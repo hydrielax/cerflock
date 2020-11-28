@@ -1,0 +1,105 @@
+/* --------------
+ * LARGE VERSION
+ * --------------*/
+
+/* la barre de navigation*/
+.topnav {
+  background-color: #872d0c;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+/* les cases cliquables */
+.topnav a {
+  float: left;
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  align-items: center;
+}
+
+/* les cases cliquables quand on passe la souris dessus*/
+.topnav a:hover {
+  background-color: #ca4312;
+}
+
+/* la case de la page actuelle */
+.topnav a.active {
+  background-color: #e5ac39;
+  color: black;
+}
+/* la case de la page actuelle */
+.topnav a.active:hover {
+  background-color: #facf41;
+}
+
+/* icone menu : on la cache */
+.topnav .icon {
+  display: none;
+} 
+
+/*paramètres des images de chaque page */
+.topnav img {
+    height: 45px;
+    margin-right: 10px;
+}
+
+
+ /*---------------
+  * SMALL VERSION
+  * ---------------*/
+
+/* si la largeur de l'écran est inférieur à 800 px */
+@media screen and (max-width: 800px) {
+    
+    /* CAS MENU REDUIT */
+    
+    /*on n'affiche pas les noms des pages */
+    .topnav a span {
+        display: none;
+    }
+    
+    /*on affiche les images */
+    .topnav a img {
+        margin-right: 0px;
+    }
+    
+    /*on affiche l'icône menu */
+    .topnav a.icon {
+        float: left;
+        display: block;
+    }
+    
+    /*----------------------------------------*/
+    
+    /* CAS MENU ETENDU */
+    
+    /*affichage de l'icône menu */
+    .topnav.responsive a.icon {
+        display:block;
+        left: 0;
+        top: 0;
+    }
+    
+    /*affichage des images */
+    .topnav.responsive a img {
+        margin-right: 10px;
+    }
+    
+    /*affichage des liens*/
+    .topnav.responsive a {
+        float: none;
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
+    
+    /*affichage des noms de page*/
+    .topnav.responsive a span {
+        display: flex;
+    }
+} 
