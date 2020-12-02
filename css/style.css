@@ -9,13 +9,13 @@ body
     margin: 0px;
 }
 
-div.main {
+main {
     padding: 50px;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 1000px) {
-    div.main {
+    main {
         width: 1000px;
         margin: 0 auto;
     }
