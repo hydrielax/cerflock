@@ -1,7 +1,7 @@
 # Le site web des Cerflock Holmes
 URL prévues :
-* Français : www.cerflock.fr
-* Anglais : en.cerflock.fr
+* Français : [www.cerflock.fr](https://www.cerflock.fr)
+* Anglais : [en.cerflock.fr](https://en.cerflock.fr)
 
 ## PAGES À CRÉER
 
