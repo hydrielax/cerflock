@@ -1,9 +1,8 @@
-
 function open_close_menu() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}     
+	var x = document.getElementsByTagName('nav')[0];
+	if (x.className === "") {
+		x.className = "responsive";
+	} else {
+		x.className = "";
+	}
+}

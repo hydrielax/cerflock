@@ -1,105 +1,186 @@
-/* --------------
- * LARGE VERSION
- * --------------*/
+/* -----------------------------------------
+ * SMALL VERSION : DEFAULT - MENU REDUIT
+ * ----------------------------------------*/
+
 
 /* la barre de navigation*/
-.topnav {
-  background-color: #872d0c;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
+
+header {
+	background-color: #872d0c;
+	position: fixed;
+	width: 100%;
 }
+
+nav {
+	display: flex;
+}
+
+nav>* {
+	flex: 1 1 0;
+}
+
 
 /* les cases cliquables */
-.topnav a {
-  float: left;
-  display: flex;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 5px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  align-items: center;
+
+nav a {
+	float: left;
+	display: flex;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 5px 5px;
+	text-decoration: none;
+	font-size: 17px;
+	height: 45px;
+	align-items: center;
+	justify-content: center;
 }
+
+nav a.quick-access {
+	float: right;
+	display: none;
+}
+
 
 /* les cases cliquables quand on passe la souris dessus*/
-.topnav a:hover {
-  background-color: #ca4312;
+
+nav a:hover {
+	background-color: #ca4312;
 }
 
+
 /* la case de la page actuelle */
-.topnav a.active {
-  background-color: #e5ac39;
-  color: black;
-}
-/* la case de la page actuelle */
-.topnav a.active:hover {
-  background-color: #facf41;
+
+nav a.active {
+	background-color: #e5ac39;
+	color: black;
 }
 
-/* icone menu : on la cache */
-.topnav .icon {
-  display: none;
-} 
+
+/* la case de la page actuelle */
+
+nav a.active:hover {
+	background-color: #facf41;
+}
+
 
 /*paramètres des images de chaque page */
-.topnav img {
-    height: 45px;
-    margin-right: 10px;
+
+nav a div.icon {
+	width: 45px;
+	height: 45px;
+	padding: 0px;
+	margin: 0px 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav a div.icon img {
+	max-height: 45px;
+	max-width: 45px;
+	margin: auto;
+}
+
+nav a.quick-access div.icon {
+	width: 30px;
+}
+
+nav a.quick-access div.icon img {
+	max-height: 25px;
+	max-width: 30px;
+	margin: auto;
 }
 
 
- /*---------------
-  * SMALL VERSION
-  * ---------------*/
+/*masquer le texte*/
 
-/* si la largeur de l'écran est inférieur à 800 px */
-@media screen and (max-width: 800px) {
-    
-    /* CAS MENU REDUIT */
-    
-    /*on n'affiche pas les noms des pages */
-    .topnav a span {
-        display: none;
-    }
-    
-    /*on affiche les images */
-    .topnav a img {
-        margin-right: 0px;
-    }
-    
-    /*on affiche l'icône menu */
-    .topnav a.icon {
-        float: left;
-        display: block;
-    }
-    
-    /*----------------------------------------*/
-    
-    /* CAS MENU ETENDU */
-    
-    /*affichage de l'icône menu */
-    .topnav.responsive a.icon {
-        display:block;
-        left: 0;
-        top: 0;
-    }
-    
-    /*affichage des images */
-    .topnav.responsive a img {
-        margin-right: 10px;
-    }
-    
-    /*affichage des liens*/
-    .topnav.responsive a {
-        float: none;
-        display: flex;
-        text-align: left;
-        align-items: center;
-    }
-    
-    /*affichage des noms de page*/
-    .topnav.responsive a span {
-        display: flex;
-    }
-} 
+nav a span {
+	display: none;
+	margin: 0px 10px;
+}
+
+
+/*----------------------
+  CAS MENU OUVERT
+----------------------*/
+
+
+/*affichage de l'icône menu */
+
+nav.responsive {
+	display: block;
+}
+
+
+/*affichage des liens*/
+
+nav.responsive a {
+	float: none;
+	text-align: left;
+	align-items: center;
+	justify-content: left;
+}
+
+nav.responsive a.quick-access {
+	display: flex;
+}
+
+nav.responsive a div.icon {
+	float: none;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*affichage des noms de page*/
+
+nav.responsive a span {
+	display: flex;
+	margin-left: 10px;
+}
+
+
+/*---------------
+* LARGE VERSION
+* ---------------*/
+
+
+/* si la largeur de l'écran est supérieure à 800 px */
+
+@media screen and (min-width: 800px) {
+	/*aligner les titres à gauche*/
+	nav {
+		display: block;
+		margin: 0 50px;
+	}
+	/*on affiche les noms des pages */
+	nav a span {
+		display: flex;
+	}
+	/*on affiche pas les images */
+	nav a div.icon {
+		display: none;
+	}
+	/*on affiche les accès rapides*/
+	nav a.quick-access {
+		display: flex;
+	}
+	nav a.quick-access span {
+		display: none;
+	}
+	nav a.quick-access div.icon {
+		display: flex;
+	}
+	nav #menu {
+		display: none;
+	}
+}
+
+#titre img {
+	max-width: none;
+	max-height: none;
+	height: 65px;
+	overflow: visible;
+	transform: translateY(-12px);
+}
