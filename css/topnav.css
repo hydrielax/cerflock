@@ -1,102 +1,105 @@
 /* -----------------------------------------
- * SMALL VERSION : DEFAULT - MENU REDUIT
+ * PAR DEFAUT : VERSION MOBILE, MENU REDUIT
  * ----------------------------------------*/
 
 
 /* la barre de navigation*/
 
 header {
+	/*barre rouge en haut de la page*/
 	background-color: #872d0c;
 	position: fixed;
 	width: 100%;
 }
 
-nav {
-	display: flex;
-}
 
-nav>* {
-	flex: 1 1 0;
-}
-
-
-/* les cases cliquables */
+/* les liens cliquables*/
 
 nav a {
+	/*liens généraux*/
+	/*disposition : on les masque en mode mobile*/
+	display: none;
 	float: left;
-	display: flex;
-	color: #f2f2f2;
 	text-align: center;
-	padding: 5px 5px;
-	text-decoration: none;
-	font-size: 17px;
-	height: 45px;
 	align-items: center;
 	justify-content: center;
+	/*marges et taille de la boîte*/
+	padding: 5px 5px;
+	height: 45px;
+	/*mise en forme du texte*/
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 17px;
 }
 
 nav a.quick-access {
+	/*on affiche les accès rapides à droite*/
+	display: flex;
 	float: right;
-	display: none;
 }
 
-
-/* les cases cliquables quand on passe la souris dessus*/
+nav a#menu,
+nav a.active {
+	/* on affiche le menu et la page ative*/
+	display: flex;
+}
 
 nav a:hover {
+	/*mettre en surbrillance la case quand on passe la souris dessus*/
 	background-color: #ca4312;
 }
 
-
-/* la case de la page actuelle */
-
 nav a.active {
+	/*mettre en avant la case de la page ouverte*/
 	background-color: #e5ac39;
 	color: black;
 }
 
-
-/* la case de la page actuelle */
-
 nav a.active:hover {
+	/*quand on passe la souris sur la case de la page ouverte*/
 	background-color: #facf41;
 }
 
 
-/*paramètres des images de chaque page */
+/*les images*/
 
 nav a div.icon {
+	/*case carré qui contient l'icône*/
+	/*taille de la case*/
 	width: 45px;
 	height: 45px;
 	padding: 0px;
 	margin: 0px 5px;
+	/*positionnement de la case*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+nav a.quick-access div.icon {
+	/*case moins large pour l'accès rapide*/
+	width: 30px;
+}
+
 nav a div.icon img {
+	/*redimensionnement de l'image*/
 	max-height: 45px;
 	max-width: 45px;
 	margin: auto;
 }
 
-nav a.quick-access div.icon {
-	width: 30px;
-}
-
 nav a.quick-access div.icon img {
+	/*redimensionnement pour les images de l'accès rapide*/
 	max-height: 25px;
 	max-width: 30px;
 	margin: auto;
 }
 
 
-/*masquer le texte*/
+/*le texte des liens*/
 
 nav a span {
-	display: none;
-	margin: 0px 10px;
+	margin: 0 10px;
 }
 
 
@@ -105,79 +108,50 @@ nav a span {
 ----------------------*/
 
 
-/*affichage de l'icône menu */
+/*les liens cliquables*/
 
-nav.responsive {
-	display: block;
-}
-
-
-/*affichage des liens*/
-
-nav.responsive a {
+nav.responsive a:not(.quick-access) {
+	/*on aligne les éléments de chaque lien à gauche*/
+	display: flex;
 	float: none;
 	text-align: left;
-	align-items: center;
 	justify-content: left;
 }
 
-nav.responsive a.quick-access {
-	display: flex;
-}
 
-nav.responsive a div.icon {
-	float: none;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-}
-
-
-/*affichage des noms de page*/
-
-nav.responsive a span {
-	display: flex;
-	margin-left: 10px;
-}
-
-
-/*---------------
-* LARGE VERSION
-* ---------------*/
+/*--------------------------------------------------
+* VERSION ORDINATEUR : POUR DES ECRANS PLUS LARGES
+* -------------------------------------------------*/
 
 
 /* si la largeur de l'écran est supérieure à 800 px */
 
-@media screen and (min-width: 800px) {
-	/*aligner les titres à gauche*/
+@media screen and (min-width: 900px) {
+	/*barre de navigation : marges sur les bords*/
 	nav {
-		display: block;
 		margin: 0 50px;
 	}
-	/*on affiche les noms des pages */
-	nav a span {
+	/*liens cliquables : on les affiche tous*/
+	nav a {
 		display: flex;
 	}
-	/*on affiche pas les images */
-	nav a div.icon {
+	/*liens cliquables : on masque le bouton menu*/
+	nav a#menu {
 		display: none;
 	}
-	/*on affiche les accès rapides*/
-	nav a.quick-access {
-		display: flex;
-	}
-	nav a.quick-access span {
-		display: none;
-	}
-	nav a.quick-access div.icon {
-		display: flex;
-	}
-	nav #menu {
+	/*images : on les masque, sauf l'accès rapide et le titre*/
+	nav a:not(.quick-access):not(#titre) div.icon {
 		display: none;
 	}
 }
 
-#titre img {
+
+/* PARAMÈTRES COMMUNS */
+
+
+/* logo Cerf'lock : doit dépasser dans tous les cas*/
+
+nav a#titre div.icon img {
 	max-width: none;
 	max-height: none;
 	height: 65px;

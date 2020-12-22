@@ -12,6 +12,11 @@ main {
 	margin: 0 auto;
 }
 
+::selection {
+	background-color: #872d0c;
+	color: #ffffff;
+}
+
 
 /* écran supérieur à 1000 px */
 
