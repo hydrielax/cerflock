@@ -10,6 +10,7 @@ header {
 	background-color: #872d0c;
 	position: fixed;
 	width: 100%;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -46,18 +47,20 @@ nav a.active {
 
 nav a:hover {
 	/*mettre en surbrillance la case quand on passe la souris dessus*/
-	background-color: #ca4312;
+	background-color: #99330e;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 nav a.active {
 	/*mettre en avant la case de la page ouverte*/
 	background-color: #e5ac39;
 	color: black;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 nav a.active:hover {
 	/*quand on passe la souris sur la case de la page ouverte*/
-	background-color: #facf41;
+	background-color: #fabc40;
 }
 
 
@@ -116,6 +119,10 @@ nav.responsive a:not(.quick-access) {
 	float: none;
 	text-align: left;
 	justify-content: left;
+}
+
+nav.responsive a {
+	box-shadow: none;
 }
 
 
