@@ -13,6 +13,10 @@ header {
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
+nav {
+	max-height: 55px;
+}
+
 
 /* les liens cliquables*/
 
@@ -48,6 +52,10 @@ nav a.active {
 nav a:hover {
 	/*mettre en surbrillance la case quand on passe la souris dessus*/
 	background-color: #99330e;
+}
+
+nav a.quick-access2:hover {
+	/*ajouter une ombre au passage de la souris sur l'accès rapide*/
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -61,6 +69,19 @@ nav a.active {
 nav a.active:hover {
 	/*quand on passe la souris sur la case de la page ouverte*/
 	background-color: #fabc40;
+}
+
+@media screen and (max-width: 440px) {
+	/*si l'écran n'est pas assez large pour afficher le titre*/
+	nav a.active {
+		display: none;
+	}
+	nav a#titre {
+		display: flex;
+	}
+	nav a#titre span {
+		display: none;
+	}
 }
 
 
@@ -96,13 +117,58 @@ nav a.quick-access div.icon img {
 	max-height: 25px;
 	max-width: 30px;
 	margin: auto;
+	transition: transform .5s 0s;
+}
+
+nav a.quick-access:hover div.icon img {
+	transform: rotate(180deg);
+}
+
+nav a:hover div.icon img {
+	filter: brightness(1.2);
+}
+
+nav a#titre div.icon img {
+	/* logo Cerf'lock : doit dépasser dans tous les cas*/
+	max-width: none;
+	max-height: none;
+	height: 65px;
+	overflow: visible;
+	transform: translateY(-12px);
 }
 
 
 /*le texte des liens*/
 
 nav a span {
+	/*mise en forme par défaut du texte*/
 	margin: 0 10px;
+	position: relative;
+	text-decoration: none;
+}
+
+nav a span::after {
+	/*rétrécissement de la ligne de soulignment*/
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 10px) scaleX(0);
+	transform-origin: 50% 50%;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.6);
+	transition: transform 250ms;
+}
+
+nav a.active span::after {
+	/*changement de couleur pour la case active*/
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav a:hover span::after {
+	/*création du soulignement au passage de la souris*/
+	transform: translate(-50%, 3px) scaleX(1);
 }
 
 
@@ -111,18 +177,28 @@ nav a span {
 ----------------------*/
 
 
-/*les liens cliquables*/
+/* le menu ne s'ouvre que si on est en mode mobile*/
 
-nav.responsive a:not(.quick-access) {
-	/*on aligne les éléments de chaque lien à gauche*/
-	display: flex;
-	float: none;
-	text-align: left;
-	justify-content: left;
-}
-
-nav.responsive a {
-	box-shadow: none;
+@media screen and (max-width: 900px) {
+	/*les liens cliquables*/
+	nav.responsive {
+		max-height: 330px;
+		transition: 0.3s;
+		overflow: hidden;
+	}
+	nav.responsive a:not(.quick-access) {
+		/*on aligne les éléments de chaque lien à gauche*/
+		display: flex;
+		float: none;
+		text-align: left;
+		justify-content: left;
+	}
+	nav.responsive a {
+		box-shadow: none;
+	}
+	nav.responsive a#titre span {
+		display: flex;
+	}
 }
 
 
@@ -150,18 +226,12 @@ nav.responsive a {
 	nav a:not(.quick-access):not(#titre) div.icon {
 		display: none;
 	}
+	/*logo cerflock plus gros*/
+	nav a#titre div.icon img {
+		height: 80px;
+		transform: translate(3px, -18px);
+	}
 }
 
 
 /* PARAMÈTRES COMMUNS */
-
-
-/* logo Cerf'lock : doit dépasser dans tous les cas*/
-
-nav a#titre div.icon img {
-	max-width: none;
-	max-height: none;
-	height: 65px;
-	overflow: visible;
-	transform: translateY(-12px);
-}

@@ -57,7 +57,7 @@ URL prévues :
 ## GRAPHISMES
 * Icônes pour chaque page ?
 * Logo d'en tête de site : 
-  * s'adapeter au logo de base en mode portrait ?
-  * adapater le logo en longueur (bannière à droite)
+  * s'adapter au logo de base en mode portrait ?
+  * adapter le logo en longueur (bannière à droite)
   * supprimer la bannière ?
   * réduire le logo et agrandir la bannière ?
