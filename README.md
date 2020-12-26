@@ -1,4 +1,4 @@
-# Le site web d'étudiants qui s"amusent
+# Le site web d'étudiants qui s'amusent
 
 ## PAGES À CRÉER
 
