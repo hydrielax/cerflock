@@ -1,0 +1,42 @@
+div#container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 2em;
+}
+
+div#container div.portrait {
+	border: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	text-align: center;
+	align-items: center;
+	background: #d6b98d;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	transition: all 0.5s ease;
+	max-width: 500px;
+}
+
+div#container div.portrait:hover {
+	background: #ddbf94;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+div#container div.portrait div.image {
+	width: 100%;
+	overflow: hidden;
+}
+
+div#container div.portrait div.image img {
+	width: 100%;
+	transition: all 0.5s ease;
+}
+
+div#container div.portrait:hover div.image img {
+	transform: scale(1.1);
+	filter: brightness(1.08);
+}
+
+div#container div.portrait div.texte {
+	margin: 20px;
+}

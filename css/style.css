@@ -10,25 +10,17 @@ body {
 main {
 	padding: 50px;
 	margin: 0 auto;
+	padding-top: 70px;
+	max-width: 1200px;
+}
+
+nav {
+	max-width: 1200px;
 }
 
 ::selection {
 	background-color: #872d0c;
 	color: #f2f2f2;
-}
-
-
-/* écran supérieur à 1000 px */
-
-@media screen and (min-width: 1000px) {
-	main {
-		width: 1000px;
-		margin: 0 auto;
-	}
-	nav {
-		width: 1000px;
-		margin: 0 auto;
-	}
 }
 
 
