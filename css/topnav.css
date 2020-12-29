@@ -15,7 +15,9 @@ header {
 }
 
 nav {
+	/*le contenu de la barre rouge, centré*/
 	max-height: 55px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -124,15 +126,17 @@ nav a.quick-access div.icon img {
 }
 
 nav a.quick-access:hover div.icon img {
+	/*animation de rotation des boutons d'accès rapide*/
 	transform: rotate(180deg);
 }
 
 nav a:hover div.icon img {
+	/*icônes éclairées quand on passe la souris*/
 	filter: brightness(1.2);
 }
 
 nav a#titre div.icon img {
-	/* logo Cerf'lock : doit dépasser dans tous les cas*/
+	/* logo Cerf'lock qui dépasse de sa case*/
 	max-width: none;
 	max-height: none;
 	height: 65px;
@@ -179,12 +183,10 @@ nav a:hover span::after {
   CAS MENU OUVERT
 ----------------------*/
 
-
-/* le menu ne s'ouvre que si on est en mode mobile*/
-
 @media screen and (max-width: 700px) {
-	/*les liens cliquables*/
+	/* le menu ne s'ouvre que si on est en mode mobile*/
 	nav.responsive {
+		/*on allonge la barre rouge d'en-tête*/
 		max-height: 330px;
 		transition: 0.3s;
 		overflow: hidden;
@@ -197,9 +199,11 @@ nav a:hover span::after {
 		justify-content: left;
 	}
 	nav.responsive a {
+		/*on annule les ombres*/
 		box-shadow: none;
 	}
 	nav.responsive a#titre span {
+		/*on raffiche les textes*/
 		display: flex;
 	}
 }

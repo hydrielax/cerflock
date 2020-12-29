@@ -1,10 +1,16 @@
+/* ------------------------------
+Code CSS pour la page des membres
+---------------------------------*/
+
 div#container {
+	/*organisation de la page*/
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-gap: 2em;
 }
 
 div#container div.portrait {
+	/*bloc portrait (contient photo + texte)*/
 	border: solid;
 	border-width: 1px;
 	border-radius: 10px;
@@ -18,25 +24,44 @@ div#container div.portrait {
 }
 
 div#container div.portrait:hover {
+	/*bloc portrait quand on passe la souris*/
 	background: #ddbf94;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 div#container div.portrait div.image {
+	/*boîte contenant l'image*/
 	width: 100%;
 	overflow: hidden;
 }
 
 div#container div.portrait div.image img {
+	/*l'image en elle-même*/
 	width: 100%;
 	transition: all 0.5s ease;
 }
 
 div#container div.portrait:hover div.image img {
+	/*quand on passe la souris sur l'image*/
 	transform: scale(1.1);
 	filter: brightness(1.08);
 }
 
 div#container div.portrait div.texte {
+	/*boîte contenant le texte*/
 	margin: 20px;
+}
+
+
+/* MODE SOMBRE - PAGE MEMBRES */
+
+.dark div#container div.portrait {
+	/*boîte portrait (on ne modifie pas la couleur du texte car elle
+	dépend directement de celle du code .dark {} dans style.css)*/
+	background-color: #000000;
+}
+
+.dark div#container div.portrait:hover {
+	/*quand on passe la souris sur un portrait*/
+	background-color: #101010;
 }

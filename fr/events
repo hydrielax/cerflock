@@ -1,16 +1,18 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
 <head>
 	<meta charset="UTF-8" />
 
-	<link rel="stylesheet" href="css/topnav.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<script type="text/javascript" src="js/topnav.js"></script>
+	<link rel="stylesheet" href="../css/topnav.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/darkmode.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
 
-	<link rel="icon" href=data/favicon.ico />
-	<title>Cerflock Holmes</title>
+	<link rel="icon" href="../data/favicon.ico" />
+	<title>Cerf'lock Holmes - Évènements</title>
 </head>
 
 <body>
@@ -19,43 +21,43 @@
 		<nav>
 
 			<a href="tel:+33604066157" class="quick-access" title="Appelez-nous !">
-				<div class="icon"><img src="data/allos.svg"></div>
+				<div class="icon"><img src="../data/allos.svg" alt="Appelez-nous !"></div>
 			</a>
-			<a href="en.cerflock.fr" class="quick-access" title="In English, please!">
-				<div class="icon"><img src="data/en.png"></div>
+			<a href="../en/events" class="quick-access" title="In English, please!">
+				<div class="icon"><img src="../data/en.png" alt="English version"></div>
 			</a>
-			<a href="" class="quick-access" title="Rejoignez le côté obscur...">
-				<div class="icon"><img src="data/dark.svg"></div>
+			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
+				<div class="icon"><img src="../data/dark.svg" alt="Activer/Désactiver le mode nuit"></div>
 			</a>
 
-			<a href="javascript:void(0);" onclick="open_close_menu()" id=menu>
-				<div class="icon"><img src=data/menu.svg></div>
+			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
+				<div class="icon"><img src="../data/menu.svg" alt="Menu"></div>
 			</a>
-			<a href=index.html class="active" id=titre>
-				<div class="icon"><img src="data/logo_rond.png"></div>
+			<a href="home" id="titre">
+				<div class="icon"><img src="../data/logo_rond.png" alt=""></div>
 				<span>Cerf'lock Holmes</span>
 			</a>
-			<a href=programme.html>
-				<div class="icon"><img src="data/programme.svg"></div>
+			<a href="program">
+				<div class="icon"><img src="../data/programme.svg" alt=""></div>
 				<span>Programme</span>
 			</a>
-			<a href=membres.html>
-				<div class="icon"><img src="data/membres.svg"></div>
+			<a href="members">
+				<div class="icon"><img src="../data/membres.svg" alt=""></div>
 				<span>Membres</span>
 			</a>
-			<a href=events.html>
-				<div class="icon"><img src="data/events.svg"></div>
+			<a href="events" class="active">
+				<div class="icon"><img src="../data/events.svg" alt=""></div>
 				<span>Évènements</span>
 			</a>
-			<a href=allos.html>
-				<div class="icon"><img src="data/allos.svg"></div>
+			<a href="allos">
+				<div class="icon"><img src="../data/allos.svg" alt=""></div>
 				<span>Allos</span>
 			</a>
 
 		</nav>
 	</header>
 
-	<a href="javascript:void(0);" id=boutonEnigme onclick="showEnigme()"><img src="data/question.svg"></a>
+	<a href="javascript:void(0);" id="boutonEnigme" onclick="showEnigme()"><img src="../data/question.svg" alt="Ouvrir une énigme"></a>
 
 	<main>
 		<h1>Chapitre premier<br>M. Sherlock Holmes</h1>

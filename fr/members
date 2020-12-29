@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+
+	<link rel="stylesheet" href="../css/topnav.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/darkmode.css" />
+	<link rel="stylesheet" href="../css/membres.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript" src="../js/membres.js"></script>
+	<script type="text/javascript">
+		//lance le script au chargement de la page
+		if (document.readyState === 'complete') {
+			generer_portraits(0);
+		} else {
+			document.addEventListener('DOMContentLoaded', function() {
+				generer_portraits(0);
+			});
+		};
+	</script>
+
+	<link rel="icon" href="../data/favicon.ico" />
+	<title>Cerf'lock Holmes - Membres</title>
+</head>
+
+<body>
+
+	<header>
+		<nav>
+
+			<a href="tel:+33604066157" class="quick-access" title="Appelez-nous !">
+				<div class="icon"><img src="../data/allos.svg" alt="Appelez-nous !"></div>
+			</a>
+			<a href="../en/members" class="quick-access" title="In English, please!">
+				<div class="icon"><img src="../data/en.png" alt="English version"></div>
+			</a>
+			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
+				<div class="icon"><img src="../data/dark.svg" alt="Activer/Désactiver le mode nuit"></div>
+			</a>
+
+			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
+				<div class="icon"><img src="../data/menu.svg" alt="Menu"></div>
+			</a>
+			<a href="home" id="titre">
+				<div class="icon"><img src="../data/logo_rond.png" alt=""></div>
+				<span>Cerf'lock Holmes</span>
+			</a>
+			<a href="program">
+				<div class="icon"><img src="../data/programme.svg" alt=""></div>
+				<span>Programme</span>
+			</a>
+			<a href="members" class="active">
+				<div class="icon"><img src="../data/membres.svg" alt=""></div>
+				<span>Membres</span>
+			</a>
+			<a href="events">
+				<div class="icon"><img src="../data/events.svg" alt=""></div>
+				<span>Évènements</span>
+			</a>
+			<a href="allos">
+				<div class="icon"><img src="../data/allos.svg" alt=""></div>
+				<span>Allos</span>
+			</a>
+
+		</nav>
+	</header>
+
+	<a href="javascript:void(0);" id="boutonEnigme" onclick="showEnigme()"><img src="../data/question.svg" alt="Ouvrir une énigme"></a>
+
+	<main>
+		<h1>Membres</h1>
+		<p>Découvrez les plus grands enquêteurs de Centrale !</p>
+		<br>
+		<div id=container></div>
+	</main>
+</body>
+
+</html>
