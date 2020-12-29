@@ -11,7 +11,7 @@
 .dark {
 	/*fond de page*/
 	background-color: #020e35;
-	color: #f2f2f2;
+	color: #e2e2f2;
 }
 
 .dark header {
@@ -21,17 +21,17 @@
 
 .dark nav a:hover {
 	/*boutons des autres pages au passage de la souris*/
-	background-color: #4988d1;
+	background-color: #0f69cf;
 }
 
 .dark nav a.active {
 	/*lien de la page ouverte*/
-	background-color: #9179e7;
+	background-color: #ca9834;
 }
 
 .dark nav a.active:hover {
 	/*lien de la page ouverte au passage de la souris*/
-	background-color: #ae9bf1;
+	background-color: #e2aa3b;
 }
 
 .dark #boutonEnigme {
@@ -41,7 +41,7 @@
 
 .dark #boutonEnigme:hover {
 	/*le bouton énigme quand on passe la souris dessus*/
-	background-color: #4988d1;
+	background-color: #0f69cf;
 }
 
 ::selection {
