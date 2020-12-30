@@ -183,7 +183,7 @@ nav a:hover span::after {
   CAS MENU OUVERT
 ----------------------*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 	/* le menu ne s'ouvre que si on est en mode mobile*/
 	nav.responsive {
 		/*on allonge la barre rouge d'en-tête*/
