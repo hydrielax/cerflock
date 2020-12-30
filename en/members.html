@@ -12,22 +12,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js"></script>
 	<script type="text/javascript" src="../js/membres.js"></script>
-	<script type="text/javascript">
-		//lance le script au chargement de la page
-		if (document.readyState === 'complete') {
-			generer_portraits(1);
-		} else {
-			document.addEventListener('DOMContentLoaded', function() {
-				generer_portraits(1);
-			});
-		};
-	</script>
 
 	<link rel="icon" href="../data/favicon.ico" />
 	<title>Cerf'lock Holmes - Members</title>
 </head>
 
 <body>
+	<script type="text/javascript">
+		autoChangeMode();
+	</script>
+
 	<header>
 		<nav>
 
@@ -35,7 +29,7 @@
 				<div class="icon"><img src="../data/allos.svg" alt="Call us!"></div>
 			</a>
 			<a href="../fr/members.html" class="quick-access" title="En Français dans le texte...!">
-				<div class="icon"><img src="../data/en.png" alt="Version française"></div>
+				<div class="icon"><img src="../data/fr.svg" alt="Version française"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Join the dark side...">
 				<div class="icon"><img src="../data/dark.svg" alt="Enable/Disable dark mode"></div>
@@ -74,7 +68,11 @@
 		<h1>Membres</h1>
 		<p>Découvrez les plus grands enquêteurs de Centrale !</p>
 		<br>
-		<div id=container></div>
+		<div id=container>
+			<script type="text/javascript">
+				generer_portraits(1);
+			</script>
+		</div>
 	</main>
 </body>
 

@@ -12,22 +12,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js"></script>
 	<script type="text/javascript" src="../js/membres.js"></script>
-	<script type="text/javascript">
-		//lance le script au chargement de la page
-		if (document.readyState === 'complete') {
-			generer_portraits(0);
-		} else {
-			document.addEventListener('DOMContentLoaded', function() {
-				generer_portraits(0);
-			});
-		};
-	</script>
 
 	<link rel="icon" href="../data/favicon.ico" />
 	<title>Cerf'lock Holmes - Membres</title>
 </head>
 
 <body>
+	<script type="text/javascript">
+		autoChangeMode();
+	</script>
 
 	<header>
 		<nav>
@@ -75,7 +68,11 @@
 		<h1>Membres</h1>
 		<p>Découvrez les plus grands enquêteurs de Centrale !</p>
 		<br>
-		<div id=container></div>
+		<div id=container>
+			<script type="text/javascript">
+				generer_portraits(0);
+			</script>
+		</div>
 	</main>
 </body>
 

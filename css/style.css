@@ -22,6 +22,45 @@ main {
 	max-width: 1200px;
 }
 
+footer {
+	background-color: #e5ac39;
+	padding: 0.3em 50px;
+}
+
+footer div {
+	max-width: 1200px;
+	margin: auto;
+}
+
+main a,
+footer a {
+	text-decoration: none;
+	color: #7c290a;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+}
+
+main a:hover,
+footer a:not(.rs):hover {
+	background-color: #882c0a;
+	color: #f2f2f2;
+}
+
+footer a.rs svg {
+	height: 1.5em;
+	width: 1.5em;
+	fill: #000000;
+	margin-left: 0.3em;
+}
+
+footer a.rs:hover#facebook svg {
+	fill: #1877f2;
+}
+
+footer a.rs:hover#youtube svg {
+	fill: #ff1a1a;
+}
+
 ::selection {
 	/*couleur du texte quand on le sélectionne à la souris*/
 	background-color: #872d0c;
