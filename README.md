@@ -1,60 +1,133 @@
-# Le site web d'étudiants qui s'amusent
+# Site Web de l'association
 
-## PAGES À CRÉER
+*N'hésitez pas à remplir ce document (notamment la partie I !) pour proposer vos idées !*
 
-### 1. Page d'accueil
-* caroussel des events
-* trailer+film campagnes,
 
-### 2. Programme
-* programme de la liste
 
-### 3. Membres
-* Liste des membres : script pour générer automatiquement ?
+-------
 
-### 4. Events
+
+
+## I. Propositions d'ajouts
+
+### *Structure générale du site*
+
+* Trouver des polices (différentes pour les titres et le texte ?)
+
+### *En-tête de navigation*
+
+* Créer des icônes pour chaque page (on peut les voir uniquement en mode mobile)
+
+
+
+----------------------
+
+
+
+## II. Ce qui est fait
+
+### Page *Membres*
+
+* Algorithme automatique pour afficher les membres
+* Affichage de la photo, du nom, du rôle et de la description
+* Adaptation automatique au format de l'écran
+* Animations au passage de la souris
+
+### *En-tête de navigation*
+
+* Liens vers les autres pages crées
+* Support de l'affichage sur portable et tablettes
+* Bouton téléphone avec appel direct
+* Animations au passage de la souris
+
+### *Pied de page*
+
+* Pied de page créé
+* Mode nuit fait
+* Texte du pied de page (liens vers les mentions légales, etc…)
+* Liens vers les RS : en cours (Facebook  fait, Youtube fait mais mauvais lien)
+
+### *Mode sombre*
+
+* Bascule automatique créée (en fonction de l'heure et/ou du mode système)
+* Thème sombre général créé (peut-être à modifier encore)
+* Thème sombre de la barre de navigation créé
+
+### *Pop-Up Énigme*
+
+* Bouton ( ? ) pour ouvrir le pop-up créé
+
+### *Support multilingue*
+
+* Gestion du passage d'une langue à l'autre fait
+* Pages en anglais créées
+
+
+
+------------
+
+
+
+## III. Ce qu'il reste à faire
+
+### Page *Accueil*
+
+* carrousel des events
+* intégrer le film
+
+### Page *Programme*
+
+* intégrer le programme de la liste
+
+### Page *Membres*
+
+* Modifier les photos (une fois qu'on les aura prise)
+* Ajuster les rôles et les descriptions (doc sur le drive)
+* Améliorer le mode nuit de la page
+
+### Page *Events*
+
 * Réfléchir à une disposition originale ?
+* En attente des events
 
-### 5. Allos
+### Page *Allos*
+
 * Numéro de téléphone
 * Liste des Allos possibles
 
-### 6. Mentions Légales
-* Cookies Google si Google Analytics
-* Lieu de la société
+### Page *Mentions légales*
+
+* Créer la page
+* Indiquer :
+   * Cookies Google si Google Analytics
+   * Lieu de la société
+
+### *Pied de page*
+
+* L'intégrer sur toutes les pages
+* Liens vers les réseaux sociaux (décider lesquels)
+* Adresse mail de contact
+
+### *Mode sombre*
+
+* Enregistrer le thème choisi en cookie
+
+### *Pop-Up des cookies*
+
+* But : demander le consentement pour les cookies
+* À faire : créer le pop-up
+* Liste des cookies :
+   * Google Analytics
+   * Mémorisation de l'acceptation des cookies
+   * Mémorisation de la langue choisie
+   * Mémorisation du mode jour/nuit choisi
+
+### *Pop-Up Énigme*
+
+* Créer un pop-up proposant une énigme
+* Créer la liste des énigmes (cf doc sur le drive)
 
 
-## STRUCTURE GÉNÉRALE
 
-### 1. Barre de navigation
-* Fixe en haut (ou pas ?)
-* Sur portable : icônes seules en guise de barre, ou juste le titre du site ?
+--------------
 
-### 2. Pied de page
-* Mentions légales
-* Liens vers les versions dans d'autres langues : 
-  * drapeaux, textes ?
-  * Quelles langues ? Français + Anglais (+ Espagnol, Arabe, Allemand, ... ?)
-* Liens vers les réseaux sociaux ?
-* Adresse mail de contact ?
-* Rappel de téléphone pour les allos ?
-
-### 3. Barre sur le côté droit ?
-* réseaux Sociaux ?
-
-### 4. Pop-up
-* Pour les cookies
-
-### 5. Mode sombre ?
-* Par défaut : thème du système OU en fonction de l'heure ?
-* Bouton pour changer de thème
-* Thème choisi stocké en cookie
-
-
-## GRAPHISMES
-* Icônes pour chaque page ?
-* Logo d'en tête de site : 
-  * s'adapter au logo de base en mode portrait ?
-  * adapter le logo en longueur (bannière à droite)
-  * supprimer la bannière ?
-  * réduire le logo et agrandir la bannière ?
