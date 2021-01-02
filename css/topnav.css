@@ -7,7 +7,7 @@
 
 header {
 	/*barre rouge en haut de la page*/
-	background-color: #872d0c;
+	background-color: var(--first-color);
 	position: fixed;
 	width: 100%;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -36,7 +36,7 @@ nav a {
 	padding: 5px 5px;
 	height: 45px;
 	/*mise en forme du texte*/
-	color: #f2f2f2;
+	color: var(--text-color-light);
 	text-decoration: none;
 	font-size: 17px;
 }
@@ -55,7 +55,7 @@ nav a.active {
 
 nav a:hover {
 	/*mettre en surbrillance la case quand on passe la souris dessus*/
-	background-color: #99330e;
+	background-color: var(--first-color-lighter);
 }
 
 nav a.quick-access2:hover {
@@ -65,17 +65,17 @@ nav a.quick-access2:hover {
 
 nav a.active {
 	/*mettre en avant la case de la page ouverte*/
-	background-color: #e5ac39;
-	color: black;
+	background-color: var(--second-color);
+	color: var(--text-color-dark);
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 nav a.active:hover {
 	/*quand on passe la souris sur la case de la page ouverte*/
-	background-color: #fabc40;
+	background-color: var(--second-color-lighter);
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width:450px) {
 	/*si l'écran n'est pas assez large pour afficher le titre*/
 	nav a.active {
 		display: none;
@@ -114,7 +114,6 @@ nav a div.icon img {
 	max-height: 45px;
 	max-width: 45px;
 	margin: auto;
-	color: #ffffff;
 }
 
 nav a.quick-access div.icon img {
@@ -201,6 +200,9 @@ nav a:hover span::after {
 	nav.responsive a {
 		/*on annule les ombres*/
 		box-shadow: none;
+	}
+	nav.responsive a#titre {
+		max-width: none;
 	}
 	nav.responsive a#titre span {
 		/*on raffiche les textes*/

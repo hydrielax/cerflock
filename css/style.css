@@ -3,11 +3,68 @@ Style général du site, commun à toutes les pages
 pour le mode jour
 -------------------------------*/
 
+
+/* LES COULEURS :
+	Utilisation des couleurs :
+	--bg-color: 			couleur d'arrière-plan de la page
+	--first-color: 			couleur principale (barre de titre, bouton, surlignage)
+	--first-color-lighter: 	couleur principale éclairée (pour passage de la souris dessus)
+	--first-color-to-text: 	couleur principale adapatée au mode jour/nuit
+	--second-color:			couleur secondaire (celle de la page ouverte par exemple)
+	--second-color-lighter: couleur secondaire éclairée
+	--third-color: 			couleur tertiaire (pied de page)
+	--text-color:			couleur du texte par défaut
+	--text-color-opposite: 	couleur du texte complémentaire de celle par défaut
+	--text-color-light:		couleur du texte blanche
+	--text-color-dark: 		couleur du texte noire
+	--box-color: 			couleur de fond des boîtes/pop-up (eg les membres)
+	--box-color-lighter:	couleur de fond des boîtes éclairée
+*/
+
+body {
+	--bg-color: #d7c3a5;
+	--first-color: #872d0c;
+	--first-color-lighter: #99330e;
+	--first-color-to-text: #6b2309;
+	--second-color: #e5ac39;
+	--second-color-lighter: #fabc40;
+	--third-color: #e5ac39;
+	--text-color: #000000;
+	--text-color-opposite: #f2f2f2;
+	--text-color-light: #f2f2f2;
+	--text-color-dark: #101010;
+	--box-color: #d6b98d;
+	--box-color-lighter: #ddbf94;
+}
+
+body.dark {
+	--bg-color: #020e35;
+	--first-color: #0c55a8;
+	--first-color-lighter: #0f69cf;
+	--first-color-to-text: #0f67cc;
+	--second-color: #ca9834;
+	--second-color-lighter: #e2aa3b;
+	--third-color: #063161;
+	--text-color: #e2e2f2;
+	--text-color-opposite: #101010;
+	--text-color-light: #f2f2f2;
+	--text-color-dark: #101010;
+	--box-color: #2b3d77;
+	--box-color-lighter: #304381;
+}
+
+
+/*------------------------
+  ASPECT GENERAL DU SITE
+  ----------------------*/
+
 body {
 	/*Aspect général de la page*/
-	background-color: #d7c3a5;
+	background-color: var(--bg-color);
 	font-family: "Trebuchet MS";
+	color: var(--text-color);
 	margin: 0px;
+	min-height: 100%;
 	/*Code pour mettre une image de fond au lieu d'une couleur :
 	background-image: url("Fond.jpg");
 	background-attachment: fixed;
@@ -22,8 +79,31 @@ main {
 	max-width: 1200px;
 }
 
+a {
+	text-decoration: none;
+	color: var(--first-color-to-text);
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+}
+
+a:hover {
+	background-color: var(--first-color);
+	color: var(--text-color-light);
+}
+
+::selection {
+	/*couleur du texte quand on le sélectionne à la souris*/
+	background-color: var(--first-color);
+	color: var(--text-color-light);
+}
+
+
+/*------------------------ 
+  PIED DE PAGE
+  ------------------*/
+
 footer {
-	background-color: #e5ac39;
+	background-color: var(--third-color);
 	padding: 0.3em 50px;
 }
 
@@ -32,25 +112,15 @@ footer div {
 	margin: auto;
 }
 
-main a,
-footer a {
-	text-decoration: none;
-	color: #7c290a;
-	padding-left: 0.2em;
-	padding-right: 0.2em;
-}
-
-main a:hover,
-footer a:not(.rs):hover {
-	background-color: #882c0a;
-	color: #f2f2f2;
+footer a.rs:hover {
+	background-color: transparent;
 }
 
 footer a.rs svg {
 	height: 1.5em;
 	width: 1.5em;
-	fill: #000000;
-	margin-left: 0.3em;
+	fill: var(--text-color);
+	/*margin-left: 0.3em;*/
 }
 
 footer a.rs:hover#facebook svg {
@@ -61,21 +131,21 @@ footer a.rs:hover#youtube svg {
 	fill: #ff1a1a;
 }
 
-::selection {
-	/*couleur du texte quand on le sélectionne à la souris*/
-	background-color: #872d0c;
-	color: #f2f2f2;
-}
+
+/*------------------
+  BOUTON ENIGME
+  -----------------*/
 
 #boutonEnigme {
 	/*paramètres du bouton rond d'énigmes*/
 	/*apparence*/
-	background-color: #872d0c;
+	background-color: var(--first-color);
 	width: 70px;
 	height: 70px;
 	border-radius: 200px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 	/*position*/
+	padding: 0;
 	bottom: 20px;
 	right: 20px;
 	position: fixed;
@@ -90,7 +160,7 @@ footer a.rs:hover#youtube svg {
 #boutonEnigme:hover {
 	/*quand on passe la souris sur le bouton d'énigmes*/
 	box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
-	background-color: #99330e;
+	background-color: var(--first-color-lighter);
 	transform: rotate(360deg);
 }
 
