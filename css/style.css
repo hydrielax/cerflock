@@ -79,6 +79,13 @@ main {
 	max-width: 1200px;
 }
 
+@media screen and (max-width:600px) {
+	main {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
 a {
 	text-decoration: none;
 	color: var(--first-color-to-text);
