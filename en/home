@@ -11,9 +11,12 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript">
+		checkLanguage("en");
+	</script>
 
 	<link rel="icon" href="../data/favicon.ico" />
-	<title>Cerf'lock Holmes</title>
+	<title>Cerf'Lock Holmes</title>
 </head>
 
 <body>
@@ -27,7 +30,7 @@
 			<a href="tel:+33604066157" class="quick-access" title="Call us!">
 				<div class="icon"><img src="../data/allos.svg" alt="Call us!"></div>
 			</a>
-			<a href="../fr/home" class="quick-access" title="En Français dans le texte...!">
+			<a href="../fr/home" onclick="changeLanguage()" class="quick-access" title="En Français dans le texte...!">
 				<div class="icon"><img src="../data/fr.svg" alt="Version française"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Join the dark side...">
@@ -39,7 +42,7 @@
 			</a>
 			<a href="home" class="active" id="titre">
 				<div class="icon"><img src="../data/logo_rond.png" alt=""></div>
-				<span>Cerf'lock Holmes</span>
+				<span>Cerf'Lock Holmes</span>
 			</a>
 			<a href="program">
 				<div class="icon"><img src="../data/programme.svg" alt=""></div>

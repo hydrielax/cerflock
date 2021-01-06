@@ -12,10 +12,13 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript">
+		checkLanguage("fr");
+	</script>
 	<script type="text/javascript" src="../js/membres.js"></script>
 
 	<link rel="icon" href="../data/favicon.ico" />
-	<title>Cerf'lock Holmes - Membres</title>
+	<title>Cerf'Lock Holmes - Membres</title>
 </head>
 
 <body>
@@ -29,7 +32,7 @@
 			<a href="tel:+33604066157" class="quick-access" title="Appelez-nous !">
 				<div class="icon"><img src="../data/allos.svg" alt="Appelez-nous !"></div>
 			</a>
-			<a href="../en/members" class="quick-access" title="In English, please!">
+			<a href="../en/members" onclick="changeLanguage()" class="quick-access" title="In English, please!">
 				<div class="icon"><img src="../data/en.png" alt="English version"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
@@ -41,7 +44,7 @@
 			</a>
 			<a href="home" id="titre">
 				<div class="icon"><img src="../data/logo_rond.png" alt=""></div>
-				<span>Cerf'lock Holmes</span>
+				<span>Cerf'Lock Holmes</span>
 			</a>
 			<a href="program">
 				<div class="icon"><img src="../data/programme.svg" alt=""></div>

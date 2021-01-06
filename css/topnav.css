@@ -9,14 +9,16 @@ header {
 	/*barre rouge en haut de la page*/
 	background-color: var(--first-color);
 	position: fixed;
-	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
-	z-index: 1;
+	z-index: 2;
 }
 
 nav {
 	/*le contenu de la barre rouge, centré*/
-	max-height: 55px;
+	max-height: 2.8em;
 	max-width: 1200px;
 	margin: 0 auto;
 }
@@ -29,16 +31,14 @@ nav a {
 	/*disposition : on les masque en mode mobile*/
 	display: none;
 	float: left;
-	text-align: center;
 	align-items: center;
-	justify-content: center;
 	/*marges et taille de la boîte*/
-	padding: 5px 5px;
-	height: 45px;
+	padding: 0.3em;
+	height: 2.8em;
 	/*mise en forme du texte*/
 	color: var(--text-color-light);
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 1em;
 }
 
 nav a.quick-access {
@@ -48,7 +48,7 @@ nav a.quick-access {
 }
 
 nav a#menu,
-nav a.active {
+nav a#titre {
 	/* on affiche le menu et la page ative*/
 	display: flex;
 }
@@ -56,9 +56,6 @@ nav a.active {
 nav a:hover {
 	/*mettre en surbrillance la case quand on passe la souris dessus*/
 	background-color: var(--first-color-lighter);
-}
-
-nav a.quick-access2:hover {
 	/*ajouter une ombre au passage de la souris sur l'accès rapide*/
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -76,13 +73,13 @@ nav a.active:hover {
 }
 
 @media screen and (max-width:450px) {
-	/*si l'écran n'est pas assez large pour afficher le titre*/
+	/*si l'écran n'est pas assez large pour afficher le titre
 	nav a.active {
 		display: none;
 	}
 	nav a#titre {
 		display: flex;
-	}
+	}*/
 	nav a#titre span {
 		display: none;
 	}
@@ -94,10 +91,10 @@ nav a.active:hover {
 nav a div.icon {
 	/*case carré qui contient l'icône*/
 	/*taille de la case*/
-	width: 45px;
-	height: 45px;
-	padding: 0px;
-	margin: 0px 5px;
+	width: 2.8em;
+	height: 2.8em;
+	padding: 0;
+	margin: 0 0.3em;
 	/*positionnement de la case*/
 	display: flex;
 	justify-content: center;
@@ -106,20 +103,20 @@ nav a div.icon {
 
 nav a.quick-access div.icon {
 	/*case moins large pour l'accès rapide*/
-	width: 30px;
+	width: 1.9em;
 }
 
 nav a div.icon img {
 	/*redimensionnement de l'image*/
-	max-height: 45px;
-	max-width: 45px;
+	max-height: 2em;
+	max-width: 2em;
 	margin: auto;
 }
 
 nav a.quick-access div.icon img {
 	/*redimensionnement pour les images de l'accès rapide*/
-	max-height: 25px;
-	max-width: 30px;
+	max-height: 1.5em;
+	max-width: 1.9em;
 	margin: auto;
 	transition: transform .5s 0s;
 }
@@ -135,12 +132,12 @@ nav a:hover div.icon img {
 }
 
 nav a#titre div.icon img {
-	/* logo Cerf'lock qui dépasse de sa case*/
+	/* logo Cerf'Lock qui dépasse de sa case*/
 	max-width: none;
 	max-height: none;
-	height: 65px;
+	height: 4.2em;
 	overflow: visible;
-	transform: translateY(-12px);
+	transform: translateY(-0.7em);
 }
 
 
@@ -148,7 +145,7 @@ nav a#titre div.icon img {
 
 nav a span {
 	/*mise en forme par défaut du texte*/
-	margin: 0 10px;
+	margin: 0 0.7em;
 	position: relative;
 	text-decoration: none;
 }
@@ -159,17 +156,19 @@ nav a span::after {
 	position: absolute;
 	left: 50%;
 	bottom: 0;
-	transform: translate(-50%, 10px) scaleX(0);
+	transform: translate(-50%, 0.7em) scaleX(0);
 	transform-origin: 50% 50%;
 	width: 100%;
 	height: 1px;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: var(--text-color-light);
+	opacity: 0.7;
 	transition: transform 250ms;
 }
 
 nav a.active span::after {
 	/*changement de couleur pour la case active*/
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: var(--text-color-dark);
+	opacity: 0.7;
 }
 
 nav a:hover span::after {
@@ -186,23 +185,18 @@ nav a:hover span::after {
 	/* le menu ne s'ouvre que si on est en mode mobile*/
 	nav.responsive {
 		/*on allonge la barre rouge d'en-tête*/
-		max-height: 330px;
-		transition: 0.3s;
+		max-height: 20.4em;
+		transition: all 0.3s ease;
 		overflow: hidden;
 	}
 	nav.responsive a:not(.quick-access) {
 		/*on aligne les éléments de chaque lien à gauche*/
 		display: flex;
 		float: none;
-		text-align: left;
-		justify-content: left;
 	}
 	nav.responsive a {
 		/*on annule les ombres*/
 		box-shadow: none;
-	}
-	nav.responsive a#titre {
-		max-width: none;
 	}
 	nav.responsive a#titre span {
 		/*on raffiche les textes*/
@@ -233,7 +227,7 @@ nav a:hover span::after {
 	}
 	/*logo cerflock plus gros*/
 	nav a#titre div.icon img {
-		height: 80px;
-		transform: translate(3px, -18px);
+		height: 5em;
+		transform: translate(0.1em, -1.2em);
 	}
 }
