@@ -111,13 +111,13 @@ function changeLanguage() {
 	else setCookie("langue", "en");
 }
 
-function checkLanguage(lg) {
+function checkLanguage(lg, page) {
 	var langue = getCookie("langue");
 	if (langue === null) {
 		setCookie("langue", lg);
 	} else {
-		if (langue === "fr" && lg === "en") window.location.href = "../fr/home";
-		if (langue === "en" && lg === "fr") window.location.href = "../en/home";
+		if (langue === "fr" && lg === "en") window.location.href = "../fr/" + page;
+		if (langue === "en" && lg === "fr") window.location.href = "../en/" + page;
 	}
 }
 
