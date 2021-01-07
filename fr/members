@@ -10,14 +10,17 @@
 	<link rel="stylesheet" href="../css/topnav.css" />
 	<link rel="stylesheet" href="../css/membres.css" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js"></script>
 	<script type="text/javascript">
 		checkLanguage("fr", "members");
 	</script>
 	<script type="text/javascript" src="../js/membres.js"></script>
 
-	<link rel="icon" href="../data/favicon.ico" />
+	<link rel="shortcut icon" href="../data/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="../data/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="../data/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="../data/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="../data/favicon_144.png" sizes="144x144" />
 	<title>Cerf'Lock Holmes - Membres</title>
 </head>
 

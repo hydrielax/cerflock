@@ -35,9 +35,6 @@ nav a {
 	/*marges et taille de la boîte*/
 	padding: 0.3em;
 	height: 2.8em;
-	/*mise en forme du texte*/
-	color: var(--text-color-light);
-	text-decoration: none;
 	font-size: 1em;
 }
 
@@ -63,7 +60,6 @@ nav a:hover {
 nav a.active {
 	/*mettre en avant la case de la page ouverte*/
 	background-color: var(--second-color);
-	color: var(--text-color-dark);
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -91,32 +87,33 @@ nav a.active:hover {
 nav a div.icon {
 	/*case carré qui contient l'icône*/
 	/*taille de la case*/
-	width: 2.8em;
-	height: 2.8em;
+	width: 2.8rem;
+	height: 2.8rem;
 	padding: 0;
-	margin: 0 0.3em;
+	margin: 0 0.3rem;
 	/*positionnement de la case*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 1rem;
 }
 
 nav a.quick-access div.icon {
 	/*case moins large pour l'accès rapide*/
-	width: 1.9em;
+	width: 1.9rem;
 }
 
 nav a div.icon img {
 	/*redimensionnement de l'image*/
-	max-height: 2em;
-	max-width: 2em;
+	max-height: 2rem;
+	max-width: 2rem;
 	margin: auto;
 }
 
 nav a.quick-access div.icon img {
 	/*redimensionnement pour les images de l'accès rapide*/
-	max-height: 1.5em;
-	max-width: 1.9em;
+	max-height: 1.5rem;
+	max-width: 1.9rem;
 	margin: auto;
 	transition: transform .5s 0s;
 }
@@ -135,19 +132,32 @@ nav a#titre div.icon img {
 	/* logo Cerf'Lock qui dépasse de sa case*/
 	max-width: none;
 	max-height: none;
-	height: 4.2em;
+	height: 4.2rem;
 	overflow: visible;
-	transform: translateY(-0.7em);
+	transform: translateY(-0.8rem);
 }
 
 
 /*le texte des liens*/
 
 nav a span {
-	/*mise en forme par défaut du texte*/
-	margin: 0 0.7em;
+	/*mise en forme du texte*/
+	color: var(--text-color-light);
+	text-decoration: none;
+	font-size: 1.3em;
+	font-family: 'Grenze', sans-serif;
+	font-weight: 300;
+	margin: 0 0.7rem;
 	position: relative;
 	text-decoration: none;
+}
+
+nav a#titre span {
+	font-family: 'Grenze Gotisch';
+}
+
+nav a.active span {
+	color: var(--text-color-dark);
 }
 
 nav a span::after {
@@ -156,24 +166,24 @@ nav a span::after {
 	position: absolute;
 	left: 50%;
 	bottom: 0;
-	transform: translate(-50%, 0.7em) scaleX(0);
+	transform: translate(-50%, 0.4rem) scaleX(0);
 	transform-origin: 50% 50%;
 	width: 100%;
 	height: 1px;
 	background-color: var(--text-color-light);
-	opacity: 0.7;
-	transition: transform 250ms;
+	opacity: 0;
+	transition: all 250ms;
 }
 
 nav a.active span::after {
 	/*changement de couleur pour la case active*/
 	background-color: var(--text-color-dark);
-	opacity: 0.7;
 }
 
 nav a:hover span::after {
 	/*création du soulignement au passage de la souris*/
-	transform: translate(-50%, 3px) scaleX(1);
+	transform: translate(-50%, 0) scaleX(1);
+	opacity: 0.7;
 }
 
 
@@ -185,7 +195,7 @@ nav a:hover span::after {
 	/* le menu ne s'ouvre que si on est en mode mobile*/
 	nav.responsive {
 		/*on allonge la barre rouge d'en-tête*/
-		max-height: 20.4em;
+		max-height: 20.4rem;
 		transition: all 0.3s ease;
 		overflow: hidden;
 	}
@@ -227,7 +237,7 @@ nav a:hover span::after {
 	}
 	/*logo cerflock plus gros*/
 	nav a#titre div.icon img {
-		height: 5em;
-		transform: translate(0.1em, -1.2em);
+		height: 5rem;
+		transform: translate(0.1rem, -1.2rem);
 	}
 }

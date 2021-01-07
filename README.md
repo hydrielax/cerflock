@@ -13,14 +13,6 @@
 * Créer des icônes pour chaque page dans la barre de navigation (on peut les voir uniquement en mode mobile)
 * Peaufiner le pied de page
 
-### Page *Accueil*
-
-* carrousel des events
-
-### Page *Programme*
-
-* intégrer le programme de la liste
-
 ### Page *Membres*
 
 * Modifier les photos (une fois qu'on les aura prise)
@@ -51,7 +43,19 @@
 
 ## II. Ce qui est fait
 
-### Version 0.2
+### Version 0.03
+
+* Ajout d'un carousel sur la page d'accueil :
+   * Images prises au hasard sur internet (à changer)
+   * Défilement automatique (5s)
+   * Gestion du défilement par cliquer-glisser (tactile)
+* Ajout de contenu sur la page Programme
+* Ajout de contenu sur la page Events
+* Ajout de contenu sur la page Allos
+* Correction d'un bug : le pied de page s'affiche désormais en bas de la page quand il y a peu de contenus
+* Favicon : importation de plusieurs versions du favicon pour les différents tailles
+
+### Version 0.02
 
 * Ajout des cookies pour enregistrer :
    * la préférence de la langue
@@ -66,7 +70,7 @@
 * Ajout du logo au pied de page
 * Ajout d'ombres sur la barre de navigation au passage de la souris
 
-### Version 0.1
+### Version 0.01
 
 * Algorithme automatique pour afficher les membres
 * Affichage de la photo, du nom, du rôle et de la description

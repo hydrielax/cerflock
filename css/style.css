@@ -3,13 +3,19 @@ Style général du site, commun à toutes les pages
 pour le mode jour
 -------------------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;600&display=swap');
+
+/*&text=Cerf%27Lock%20Holmes');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 /* LES COULEURS :
 	Utilisation des couleurs :
 	--bg-color: 			couleur d'arrière-plan de la page
 	--first-color: 			couleur principale (barre de titre, bouton, surlignage)
 	--first-color-lighter: 	couleur principale éclairée (pour passage de la souris dessus)
-	--first-color-to-text: 	couleur principale adapatée au mode jour/nuit
+	--first-color-to-text: 	couleur principale adapatée au mode jour/nuit (liens)
 	--second-color:			couleur secondaire (celle de la page ouverte par exemple)
 	--second-color-lighter: couleur secondaire éclairée
 	--third-color: 			couleur tertiaire (pied de page)
@@ -22,6 +28,7 @@ pour le mode jour
 */
 
 body {
+	--title-font: 'Trebuchet MS';
 	--bg-color: #d7c3a5;
 	--first-color: #872d0c;
 	--first-color-lighter: #99330e;
@@ -41,7 +48,7 @@ body.dark {
 	--bg-color: #020e35;
 	--first-color: #0c55a8;
 	--first-color-lighter: #0f69cf;
-	--first-color-to-text: #0f67cc;
+	--first-color-to-text: #4997f0;
 	--second-color: #ca9834;
 	--second-color-lighter: #e2aa3b;
 	--third-color: #063161;
@@ -58,17 +65,22 @@ body.dark {
   ASPECT GENERAL DU SITE
   ----------------------*/
 
+html {
+	height: 100%;
+}
+
 body {
 	/*Aspect général de la page*/
 	background-color: var(--bg-color);
-	font-family: "Trebuchet MS";
 	color: var(--text-color);
+	font-family: 'Lato', sans-serif;
+	/*Aspect technique*/
 	margin: 0px;
 	min-height: 100%;
-	/*Code pour mettre une image de fond au lieu d'une couleur :
-	background-image: url("Fond.jpg");
-	background-attachment: fixed;
-	background-size: cover;*/
+	position: relative;
+	padding: 0;
+	padding-bottom: 30rem;
+	box-sizing: border-box;
 }
 
 main {
@@ -84,6 +96,30 @@ main {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Grenze', sans-serif;
+}
+
+h1 {
+	font-size: 4em;
+	font-family: 'Grenze Gotisch', sans-serif;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2em;
+	font-family: 'Grenze', sans-serif;
+	margin: 0;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-family: 'Grenze', sans-serif;
+	margin: 0;
 }
 
 a {
@@ -112,6 +148,10 @@ a:hover {
 footer {
 	background-color: var(--third-color);
 	padding: 0.3em 50px;
+	bottom: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
 }
 
 @media screen and (max-width:800px) {

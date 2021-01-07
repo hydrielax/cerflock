@@ -9,13 +9,16 @@
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../css/topnav.css" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/scripts.js"></script>
 	<script type="text/javascript">
 		checkLanguage("fr", "program");
 	</script>
 
-	<link rel="icon" href="../data/favicon.ico" />
+	<link rel="shortcut icon" href="../data/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="../data/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="../data/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="../data/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="../data/favicon_144.png" sizes="144x144" />
 	<title>Cerf'Lock Holmes - Programme</title>
 </head>
 
@@ -67,40 +70,82 @@
 	<a href="javascript:void(0);" id="boutonEnigme" onclick="showEnigme()"><img src="../data/question.svg" alt="Ouvrir une énigme"></a>
 
 	<main>
-		<h1>Chapitre premier<br>M. Sherlock Holmes</h1>
+		<h1>Programme</h1>
+		<p>Découvrez les actions et engagements de la liste Sex on the Biche !</p>
+		<h2>🎉 Vie centralienne</h2>
 
-		<p>En 1878, reçu médecin à l’Université de Londres, je me rendis à Netley pour suivre les cours prescrits aux chirurgiens de l’armée ; et là, je complétai mes études. On me désigna ensuite, comme aide-major, pour le 5e régiment de fusiliers de Northumberland
-			en garnison aux Indes.</p>
+		<p>La vie à Centrale manque parfois un peu de piquant, vous ne trouvez pas ? Voici nos projets pour dynamiser tout ça !</p>
 
-		<p>Avant que j’eusse pu le rejoindre, la seconde guerre d’Afghanistan avait éclaté. En débarquant à Bombay, j’appris que mon corps d’armée s’était engagé dans les défilés ; il avait même poussé très avant en territoire ennemi. A l’exemple de plusieurs
-			autres officiers dans mon cas, je partis à sa poursuite aussitôt ; et je parvins sans encombre à Kandahar, où il stationnait. J’entrai immédiatement en fonctions.
-		</p>
+		<ul>
+			<li> Ouverture d'un bar à la MDE, pour profiter de notre fameux cocktail « Sex on the Biche » !</li>
+			<li>
+				Rénovation de la MDE avec des ateliers/concours décorations de la MDE
+			</li>
+		</ul>
+		<h2>🌿 Écologie</h2>
 
-		<p>Si la campagne procura des décorations et de l’avancement à certains, à moi elle n’apporta que déboires et malheurs. On me détacha de ma brigade pour m’adjoindre au régiment de Berkshire ; ainsi je participai à la fatale bataille de Maiwand. Une balle
-			m’atteignit à l’épaule ; elle me fracassa l’os et frôla l’artère sous-clavière. Je n’échappai aux sanguinaires Ghazis que par le dévouement et le courage de mon ordonnance Murray : il me jeta en travers d’un cheval de bât et put me ramener dans nos
-			lignes.
-		</p>
+		<p>Face à l’urgence écologique, les Sex on the Biche relèvent le défi et s’engagent ! Nous comptons :</p>
+		<ul>
+			<li>
+				Travailler tout au long du mandat en étroite collaboration avec les différents clubs et assos écolos de l’école
+			</li>
+			<li>
+				Reconduire l’amphi écologie de début d’année et le kit pour des campagnes écoresponsables
+			</li>
+			<li>
+				Travailler à l’élaboration d’un guide d’alternatives écologiques qui serait diffusé aux différents clubs de l’école
+			</li>
+			<li>
+				Organiser en partenariat avec l’administration et les associations concernées des ateliers de fresque du climat à la rentrée (dans l’idéal de manière obligatoire au cours d’un atelier dédié pour les nouveaux étudiants à leur rentrée — sous l’hypothèse
+				d’une situation sanitaire compatible)
+			</li>
+			<li>
+				Nous associer aux clubs et assos écolos de l'école pour informer et former les élèves en matière d'environnement, notamment à l'occasion de journées mondiales ou semaines thématiques
+			</li>
+			<li>
+				Encourager la généralisation du bilan carbone à toutes les activités associatives nantraliennes
+			</li>
+		</ul>
+		<h2>🧡 Sensibilisation</h2>
 
-		<p>Épuisé par les souffrances et les privations. Je fus dirigé, avec un convoi de nombreux blessés, sur l’hôpital de Peshawar. Bientôt, j’entrai en convalescence ; je me promenais déjà dans les salles, et même j’allais me chauffer au soleil sous la véranda,
-			quand la fièvre entérique me terrassa : c’est le fléau de nos colonies indiennes. Des mois durant, on désespéra de moi. Enfin je revins à la vie. Mais j’étais si faible, tellement amaigri, qu’une commission médicale décida mon rapatriement immédiat.
-			Je m’embarquai sur le transport Oronte et, un mois plus tard, je posai le pied sur la jetée de Portsmouth. Ma santé était irrémédiablement perdue. Toutefois, un gouvernement paternel m’octroya neuf mois pour l’améliorer.
-		</p>
+		<p>Pour faire de Centrale le lieu le plus bienveillant et inclusif possible, voici nos projets de sensibilisation !</p>
+		<ul>
+			<li>
+				Dépoussiérer l’image de la sensibilisation, drôle ou grave, mais toujours proche des étudiants et des sujets qui vous concernent : l’incontournable prévention lors des soirées, l’indispensable don du sang et de moelle osseuse, mais aussi la dépendance,
+				la santé mentale et les violences sexistes et sexuelles
+			</li>
+			<li>
+				Informer et former les étudiants par une multitude d’actions : communication, conférences, ateliers, défis, lors de mois thématiques !
+			</li>
+			<li>
+				Mettre en place un accompagnement des victimes de violences sexistes et sexuelles en coopération avec les associations concernées
+			</li>
+			<li>
+				Rechercher l’exemplarité dans nos pratiques et nos événements, dans une démarche d’amélioration tout au long de l’année avec les responsables d’événements et en formant systématiquement les staffeurs au sein du BDE…
+			</li>
+			<li>
+				...Puis en le proposant à toute association !
+			</li>
+			<li>
+				Lutter contre tout type de discrimination, violence et isolement : nous serons à votre écoute, avec bienveillance et sérieux, pour vous accompagner sur tout sujet !
+			</li>
+		</ul>
+		<h2>🎓 Côté Élèves</h2>
 
-		<p>Je n’avais en Angleterre ni parents ni amis : j’étais aussi libre que l’air – autant, du moins, qu’on peut l’être avec un revenu quotidien de neuf shillings et six pence ! Naturellement, je me dirigeai vers Londres, ce grand cloaque où se déversent
-			irrésistiblement tous les flâneurs et tous les paresseux de l’Empire. Pendant quelque temps, je menai dans un hôtel privé du Strand une existence sans but et sans confort ; je dépensais très libéralement. A la fin, ma situation pécuniaire m’alarma.
-			Je me vis en face de l’alternative suivante : ou me retirer quelque part à la campagne, ou changer du tout au tout mon train de vie. C’est à ce dernier parti que je m’arrêtai ; et, pour commencer, je résolus de quitter l’hôtel pour m’établir dans un
-			endroit moins fashionable et moins coûteux.</p>
-
-		<p>Le jour où j’avais mûri cette grande décision, j’étais allé prendre un verre au Criterion Bar ; quelqu’un me toucha l’épaule. Je reconnus l’ex-infirmier Stamford, que j’avais eu sous mes ordres à Barts. Pour un homme réduit à la solitude, c’était vraiment
-			une chose agréable que l’apparition d’un visage familier. Auparavant Stamford n’avait jamais été un réel ami, mais, ce jour-là, je l’accueillis avec chaleur, et lui, parallèlement, parut enchanté de la rencontre. Dans l’exubérance de ma joie, je l’invitai
-			à déjeuner au Holborn ; nous partîmes ensemble en fiacre.</p>
-
-		<p>« A quoi avez-vous donc passé le temps, Watson ? me demanda-t-il sans dissimuler son étonnement, tandis que nous roulions avec une bruit de ferraille à travers les rues encombrées de Londres. Vous êtes aussi mince qu’une latte et aussi brun qu’une noix ! »</p>
-
-		<p>Je lui racontai brièvement mes aventures.</p>
-
-		<p>« Pauvre diable ! fit-il avec compassion, après avoir écouté mon récit. Qu’est-ce que vous vous proposez de faire maintenant ?</p>
-
+		<p>Et enfin, que serait un Bureau Des Élèves sans élèves à bureauter ? Voici nos propositions pour vous !</p>
+		<ul>
+			<li>
+				Meilleure intégration des élèves étrangers
+			</li>
+			<li>
+				Promouvoir le cursus ingénieur dans les milieux défavorisés
+			</li>
+			<li>
+				Encourager la parité au sein de Centrale
+			</li>
+			<li>
+				Faire un guide d’arrivée à Nantes (démarches Tan, lieux d'intérêt, certificat médical, ...)</li>
+		</ul>
 	</main>
 
 	<footer>
