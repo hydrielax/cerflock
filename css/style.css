@@ -65,10 +65,6 @@ body.dark {
   ASPECT GENERAL DU SITE
   ----------------------*/
 
-* {
-	scrollbar-color: var(--first-color) var(--bg-color);
-}
-
 html {
 	height: 100%;
 }
