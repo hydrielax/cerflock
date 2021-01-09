@@ -9,14 +9,16 @@ function open_close_menu() {
 }
 
 
+
+var page = document.getElementsByTagName('html')[0];
+
 //basculer le mode jour/nuit manuellement
 function changeMode() {
 	//on change le mode
-	var body = document.getElementsByTagName('body')[0];
-	if (body.className === "") {
-		body.className = "dark";
+	if (page.className === "") {
+		page.className = "dark";
 	} else {
-		body.className = "";
+		page.className = "";
 	}
 	//on calcule mode auto
 	var auto = getCookie("auto");
@@ -27,10 +29,10 @@ function changeMode() {
 		if (!isDay()) modeAuto = "dark";
 	}
 	//on enregistre le mode
-	if (body.className === modeAuto) {
+	if (page.className === modeAuto) {
 		setCookie("mode", "auto");
 	} else {
-		setCookie("mode", body.className);
+		setCookie("mode", page.className);
 	}
 }
 
@@ -65,13 +67,12 @@ function autoChangeMode() {
 	auto = getCookie("auto");
 
 	//on applique le mode
-	var body = document.getElementsByTagName('body')[0];
-	if (mode === "dark") body.className = "dark";
+	if (mode === "dark") page.className = "dark";
 	if (mode === "auto") {
 		if (auto === "system") {
-			if (window.matchMedia('(prefers-color-scheme: dark)').matches) body.className = "dark";
+			if (window.matchMedia('(prefers-color-scheme: dark)').matches) page.className = "dark";
 		} else {
-			if (!isDay()) body.className = "dark";
+			if (!isDay()) page.className = "dark";
 		}
 	}
 }
@@ -86,7 +87,7 @@ function isDay() {
 
 //lit un cookie
 function getCookie(sName) {
-	//de http://www.siteduzero.com/tutoriel-3-4721-lire-un-cookie.html
+	//de http://www.siteduzero.com/tutoriel-3-4721-lire-un-cookie.body
 	var oRegex = new RegExp("(?:; )?" + sName + "=([^;]*);?");
 	if (oRegex.test(document.cookie)) {
 		return decodeURIComponent(RegExp["$1"]);

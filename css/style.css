@@ -27,9 +27,9 @@ pour le mode jour
 	--box-color-lighter:	couleur de fond des boîtes éclairée
 */
 
-body {
-	--title-font: 'Trebuchet MS';
+html {
 	--bg-color: #d7c3a5;
+	--gray: #CECECE;
 	--first-color: #872d0c;
 	--first-color-lighter: #99330e;
 	--first-color-to-text: #6b2309;
@@ -44,8 +44,9 @@ body {
 	--box-color-lighter: #ddbf94;
 }
 
-body.dark {
+html.dark {
 	--bg-color: #020e35;
+	--gray: #454a4d;
 	--first-color: #0c55a8;
 	--first-color-lighter: #0f69cf;
 	--first-color-to-text: #4997f0;
@@ -64,6 +65,34 @@ body.dark {
 /*------------------------
   ASPECT GENERAL DU SITE
   ----------------------*/
+
+html {
+	scrollbar-color: var(--first-color) rgba(0, 0, 0, 0);
+	scroll-behavior: smooth;
+	scrollbar-width: auto;
+}
+
+html::-webkit-scrollbar {
+	width: 0.65rem;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+html::-webkit-scrollbar-thumb {
+	background: var(--first-color);
+	cursor: -webkit-grab;
+	cursor: grab;
+	border-radius: 6px;
+}
+
+html::-webkit-scrollbar-thumb:focus {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+	background: var(--first-color-lighter);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+	background: var(--first-color-lighter);
+}
 
 html {
 	height: 100%;
