@@ -67,7 +67,7 @@
 		</nav>
 	</header>
 
-	<a href="javascript:void(0);" id="boutonEnigme" onclick="showEnigme()"><img src="../data/question.svg" alt="Ouvrir une énigme"></a>
+	<button id="boutonEnigme" onclick="showEnigme()" type="button"><img src="../data/question.svg" alt="Ouvrir une énigme"></button>
 
 	<main>
 		<h1>Évènements</h1>
@@ -79,20 +79,24 @@
 	</main>
 
 	<footer>
-		<div>
-			<table>
-				<tr>
-					<td>
-						<p>© Châteaux Porcs 2020 | <a href="legal">Mentions légales</a> | Fait avec des biches, de l'amour, de l'humour et du fun !
-						</p>
-					</td>
-					<td>
-						<a href="https://www.facebook.com/sotb2020" target="_blank" class="rs" title="Facebook" id="facebook">
-							<svg viewBox="-204.79995 -341.33325 788.85904 1365.3329" version="1.1" alt="Facebook">
+		<div id="piedDePage">
+			<img id="footerlogo" src="../data/logo.png" alt="Cerf'Lock Holmes" />
+			<div id="footertext">
+				<div id="footer1">
+					<h2 style="font-family:'Grenze Gotisch', serif">Cerf'Lock Holmes</h2>
+					<p>© Châteaux Porcs 2020</p>
+					<p><a href="legal">Mentions légales</a></p>
+					<p><i>Fait avec des biches, de l'amour, de l'humour et du fun !</i></p>
+				</div>
+				<div id="footer2">
+					<h2>Nos Réseaux !</h2>
+					<p>
+						<a href="https://www.facebook.com/sotb2020" target="_blank" class="hidden" title="Facebook" id="facebook"><button style="background-color:#1877f2;">
+						<svg viewBox="-204.79995 -341.33325 788.85904 1365.3329" version="1.1" alt="Facebook">
 								<path d="m 876.16697,343.59539 c 0,-377.026996 -305.64,-682.667 -682.666,-682.667 -377.027,0 -682.667,305.640004 -682.667,682.667 0,340.738 249.641,623.16 576.000006,674.37301 V 540.92839 h -173.333 v -197.333 h 173.333 v -150.4 c 0,-171.093996 101.916994,-265.599996 257.852994,-265.599996 74.69,0 152.814,13.333 152.814,13.333 V 108.92839 h -86.083 c -84.804,0 -111.25,52.623 -111.25,106.61 v 128.057 h 189.333 l -30.267,197.333 h -159.067 v 477.04001 c 326.359,-51.21301 576,-333.63501 576,-674.37301"/>
-							</svg></a>
-						<a href="https://www.youtube.com" target="_blank" class="rs" title="Youtube" id="youtube">
-							<svg version="1.1" viewBox="0 0 71.412065 50">
+							</svg>Facebook</button></a>
+						<a href="https://www.youtube.com/channel/UCXkxERW_Eq3eXeSNH2yEp9A" target="_blank" class="hidden" title="Youtube" id="youtube"><button style="background-color: #ff1a1a;">
+						<svg version="1.1" viewBox="0 0 71.412065 50">
 								<defs>
 									<clipPath clipPathUnits="userSpaceOnUse" id="clipPath837">
 										<polygon points="48.6,24.3 48.6,60.7 80.2,42.5 " style="display:none;" clip-path="none"/>
@@ -105,11 +109,10 @@
 										clip-path="url(#clipPath837)" 
 									/>
 								</g>
-							</svg>
-						</a>
-					</td>
-					<td width="50px;"></td>
-				</tr>
+							</svg>Youtube</button>
+					</a></p>
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>

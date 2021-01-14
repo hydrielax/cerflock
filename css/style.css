@@ -1,17 +1,15 @@
-/*-----------------------------
-Style général du site, commun à toutes les pages
-pour le mode jour
--------------------------------*/
+/*polices*/
 
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;600&display=swap');
-
-/*&text=Cerf%27Lock%20Holmes');*/
-
 @import url('https://fonts.googleapis.com/css2?family=Grenze:wght@300;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-/* LES COULEURS :
-	Utilisation des couleurs :
+/* -------------
+   LES COULEURS :
+ ----------------*/
+
+
+/* Utilisation des couleurs :
 	--bg-color: 			couleur d'arrière-plan de la page
 	--first-color: 			couleur principale (barre de titre, bouton, surlignage)
 	--first-color-lighter: 	couleur principale éclairée (pour passage de la souris dessus)
@@ -28,6 +26,7 @@ pour le mode jour
 */
 
 html {
+	/*couleurs claires*/
 	--bg-color: #d7c3a5;
 	--gray: #CECECE;
 	--first-color: #872d0c;
@@ -45,6 +44,7 @@ html {
 }
 
 html.dark {
+	/*couleurs sombres*/
 	--bg-color: #020e35;
 	--gray: #454a4d;
 	--first-color: #0c55a8;
@@ -67,34 +67,7 @@ html.dark {
   ----------------------*/
 
 html {
-	scrollbar-color: var(--first-color) rgba(0, 0, 0, 0);
-	scroll-behavior: smooth;
-	scrollbar-width: auto;
-}
-
-html::-webkit-scrollbar {
-	width: 0.65rem;
-	background-color: rgba(0, 0, 0, 0);
-}
-
-html::-webkit-scrollbar-thumb {
-	background: var(--first-color);
-	cursor: -webkit-grab;
-	cursor: grab;
-	border-radius: 6px;
-}
-
-html::-webkit-scrollbar-thumb:focus {
-	cursor: -webkit-grabbing;
-	cursor: grabbing;
-	background: var(--first-color-lighter);
-}
-
-html::-webkit-scrollbar-thumb:hover {
-	background: var(--first-color-lighter);
-}
-
-html {
+	/*paramètre technique (pour fixer le pied de page)*/
 	height: 100%;
 }
 
@@ -108,7 +81,7 @@ body {
 	min-height: 100%;
 	position: relative;
 	padding: 0;
-	padding-bottom: 30rem;
+	padding-bottom: 18rem;
 	box-sizing: border-box;
 }
 
@@ -121,46 +94,74 @@ main {
 }
 
 @media screen and (max-width:800px) {
+	/*on réduit les marges quand l'écran est tout petit*/
 	main {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 }
 
-h1,
-h2,
-h3 {
-	font-family: 'Grenze', sans-serif;
-}
-
 h1 {
-	font-size: 4em;
+	/*titres de niveau 1*/
 	font-family: 'Grenze Gotisch', sans-serif;
+	font-size: 4em;
 	margin: 0;
 }
 
 h2 {
-	font-size: 2em;
+	/*titres de niveau 2*/
 	font-family: 'Grenze', sans-serif;
+	font-size: 2em;
 	margin: 0;
 }
 
 h3 {
-	font-size: 1.5em;
+	/*titres de niveau 3*/
 	font-family: 'Grenze', sans-serif;
+	font-size: 1.5em;
 	margin: 0;
 }
 
 a {
-	text-decoration: none;
+	/*liens hypertextes*/
+	/*text-decoration: none;*/
 	color: var(--first-color-to-text);
 	padding-left: 0.2em;
 	padding-right: 0.2em;
 }
 
 a:hover {
+	/*liens hypertextes quand on passe la souris dessus*/
 	background-color: var(--first-color);
 	color: var(--text-color-light);
+	text-decoration: none;
+}
+
+a.hidden {
+	padding: 0;
+}
+
+a.hidden:hover {
+	background-color: transparent;
+}
+
+button {
+	padding: 0.5rem;
+	margin: 0;
+	border: none;
+	border-radius: 0.2em;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+	background-color: var(--first-color);
+	color: var(--text-color-light);
+	cursor: pointer;
+	align-items: center;
+	display: inline flex;
+	height: 2rem;
+}
+
+button:hover {
+	background-color: var(--first-color-lighter);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 ::selection {
@@ -175,50 +176,85 @@ a:hover {
   ------------------*/
 
 footer {
+	/*le bandeau de bas de page*/
 	background-color: var(--third-color);
-	padding: 0.3em 50px;
-	bottom: 0;
+	padding: 1rem 50px;
+	padding-right: calc(4.5rem + 20px);
 	position: absolute;
+	bottom: 0;
 	left: 0;
 	right: 0;
 }
 
 @media screen and (max-width:800px) {
+	/*on réduit les marges quand l'écran est tout petit*/
 	footer {
 		padding-left: 20px;
-		padding-right: 20px;
 	}
 }
 
-@media screen and (max-width:1200px) {
-	footer {
-		padding-right: 150px;
-	}
-}
-
-#piedDePage {
+footer #piedDePage {
+	/*le pied de page en soit*/
 	max-width: 1200px;
-	margin: auto;
+	margin: 0 auto;
 	display: flex;
+	align-items: center;
 }
 
-footer a.rs:hover {
-	background-color: transparent;
+footer #footerlogo {
+	/*logo Cerflock*/
+	height: 16rem;
+	padding: 0;
+	margin: 0;
 }
 
-footer a.rs svg {
+footer #footertext {
+	/*texte du pied de page*/
+	display: flex;
+	height: min-content;
+	padding: 0;
+}
+
+footer #footertext div {
+	padding: 0 0 0 2rem;
+}
+
+@media screen and (max-width:800px) {
+	footer #piedDePage {
+		align-items: start;
+	}
+	footer #footerlogo {
+		height: 9rem;
+		float: right;
+	}
+	footer #footertext {
+		display: block;
+		float: left;
+	}
+}
+
+footer #footer2 h2 {
+	white-space: nowrap;
+	margin-bottom: 1rem;
+}
+
+footer #footer2 p {
+	line-height: 2.3rem;
+}
+
+footer #footer2 button svg {
+	overflow: visible;
+	/*images des réseaux sociaux*/
 	height: 1.5em;
 	width: 1.5em;
-	fill: var(--text-color);
+	/*translate: 0 0.4em;*/
+	margin-right: 0.5em;
+	fill: var(--text-color-light);
 	/*margin-left: 0.3em;*/
 }
 
-footer a.rs:hover#facebook svg {
-	fill: #1877f2;
-}
-
-footer a.rs:hover#youtube svg {
-	fill: #ff1a1a;
+footer #footer2 button:hover {
+	filter: brightness(130%);
 }
 
 
@@ -230,8 +266,8 @@ footer a.rs:hover#youtube svg {
 	/*paramètres du bouton rond d'énigmes*/
 	/*apparence*/
 	background-color: var(--first-color);
-	width: 70px;
-	height: 70px;
+	width: 4.5rem;
+	height: 4.5rem;
 	border-radius: 200px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 	/*position*/
@@ -259,3 +295,36 @@ footer a.rs:hover#youtube svg {
 	width: 50px;
 	margin: auto;
 }
+
+
+/* CHANGER LA BARRE DE DEFILEMENT */
+
+
+/*
+html {
+	scrollbar-color: var(--first-color) rgba(0, 0, 0, 0);
+	scroll-behavior: smooth;
+	scrollbar-width: auto;
+}
+
+html::-webkit-scrollbar {
+	width: 0.65rem;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+html::-webkit-scrollbar-thumb {
+	background: var(--first-color);
+	cursor: -webkit-grab;
+	cursor: grab;
+	border-radius: 6px;
+}
+
+html::-webkit-scrollbar-thumb:focus {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+	background: var(--first-color-lighter);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+	background: var(--first-color-lighter);
+}*/

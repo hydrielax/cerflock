@@ -32,6 +32,7 @@ nav a {
 	display: none;
 	float: left;
 	align-items: center;
+	text-decoration: none;
 	/*marges et taille de la boîte*/
 	padding: 0.3em;
 	height: 2.8em;

@@ -1,14 +1,12 @@
 #carousel {
+	/*le carousel qui fait tourner les images*/
 	width: 100%;
 	height: 100vh;
-}
- 
-#carousel div.gallery {
 	position: relative;
-	height: 100%;
 }
 
 #carousel div.gallery-cell {
+	/*les cellules (ie les grandes images)*/
 	height: 100%;
 	width: 100%;
 	background-size: cover;
@@ -16,6 +14,7 @@
 }
 
 #carousel div.content {
+	/*le contenu des cellules : on remet les même marges que la page*/
 	height: 90%;
 	display: flex;
 	padding-right: 50px;
@@ -27,6 +26,7 @@
 }
 
 @media screen and (max-width:800px) {
+	/*on réduit les marges si l'écran est trop petit*/
 	#carousel div.content {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -34,68 +34,33 @@
 }
 
 #carousel ol.flickity-page-dots {
+	/*position des points en bas du carousel*/
 	position: relative;
 	top: -5%;
 }
 
 #carousel li.dot {
+	/*couleur des points du carousel*/
 	background: hsla(0, 0%, 100%, 0.75);
 }
 
+#carousel .flickity-prev-next-button {
+	background: transparent;
+}
+
+#carousel .flickity-prev-next-button:hover {
+	background: hsla(0, 0%, 100%, 0.75);
+}
+
+#carousel .flickity-prev-next-button .arrow {
+	fill: hsla(0, 0%, 100%, 0.5);
+}
+
+#carousel .flickity-prev-next-button:hover .arrow {
+	fill: #333;
+}
+
 main {
+	/*on enlève l'écart au-dessus du main*/
 	padding-top: 0;
-}
-
-#carousel #slide1 {
-	background-image: url('https://images2.alphacoders.com/509/thumb-1920-509099.jpg');
-}
-
-#carousel #slide2 {
-	background-image: url('https://images7.alphacoders.com/782/782847.jpg');
-}
-
-#carousel #slide3 {
-	background-image: url('https://images6.alphacoders.com/312/thumb-1920-312124.jpg');
-}
-
-#carousel #timeline {
-	position: relative;
-	top: -5px;
-	height: 3px;
-	background: var(--second-color);
-	width: 33.33%;
-	animation: 20s timeliner infinite;
-	border-radius: 10px;
-}
-
-@keyframes slidy {
-	0%,
-	25%,
-	100% {
-		left: 0%;
-	}
-	33%,
-	59% {
-		left: -100%;
-	}
-	66%,
-	93% {
-		left: -200%;
-	}
-}
-
-@keyframes timeliner {
-	0%,
-	25%,
-	100% {
-		margin-left: 0;
-	}
-	33%,
-	59% {
-		margin-left: 33.33%;
-	}
-	66%,
-	93% {
-		margin-left: 66.66%;
-	}
 }
