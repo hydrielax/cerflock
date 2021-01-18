@@ -5,24 +5,26 @@
 	position: relative;
 }
 
-#carousel div.gallery-cell {
+#carousel .gallery-cell {
 	/*les cellules (ie les grandes images)*/
 	height: 100%;
 	width: 100%;
 	background-size: cover;
 	background-position: center;
+	display: grid;
+	align-items: end;
 }
 
-#carousel div.content {
+#carousel .content {
 	/*le contenu des cellules : on remet les même marges que la page*/
 	height: 90%;
-	display: flex;
-	padding-right: 50px;
-	padding-left: 50px;
+	padding: 0 50px;
 	max-width: 1200px;
-	margin: 0 auto;
-	align-items: end;
+	width: 100%;
+	height: max-content;
+	margin: 6% auto;
 	color: var(--text-color-light);
+	text-shadow: 2px 2px 8px var(--text-color-dark);
 }
 
 @media screen and (max-width:800px) {

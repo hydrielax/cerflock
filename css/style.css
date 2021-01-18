@@ -1,8 +1,6 @@
 /*polices*/
 
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@300;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;600&family=Grenze:wght@300;600&family=Lato:wght@400;700&display=swap');
 
 /* -------------
    LES COULEURS :
@@ -66,10 +64,12 @@ html.dark {
   ASPECT GENERAL DU SITE
   ----------------------*/
 
+
+/*
 html {
-	/*paramètre technique (pour fixer le pied de page)*/
+	/*paramètre technique (pour fixer le pied de page)
 	height: 100%;
-}
+}*/
 
 body {
 	/*Aspect général de la page*/
@@ -78,18 +78,15 @@ body {
 	font-family: 'Lato', sans-serif;
 	/*Aspect technique*/
 	margin: 0px;
-	min-height: 100%;
-	position: relative;
+	min-height: 100vh;
 	padding: 0;
-	padding-bottom: 18rem;
-	box-sizing: border-box;
 }
 
 main {
 	/*contenu de la page (hors en-tête, pied de page, etc...)*/
 	padding: 50px;
 	margin: 0 auto;
-	padding-top: 70px;
+	padding-top: 4rem;
 	max-width: 1200px;
 }
 
@@ -103,23 +100,27 @@ main {
 
 h1 {
 	/*titres de niveau 1*/
-	font-family: 'Grenze Gotisch', sans-serif;
+	font-family: 'Grenze Gotisch', 'Grenze', serif;
 	font-size: 4em;
 	margin: 0;
 }
 
 h2 {
 	/*titres de niveau 2*/
-	font-family: 'Grenze', sans-serif;
+	font-family: 'Grenze', serif;
 	font-size: 2em;
 	margin: 0;
 }
 
 h3 {
 	/*titres de niveau 3*/
-	font-family: 'Grenze', sans-serif;
+	font-family: 'Grenze', serif;
 	font-size: 1.5em;
 	margin: 0;
+}
+
+ul {
+	list-style-type: square;
 }
 
 a {
@@ -139,6 +140,9 @@ a:hover {
 
 a.hidden {
 	padding: 0;
+	text-decoration: none;
+	color: unset;
+	cursor: unset
 }
 
 a.hidden:hover {
@@ -155,8 +159,9 @@ button {
 	color: var(--text-color-light);
 	cursor: pointer;
 	align-items: center;
-	display: inline flex;
+	display: inline-flex;
 	height: 2rem;
+	font-family: 'Lato', sans-serif;
 }
 
 button:hover {
@@ -170,6 +175,10 @@ button:hover {
 	color: var(--text-color-light);
 }
 
+.titlefont {
+	font-family: 'Grenze Gotisch', 'Grenze', serif;
+}
+
 
 /*------------------------ 
   PIED DE PAGE
@@ -180,10 +189,6 @@ footer {
 	background-color: var(--third-color);
 	padding: 1rem 50px;
 	padding-right: calc(4.5rem + 20px);
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
 }
 
 @media screen and (max-width:800px) {

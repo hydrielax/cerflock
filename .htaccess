@@ -1,0 +1,6 @@
+DirectoryIndex /fr/home
+ErrorDocument 404 /fr/404
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://cerflock.fr/$1 [R=301,L]

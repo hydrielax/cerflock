@@ -6,19 +6,19 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 
-	<link rel="stylesheet" href="../css/style.css" />
-	<link rel="stylesheet" href="../css/topnav.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/topnav.css" />
 
-	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript" src="/js/scripts.js"></script>
 	<script type="text/javascript">
 		checkLanguage("fr", "program");
 	</script>
 
-	<link rel="shortcut icon" href="../data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="../data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="../data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="../data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="../data/favicon_144.png" sizes="144x144" />
+	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
 	<title>Cerf'Lock Holmes - Programme</title>
 </head>
 
@@ -31,79 +31,79 @@
 		<nav>
 
 			<a href="tel:+33604066157" class="quick-access" title="Appelez-nous !">
-				<div class="icon"><img src="../data/allos.svg" alt="Appelez-nous !"></div>
+				<div class="icon"><img src="/data/allos.svg" alt="Appelez-nous !"></div>
 			</a>
-			<a href="../en/program" onclick="changeLanguage()" class="quick-access" title="In English, please!">
-				<div class="icon"><img src="../data/en.png" alt="English version"></div>
+			<a href="/en/program" onclick="changeLanguage()" class="quick-access" title="In English, please!">
+				<div class="icon"><img src="/data/en.png" alt="English version"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
-				<div class="icon"><img src="../data/dark.svg" alt="Activer/Désactiver le mode nuit"></div>
+				<div class="icon"><img src="/data/dark.svg" alt="Activer/Désactiver le mode nuit"></div>
 			</a>
 
 			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
-				<div class="icon"><img src="../data/menu.svg" alt="Menu"></div>
+				<div class="icon"><img src="/data/menu.svg" alt="Menu"></div>
 			</a>
-			<a href="home" id="titre">
-				<div class="icon"><img src="../data/logo_rond.png" alt=""></div>
+			<a href="/fr/home" id="titre">
+				<div class="icon"><img src="/data/logo_rond.png" alt=""></div>
 				<span>Cerf'Lock Holmes</span>
 			</a>
-			<a href="program" class="active">
-				<div class="icon"><img src="../data/programme.svg" alt=""></div>
+			<a href="/fr/program" class="active">
+				<div class="icon"><img src="/data/programme.svg" alt=""></div>
 				<span>Programme</span>
 			</a>
-			<a href="members">
-				<div class="icon"><img src="../data/membres.svg" alt=""></div>
+			<a href="/fr/members">
+				<div class="icon"><img src="/data/membres.svg" alt=""></div>
 				<span>Membres</span>
 			</a>
-			<a href="events">
-				<div class="icon"><img src="../data/events.svg" alt=""></div>
+			<a href="/fr/events">
+				<div class="icon"><img src="/data/events.svg" alt=""></div>
 				<span>Évènements</span>
 			</a>
-			<a href="allos">
-				<div class="icon"><img src="../data/allos.svg" alt=""></div>
+			<a href="/fr/allos">
+				<div class="icon"><img src="/data/allos.svg" alt=""></div>
 				<span>Allos</span>
 			</a>
 
 		</nav>
 	</header>
 
-	<button id="boutonEnigme" onclick="showEnigme()" type="button"><img src="../data/question.svg" alt="Ouvrir une énigme"></button>
+	<button id="boutonEnigme" onclick="showEnigme()" type="button"><img src="/data/question.svg" alt="Ouvrir une énigme"></button>
 
 	<main>
 		<h1>Programme</h1>
-		<p>Découvrez les actions et engagements de la liste Sex on the Biche !</p>
+		<p>Découvrez les actions et engagements des Cerf'Lock Holmes !</p>
 		<h2>🎉 Vie centralienne</h2>
 
 		<p>La vie à Centrale manque parfois un peu de piquant, vous ne trouvez pas ? Voici nos projets pour dynamiser tout ça !</p>
 
 		<ul>
-			<li> Ouverture d'un bar à la MDE, pour profiter de notre fameux cocktail « Sex on the Biche » !</li>
+			<li> Ouverture d'un <b>bar</b> à la MDE, pour profiter de notre fameux cocktail « Sex on the Biche » !</li>
 			<li>
-				Rénovation de la MDE avec des ateliers/concours décorations de la MDE
+				<b>Rénovation</b> de la MDE avec des ateliers/concours décorations de la MDE
 			</li>
 		</ul>
 		<h2>🌿 Écologie</h2>
 
-		<p>Face à l’urgence écologique, les Sex on the Biche relèvent le défi et s’engagent ! Nous comptons :</p>
+		<p>Face à l’urgence écologique, Cerf'Lock relève le défi et s’engage ! Nous comptons :</p>
 		<ul>
 			<li>
-				Travailler tout au long du mandat en étroite collaboration avec les différents clubs et assos écolos de l’école
+				Travailler tout au long du mandat en étroite <b>collaboration</b> avec les différents clubs et assos écolos de l’école
 			</li>
 			<li>
-				Reconduire l’amphi écologie de début d’année et le kit pour des campagnes écoresponsables
+				Reconduire l’<b>amphi écologie</b> de début d’année et le <b>kit pour des campagnes écoresponsables</b>
 			</li>
 			<li>
-				Travailler à l’élaboration d’un guide d’alternatives écologiques qui serait diffusé aux différents clubs de l’école
+				Travailler à l’élaboration d’un <b>guide d’alternatives écologiques</b> qui serait diffusé aux différents clubs de l’école
 			</li>
 			<li>
-				Organiser en partenariat avec l’administration et les associations concernées des ateliers de fresque du climat à la rentrée (dans l’idéal de manière obligatoire au cours d’un atelier dédié pour les nouveaux étudiants à leur rentrée — sous l’hypothèse
-				d’une situation sanitaire compatible)
+				Organiser en partenariat avec l’administration et les associations concernées des ateliers de <b>fresque du climat</b> à la rentrée (dans l’idéal de manière obligatoire au cours d’un atelier dédié pour les nouveaux étudiants à leur rentrée — sous
+				l’hypothèse d’une situation sanitaire compatible)
 			</li>
 			<li>
-				Nous associer aux clubs et assos écolos de l'école pour informer et former les élèves en matière d'environnement, notamment à l'occasion de journées mondiales ou semaines thématiques
+				Nous <b>associer</b> aux clubs et assos écolos de l'école pour <b>informer</b> et <b>former</b> les élèves en matière d'environnement, notamment à l'occasion de journées mondiales ou semaines thématiques
 			</li>
 			<li>
-				Encourager la généralisation du bilan carbone à toutes les activités associatives nantraliennes
+				<b>Encourager la généralisation du bilan carbone</b> à toutes les activités associatives nantraliennes
 			</li>
 		</ul>
 		<h2>🧡 Sensibilisation</h2>
@@ -111,23 +111,23 @@
 		<p>Pour faire de Centrale le lieu le plus bienveillant et inclusif possible, voici nos projets de sensibilisation !</p>
 		<ul>
 			<li>
-				Dépoussiérer l’image de la sensibilisation, drôle ou grave, mais toujours proche des étudiants et des sujets qui vous concernent : l’incontournable prévention lors des soirées, l’indispensable don du sang et de moelle osseuse, mais aussi la dépendance,
-				la santé mentale et les violences sexistes et sexuelles
+				Dépoussiérer l’image de la sensibilisation, drôle ou grave, mais toujours proche des étudiants et des sujets qui vous concernent : l’incontournable prévention lors des soirées, l’indispensable don du sang et de moelle osseuse, mais aussi la <b>dépendance</b>,
+				la <b>santé mentale</b> et les violences sexistes et sexuelles
 			</li>
 			<li>
-				Informer et former les étudiants par une multitude d’actions : communication, conférences, ateliers, défis, lors de mois thématiques !
+				<b>Informer</b> et <b>former</b> les étudiants par une multitude d’actions : communication, conférences, ateliers, défis, lors de <b>mois thématiques</b> !
 			</li>
 			<li>
-				Mettre en place un accompagnement des victimes de violences sexistes et sexuelles en coopération avec les associations concernées
+				Mettre en place un <b>accompagnement des victimes</b> de violences sexistes et sexuelles en coopération avec les associations concernées
 			</li>
 			<li>
-				Rechercher l’exemplarité dans nos pratiques et nos événements, dans une démarche d’amélioration tout au long de l’année avec les responsables d’événements et en formant systématiquement les staffeurs au sein du BDE…
+				Rechercher l’<b>exemplarité</b> dans nos pratiques et nos événements, dans une démarche d’amélioration tout au long de l’année avec les responsables d’événements et en formant systématiquement les staffeurs au sein du BDE…
 			</li>
 			<li>
 				...Puis en le proposant à toute association !
 			</li>
 			<li>
-				Lutter contre tout type de discrimination, violence et isolement : nous serons à votre écoute, avec bienveillance et sérieux, pour vous accompagner sur tout sujet !
+				Lutter contre tout type de discrimination, violence et isolement : nous serons à votre écoute, avec <b>bienveillance </b>et <b>sérieux</b>, pour vous accompagner sur tout sujet !
 			</li>
 		</ul>
 		<h2>🎓 Côté Élèves</h2>
@@ -135,25 +135,26 @@
 		<p>Et enfin, que serait un Bureau Des Élèves sans élèves à bureauter ? Voici nos propositions pour vous !</p>
 		<ul>
 			<li>
-				Meilleure intégration des élèves étrangers
+				Meilleure <b>intégration</b> des élèves étrangers
 			</li>
 			<li>
 				Promouvoir le cursus ingénieur dans les milieux défavorisés
 			</li>
 			<li>
-				Encourager la parité au sein de Centrale
+				Encourager la <b>parité</b> au sein de Centrale
 			</li>
 			<li>
-				Faire un guide d’arrivée à Nantes (démarches Tan, lieux d'intérêt, certificat médical, ...)</li>
+				Faire un <b>guide d’arrivée</b> à Nantes (démarches Tan, lieux d'intérêt, certificat médical, ...)
+			</li>
 		</ul>
 	</main>
 
 	<footer>
 		<div id="piedDePage">
-			<img id="footerlogo" src="../data/logo.png" alt="Cerf'Lock Holmes" />
+			<img id="footerlogo" src="/data/logo.png" alt="Cerf'Lock Holmes" />
 			<div id="footertext">
 				<div id="footer1">
-					<h2 style="font-family:'Grenze Gotisch', serif">Cerf'Lock Holmes</h2>
+					<h2 class="titlefont">Cerf'Lock Holmes</h2>
 					<p>© Châteaux Porcs 2020</p>
 					<p><a href="legal">Mentions légales</a></p>
 					<p><i>Fait avec des biches, de l'amour, de l'humour et du fun !</i></p>

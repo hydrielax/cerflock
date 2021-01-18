@@ -6,20 +6,20 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 
-	<link rel="stylesheet" href="/css/style.css" />
-	<link rel="stylesheet" href="/css/topnav.css" />
+	<link rel="stylesheet" href="http://cerflock.fr/css/style.css" />
+	<link rel="stylesheet" href="http://cerflock.fr/css/topnav.css" />
 
-	<script type="text/javascript" src="/js/scripts.js"></script>
+	<script type="text/javascript" src="http://cerflock.fr/js/scripts.js"></script>
 	<script type="text/javascript">
-		checkLanguage("fr", "legal");
+		checkLanguage("fr", "404");
 	</script>
 
-	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
-	<title>Cerf'Lock Holmes - Mentions Légales</title>
+	<link rel="shortcut icon" href="http://cerflock.fr/data/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="http://cerflock.fr/data/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="http://cerflock.fr/data/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="http://cerflock.fr/data/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="http://cerflock.fr/data/favicon_144.png" sizes="144x144" />
+	<title>Cerf'Lock Holmes - 404</title>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
 			<a href="tel:+33604066157" class="quick-access" title="Appelez-nous !">
 				<div class="icon"><img src="/data/allos.svg" alt="Appelez-nous !"></div>
 			</a>
-			<a href="/en/legal" onclick="changeLanguage()" class="quick-access" title="In English, please!">
+			<a href="http://cerflock.fr/en/404" onclick="changeLanguage()" class="quick-access" title="In English, please!">
 				<div class="icon"><img src="/data/en.png" alt="English version"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
@@ -43,23 +43,23 @@
 			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
 				<div class="icon"><img src="/data/menu.svg" alt="Menu"></div>
 			</a>
-			<a href="/fr/home" id="titre">
+			<a href="http://cerflock.fr/fr/home" id="titre">
 				<div class="icon"><img src="/data/logo_rond.png" alt=""></div>
 				<span>Cerf'Lock Holmes</span>
 			</a>
-			<a href="/fr/program">
+			<a href="http://cerflock.fr/fr/program">
 				<div class="icon"><img src="/data/programme.svg" alt=""></div>
 				<span>Programme</span>
 			</a>
-			<a href="/fr/members">
+			<a href="http://cerflock.fr/fr/members">
 				<div class="icon"><img src="/data/membres.svg" alt=""></div>
 				<span>Membres</span>
 			</a>
-			<a href="/fr/events">
+			<a href="http://cerflock.fr/fr/events">
 				<div class="icon"><img src="/data/events.svg" alt=""></div>
 				<span>Évènements</span>
 			</a>
-			<a href="/fr/allos">
+			<a href="http://cerflock.fr/fr/allos">
 				<div class="icon"><img src="/data/allos.svg" alt=""></div>
 				<span>Allos</span>
 			</a>
@@ -67,31 +67,23 @@
 		</nav>
 	</header>
 
-	<button id="boutonEnigme" onclick="showEnigme()" type="button"><img src="/data/question.svg" alt="Ouvrir une énigme"></button>
+	<button id="boutonEnigme" onclick="showEnigme()" type="button"><img src="http://cerflock.fr/data/question.svg" alt="Ouvrir une énigme"></button>
 
-	<main>
-		<h1>Mentions Légales</h1>
-		<h2>Propriété intellectuelle</h2>
-		<p>Tout le contenu de ce site est la propriété de l'association <i>Château Porc</i>, qui est derrière la liste <i>Cerf'Lock Holmes</i>, candidate au BDE de Centrale Nantes. Pour toute réutilisation de son contenu, n'hésitez pas à nous faire une demande
-			par mail : <a href="mailto:contact@cerflock.fr">contact@cerflock.fr</a>.</p>
-		<h2>Cookies</h2>
-		<p>Ce site utilise exactement trois cookies :</p>
-		<ul>
-			<li>le premier pour enregistrer votre choix de langue</li>
-			<li>et les deux autres pour enregistrer votre choix du mode jour/nuit.</li>
-		</ul>
-		<p>Conformément à la loi européenne, votre consentement n'est pas requis pour ce type de cookies. Si vous vouliez néanmoins les éviter, toutes mes excuses mais je n'avais vraiment pas le temps de coder un formulaire d'acceptation 😅 J'espère néanmoins
-			que vous n'y verrez pas trop d'inconvénients !</p>
+	<main style="text-align:center;">
+		<h1>Erreur 404</h1>
+		<h3>Désolé, MoriArty a dérobé cette page...</h3>
+		<br>
+		<img style="max-width: 100%;" src="http://cerflock.fr/data/moriarty.png" alt="Logo de la liste MoriArty" />
 	</main>
 
 	<footer>
 		<div id="piedDePage">
-			<img id="footerlogo" src="/data/logo.png" alt="Cerf'Lock Holmes" />
+			<img id="footerlogo" src="http://cerflock.fr/data/logo.png" alt="Cerf'Lock Holmes" />
 			<div id="footertext">
 				<div id="footer1">
 					<h2 class="titlefont">Cerf'Lock Holmes</h2>
 					<p>© Châteaux Porcs 2020</p>
-					<p><a href="legal">Mentions légales</a></p>
+					<p><a href="http://cerflock.fr/fr/legal">Mentions légales</a></p>
 					<p><i>Fait avec des biches, de l'amour, de l'humour et du fun !</i></p>
 				</div>
 				<div id="footer2">

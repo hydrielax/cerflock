@@ -18,9 +18,10 @@ header {
 
 nav {
 	/*le contenu de la barre rouge, centré*/
-	max-height: 2.8em;
+	height: 2.8rem;
 	max-width: 1200px;
 	margin: 0 auto;
+	transition: height 0.3s ease;
 }
 
 
@@ -35,7 +36,7 @@ nav a {
 	text-decoration: none;
 	/*marges et taille de la boîte*/
 	padding: 0.3em;
-	height: 2.8em;
+	height: 2.8rem;
 	font-size: 1em;
 }
 
@@ -146,7 +147,7 @@ nav a span {
 	color: var(--text-color-light);
 	text-decoration: none;
 	font-size: 1.3em;
-	font-family: 'Grenze', sans-serif;
+	font-family: 'Grenze', serif;
 	font-weight: 300;
 	margin: 0 0.7rem;
 	position: relative;
@@ -154,7 +155,7 @@ nav a span {
 }
 
 nav a#titre span {
-	font-family: 'Grenze Gotisch';
+	font-family: 'Grenze Gotisch', 'Grenze', serif;
 }
 
 nav a.active span {
@@ -196,8 +197,7 @@ nav a:hover span::after {
 	/* le menu ne s'ouvre que si on est en mode mobile*/
 	nav.responsive {
 		/*on allonge la barre rouge d'en-tête*/
-		max-height: 20.4rem;
-		transition: all 0.3s ease;
+		height: 20.4rem;
 		overflow: hidden;
 	}
 	nav.responsive a:not(.quick-access) {

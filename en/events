@@ -6,19 +6,19 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 
-	<link rel="stylesheet" href="../css/style.css" />
-	<link rel="stylesheet" href="../css/topnav.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/topnav.css" />
 
-	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript" src="/js/scripts.js"></script>
 	<script type="text/javascript">
 		checkLanguage("en", "events");
 	</script>
 
-	<link rel="shortcut icon" href="../data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="../data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="../data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="../data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="../data/favicon_144.png" sizes="144x144" />
+	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
 	<title>Cerf'Lock Holmes - Events</title>
 </head>
 
@@ -31,43 +31,43 @@
 		<nav>
 
 			<a href="tel:+33604066157" class="quick-access" title="Call us!">
-				<div class="icon"><img src="../data/allos.svg" alt="Call us!"></div>
+				<div class="icon"><img src="/data/allos.svg" alt="Call us!"></div>
 			</a>
-			<a href="../fr/events" onclick="changeLanguage()" class="quick-access" title="En Français dans le texte...!">
-				<div class="icon"><img src="../data/fr.svg" alt="Version française"></div>
+			<a href="/fr/events" onclick="changeLanguage()" class="quick-access" title="En Français dans le texte...!">
+				<div class="icon"><img src="/data/fr.svg" alt="Version française"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Join the dark side...">
-				<div class="icon"><img src="../data/dark.svg" alt="Enable/Disable dark mode"></div>
+				<div class="icon"><img src="/data/dark.svg" alt="Enable/Disable dark mode"></div>
 			</a>
 
 			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
-				<div class="icon"><img src="../data/menu.svg" alt="Menu"></div>
+				<div class="icon"><img src="/data/menu.svg" alt="Menu"></div>
 			</a>
-			<a href="home" id="titre">
-				<div class="icon"><img src="../data/logo_rond.png" alt=""></div>
+			<a href="/en/home" id="titre">
+				<div class="icon"><img src="/data/logo_rond.png" alt=""></div>
 				<span>Cerf'Lock Holmes</span>
 			</a>
-			<a href="program">
-				<div class="icon"><img src="../data/programme.svg" alt=""></div>
+			<a href="/en/program">
+				<div class="icon"><img src="/data/programme.svg" alt=""></div>
 				<span>Program</span>
 			</a>
-			<a href="members">
-				<div class="icon"><img src="../data/membres.svg" alt=""></div>
+			<a href="/en/members">
+				<div class="icon"><img src="/data/membres.svg" alt=""></div>
 				<span>Members</span>
 			</a>
-			<a href="events" class="active">
-				<div class="icon"><img src="../data/events.svg" alt=""></div>
+			<a href="/en/events" class="active">
+				<div class="icon"><img src="/data/events.svg" alt=""></div>
 				<span>Events</span>
 			</a>
-			<a href="allos">
-				<div class="icon"><img src="../data/allos.svg" alt=""></div>
+			<a href="/en/allos">
+				<div class="icon"><img src="/data/allos.svg" alt=""></div>
 				<span>Calls</span>
 			</a>
 
 		</nav>
 	</header>
 
-	<button id="boutonEnigme" onclick="showEnigme()" type="button"><img src="../data/question.svg" alt="Ouvrir une énigme"></button>
+	<button id="boutonEnigme" onclick="showEnigme()" type="button"><img src="/data/question.svg" alt="Ouvrir une énigme"></button>
 
 	<main>
 		<h1>Chapitre premier<br>M. Sherlock Holmes</h1>
@@ -108,10 +108,10 @@
 
 	<footer>
 		<div id="piedDePage">
-			<img id="footerlogo" src="../data/logo.png" alt="Cerf'Lock Holmes" />
+			<img id="footerlogo" src="/data/logo.png" alt="Cerf'Lock Holmes" />
 			<div id="footertext">
 				<div id="footer1">
-					<h2 style="font-family:'Grenze Gotisch', serif">Cerf'Lock Holmes</h2>
+					<h2 class="titlefont">Cerf'Lock Holmes</h2>
 					<p>© Châteaux Porcs 2020</p>
 					<p><a href="legal">Mentions légales</a></p>
 					<p><i>Fait avec des biches, de l'amour, de l'humour et du fun !</i></p>

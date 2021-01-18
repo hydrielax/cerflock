@@ -117,8 +117,8 @@ function checkLanguage(lg, page) {
 	if (langue === null) {
 		setCookie("langue", lg);
 	} else {
-		if (langue === "fr" && lg === "en") window.location.href = "../fr/" + page;
-		if (langue === "en" && lg === "fr") window.location.href = "../en/" + page;
+		if (langue === "fr" && lg === "en") window.location.href = "/fr/" + page;
+		if (langue === "en" && lg === "fr") window.location.href = "/en/" + page;
 	}
 }
 

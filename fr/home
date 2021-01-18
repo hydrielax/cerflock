@@ -5,23 +5,23 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="stylesheet" href="../css/style.css" />
-	<link rel="stylesheet" href="../css/topnav.css" />
-	<link rel="stylesheet" href="../css/carroussel.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/topnav.css" />
+	<link rel="stylesheet" href="/css/carousel.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" />
 
 	<script type="text/javascript" src="../js/flickity.pkgd.js"></script>
 
-	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript" src="/js/scripts.js"></script>
 	<script type="text/javascript">
 		checkLanguage("fr", "home");
 	</script>
 
-	<link rel="shortcut icon" href="../data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="../data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="../data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="../data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="../data/favicon_144.png" sizes="144x144" />
+	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
 	<title>Cerf'Lock Holmes</title>
 </head>
 
@@ -34,43 +34,43 @@
 		<nav>
 
 			<a href="tel:+33604066157" class="quick-access" title="Appelez-nous !">
-				<div class="icon"><img src="../data/allos.svg" alt="Appelez-nous !"></div>
+				<div class="icon"><img src="/data/allos.svg" alt="Appelez-nous !"></div>
 			</a>
-			<a href="../en/home" onclick="changeLanguage()" class="quick-access" title="In English, please!">
-				<div class="icon"><img src="../data/en.png" alt="English version"></div>
+			<a href="/en/home" onclick="changeLanguage()" class="quick-access" title="In English, please!">
+				<div class="icon"><img src="/data/en.png" alt="English version"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
-				<div class="icon"><img src="../data/dark.svg" alt="Activer/Désactiver le mode nuit"></div>
+				<div class="icon"><img src="/data/dark.svg" alt="Activer/Désactiver le mode nuit"></div>
 			</a>
 
 			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
-				<div class="icon"><img src="../data/menu.svg" alt="Menu"></div>
+				<div class="icon"><img src="/data/menu.svg" alt="Menu"></div>
 			</a>
-			<a href="home" class="active" id="titre">
-				<div class="icon"><img src="../data/logo_rond.png" alt=""></div>
+			<a href="/fr/home" class="active" id="titre">
+				<div class="icon"><img src="/data/logo_rond.png" alt=""></div>
 				<span>Cerf'Lock Holmes</span>
 			</a>
-			<a href="program">
-				<div class="icon"><img src="../data/programme.svg" alt=""></div>
+			<a href="/fr/program">
+				<div class="icon"><img src="/data/programme.svg" alt=""></div>
 				<span>Programme</span>
 			</a>
-			<a href="members">
-				<div class="icon"><img src="../data/membres.svg" alt=""></div>
+			<a href="/fr/members">
+				<div class="icon"><img src="/data/membres.svg" alt=""></div>
 				<span>Membres</span>
 			</a>
-			<a href="events">
-				<div class="icon"><img src="../data/events.svg" alt=""></div>
+			<a href="/fr/events">
+				<div class="icon"><img src="/data/events.svg" alt=""></div>
 				<span>Évènements</span>
 			</a>
-			<a href="allos">
-				<div class="icon"><img src="../data/allos.svg" alt=""></div>
+			<a href="/fr/allos">
+				<div class="icon"><img src="/data/allos.svg" alt=""></div>
 				<span>Allos</span>
 			</a>
 
 		</nav>
 	</header>
 
-	<button id="boutonEnigme" onclick="showEnigme()" type="button"><img src="../data/question.svg" alt="Ouvrir une énigme"></button>
+	<button id="boutonEnigme" onclick="showEnigme()" type="button"><img src="/data/question.svg" alt="Ouvrir une énigme"></button>
 
 	<section id="carousel" class="gallery js-flickity" data-flickity-options='{"autoPlay": 5000}'>
 		<!--, "wrapAround": true-->
@@ -84,9 +84,11 @@
 				<h1>Une liste où il fait bon vivre...</h1>
 			</div>
 		</div>
-		<div class="gallery-cell" style="background-image: url('https://images6.alphacoders.com/312/thumb-1920-312124.jpg');">
+		<div class="gallery-cell" style="background-image: url('/data/adrien.jpg');">
 			<div class="content">
-				<h1>Quiconque nous affronte perdra !</h1>
+				<h1>Des Listeux incroyables !</h1>
+				<b>Découvrez les membres de la liste de Cerf'Lock !</b>
+				<a href="/fr/members" class="hidden"> <button>Voir les membres</button></a>
 			</div>
 		</div>
 	</section>
@@ -96,11 +98,11 @@
 		<p>Bienvenue sur le site officiel des Cerf'Lock Holmes ! Candidats au BDE de Centrale Nantes pour l'année 2021, nous sommes juste la meilleure liste de tout l'univers.</p>
 		<p>Alors, prêt à mener l'enquête avec nous ?</p>
 		<ul>
-			<li>Rejoins-nous à nos <a href="events">events</a> !</li>
-			<li>Tu t'ennuies ? <a href="allos">Appelle-nous !</a></li>
-			<li>Tu veux savoir ce qu'on te réserve si on est élu ? On t'a préparé tout un <a href="program">programme</a> !</li>
+			<li>Rejoins-nous à nos <a href="/fr/events">events</a> !</li>
+			<li>Tu t'ennuies ? <a href="/fr/allos">Appelle-nous !</a></li>
+			<li>Tu veux savoir ce qu'on te réserve si on est élu ? On t'a préparé tout un <a href="/fr/program">programme</a> !</li>
 
-			<li>Et enfin si tu veux voir nos jolis minois, c'est <a href="members">ici</a> !</li>
+			<li>Et enfin si tu veux voir nos jolis minois, c'est <a href="/fr/members">ici</a> !</li>
 		</ul>
 		<br>
 		<br><br>
@@ -108,10 +110,10 @@
 
 	<footer>
 		<div id="piedDePage">
-			<img id="footerlogo" src="../data/logo.png" alt="Cerf'Lock Holmes" />
+			<img id="footerlogo" src="/data/logo.png" alt="Cerf'Lock Holmes" />
 			<div id="footertext">
 				<div id="footer1">
-					<h2 style="font-family:'Grenze Gotisch', serif">Cerf'Lock Holmes</h2>
+					<h2 class="titlefont">Cerf'Lock Holmes</h2>
 					<p>© Châteaux Porcs 2020</p>
 					<p><a href="legal">Mentions légales</a></p>
 					<p><i>Fait avec des biches, de l'amour, de l'humour et du fun !</i></p>

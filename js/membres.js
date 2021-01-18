@@ -46,7 +46,7 @@ var list_membres = [
 function generer_portraits(en) {
 	var code = "";
 	for (var i = 0; i < list_membres.length; i++) {
-		code += "<div class=portrait><div class=image><img src='../data/photos_membres/" + list_membres[i][0] + " " + list_membres[i][1] +
+		code += "<div class=portrait><div class=image><img src='/data/photos_membres/" + list_membres[i][0] + " " + list_membres[i][1] +
 			".jpg' alt=''></div><div class=texte><h2>" + list_membres[i][0] + " " + list_membres[i][1] + "</h2><h3>" + list_membres[i][2 + en] + "</h3><p>" +
 			list_membres[i][4 + en] + "</p></div></div>";
 	}
