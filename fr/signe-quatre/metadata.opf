@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">9b711440-b40f-4a79-814b-b5c3a5748be6</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">9b711440-b40f-4a79-814b-b5c3a5748be6</dc:identifier>
+        <dc:title>Le Signe des Quatre</dc:title>
+        <dc:creator opf:file-as="Doyle, Arthur Conan" opf:role="aut">Arthur Conan Doyle</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (5.9.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+        <dc:description>Chaque année, la jeune Mary Morstan, dont le père, officier dans l'armée des Indes, a disparu voilà longtemps reçoit par la poste le présent d'une perle. Le jour où une lettre lui fixe un mystérieux rendez-vous, elle demande au célèbre Sherlock Holmes de l'y accompagner...  Cependant que le bon Dr Watson est conquis par le charme de la jeune fille, nous nous enfonçons dans une des plus ténébreuses énigmes qui se soient offertes à la sagacité du détective. L'Inde des maharadjahs, le fort d'Agra cerné par la rébellion des Cipayes, le bagne des îles Andaman sont les décors de l'extraordinaire aventure qu'il va reconstituer, et qui trouvera sa conclusion dans les brouillards de la Tamise...  Une des plus inoubliables aventures de Sherlock Holmes, publiée pour la première fois en 1889.</dc:description>
+        <dc:language>fr</dc:language>
+        <meta name="calibre:author_link_map" content="{}"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Couverture" href="cover.jpg"/>
+    </guide>
+</package>

@@ -8,10 +8,10 @@
 
 ### *Structure générale du site*
 
-* Trouver des polices (différentes pour les titres et le texte ?)
+* ~~Trouver des polices (différentes pour les titres et le texte ?)~~
 
 * Créer des icônes pour chaque page dans la barre de navigation (on peut les voir uniquement en mode mobile)
-* Peaufiner le pied de page
+* ~~Peaufiner le pied de page~~
 
 ### Page *Membres*
 
@@ -20,7 +20,7 @@
 
 ### Page *Events*
 
-* Réfléchir à une disposition originale ?
+* Réfléchir à une disposition originale ?
 * En attente des events
 
 ### Page *Allos*
@@ -30,7 +30,7 @@
 
 ### Page *Mentions légales*
 
-* * À rédiger
+* À rédiger
 
 ### *Pop-Up Énigme*
 

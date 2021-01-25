@@ -2,18 +2,19 @@
 Code CSS pour la page des membres
 ---------------------------------*/
 
-div#container {
+.jeu {
 	/*organisation de la page*/
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-gap: 2em;
 }
 
-div#container div.portrait {
-	/*bloc portrait (contient photo + texte)*/
+.jeu .carte {
+	/*bloc carte (contient photo + texte)*/
 	border: solid;
 	border-width: 1px;
 	border-radius: 10px;
+	border-color: var(--text-color-dark);
 	text-align: center;
 	align-items: center;
 	background: var(--box-color);
@@ -23,31 +24,38 @@ div#container div.portrait {
 	max-width: 500px;
 }
 
-div#container div.portrait:hover {
-	/*bloc portrait quand on passe la souris*/
+.jeu .carte:hover {
+	/*bloc carte quand on passe la souris*/
 	background: var(--box-color-lighter);
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-div#container div.portrait div.image {
+.jeu .carte .image {
 	/*boîte contenant l'image*/
 	width: 100%;
 	overflow: hidden;
 }
 
-div#container div.portrait div.image img {
+.jeu .carte .image img {
 	/*l'image en elle-même*/
 	width: 100%;
 	transition: all 0.5s ease;
 }
 
-div#container div.portrait:hover div.image img {
+.jeu .carte:hover .image img {
 	/*quand on passe la souris sur l'image*/
 	transform: scale(1.1);
 	filter: brightness(1.08);
 }
 
-div#container div.portrait div.texte {
+.dark .jeu .carte:hover .image img {
+	/*quand on passe la souris sur l'image*/
+	transform: scale(1.1);
+	filter: brightness(1.08) grayscale(0.2);
+}
+
+.jeu .carte .texte {
 	/*boîte contenant le texte*/
-	margin: 20px;
+	margin: 1rem;
+	margin-top: 0.5rem;
 }
