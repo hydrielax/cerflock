@@ -123,6 +123,11 @@ function checkLanguage(lg, page) {
 }
 
 
+if ('serviceWorker' in navigator) {
+	// enregistrer le service worker 
+	navigator.serviceWorker.register('/service-worker.js');
+}
+
 //note : ce que dit la loi sur les cookies
 //https://www.cnil.fr/fr/cookies-et-traceurs-que-dit-la-loi
 //=> pas de consentement nécéssaire dans notre cas

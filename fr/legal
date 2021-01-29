@@ -5,6 +5,17 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
+	<link rel="alternate" hreflang="en" href="/en/legal" />
+	<link rel="alternate" hreflang="fr" href="/fr/legal" />
+	<link rel="canonical" href="https://www.cerflock.fr/fr/legal" />
+	<link rel="manifest" href="/manifest.json">
+	<title>Mentions Légales - Cerf'Lock Holmes</title>
+
+	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
 
 	<link rel="stylesheet" href="/css/style.css" />
 	<link rel="stylesheet" href="/css/topnav.css" />
@@ -13,13 +24,6 @@
 	<script type="text/javascript">
 		checkLanguage("fr", "legal");
 	</script>
-
-	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
-	<title>Cerf'Lock Holmes - Mentions Légales</title>
 </head>
 
 <body>
@@ -31,7 +35,7 @@
 		<nav>
 
 			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
-				<div class="icon"><img src="/data/allos.svg" alt="Appelez-nous !"></div>
+				<div class="icon"><img src="/data/tel.svg" alt="Appelez-nous !"></div>
 			</a>
 			<a href="/en/legal" onclick="changeLanguage()" class="quick-access" title="In English, please!">
 				<div class="icon"><img src="/data/en.png" alt="English version"></div>
@@ -56,7 +60,7 @@
 				<span>Membres</span>
 			</a>
 			<a href="/fr/campaigns">
-				<div class="icon"><img src="/datacampaigns.svg" alt=""></div>
+				<div class="icon"><img src="/data/campaigns.svg" alt=""></div>
 				<span>Campagnes</span>
 			</a>
 			<a href="/fr/allos">
@@ -100,10 +104,10 @@
 		<p>L'ensemble des textes et images de ce site sont la propriété exclusive de l'association Château Porc, sauf pour les exceptions suivantes :
 		</p>
 		<ul>
-			<li>les images de la page <a href="/fr/allos">Allos</a> sont des images libres de droit pouvant être réutilisées, issues du site <a href="https://www.pexels.com">
-				www.pexels.com</a> ;</li>
-			<li>les textes et images des œuvres de Arthur Conan Doyle reproduites sur ce site sont soumises aux règles stipulées au bas de leurs pages respectives.
+			<li>les images de la page <a href="/fr/allos">Allos</a> sont des images libres de droit pouvant être réutilisées, issues du site <a href="https://pixabay.com" target="_blank">Pixabay</a> pour le tandem et du site<a href="https://www.pexels.com">Pexels</a>				pour les autres ;</li>
+			<li>les textes et images des œuvres de Arthur Conan Doyle reproduites sur ce site sont soumises aux règles stipulées au bas de leurs pages respectives ;
 			</li>
+			<li>les images du menu de navigation (visibles uniquement sur mobile) sont issues du site Flaticon.</li>
 		</ul>
 		<h2>Le saviez-vous ?</h2>
 		<p>Avant d'avoir pour nom <i>Cerf'Lock Holmes,</i> notre liste avait pour fake nom <i>Sex 
@@ -121,7 +125,7 @@
 				<div id="footer1">
 					<h2 class="titlefont">Cerf'Lock Holmes</h2>
 					<p>© Château Porc 2021</p>
-					<p><a href="legal">Mentions légales</a></p>
+					<p><a href="/fr/bonus">Mentions légales</a></p>
 					<p><i>Fait avec des biches, de l'amour, de l'humour et du fun !</i></p>
 				</div>
 				<div id="footer2">

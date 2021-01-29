@@ -95,7 +95,7 @@ main {
 	max-width: 1200px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:500px) {
 	/*on réduit les marges quand l'écran est tout petit*/
 	main {
 		padding-left: 20px;
@@ -162,6 +162,7 @@ a.hidden {
 
 a.hidden:hover {
 	background-color: transparent;
+	overflow: hidden;
 }
 
 i {
@@ -215,10 +216,10 @@ footer {
 	/*le bandeau de bas de page*/
 	background-color: var(--third-color);
 	padding: 1rem 50px;
-	padding-right: calc(4.5rem + 20px);
+	/*padding-right: calc(4.5rem + 20px);*/
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:500px) {
 	/*on réduit les marges quand l'écran est tout petit*/
 	footer {
 		padding-left: 20px;
@@ -262,6 +263,12 @@ footer #footertext div {
 	footer #footertext {
 		display: block;
 		float: left;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	footer #footerlogo {
+		display: none;
 	}
 }
 

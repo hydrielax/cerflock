@@ -95,7 +95,7 @@
 						var returnValue = instance[options].apply(instance, args);
 
 						// break look and return first value if provided
-						if (returnValue  !== undefined) {
+						if (returnValue !== undefined) {
 							return returnValue;
 						}
 					}
@@ -449,7 +449,7 @@
 			if (listeners.hasOwnProperty(key)) {
 				index = indexOfListener(listeners[key], listener);
 
-				if (index  !== -1) {
+				if (index !== -1) {
 					listeners[key].splice(index, 1);
 				}
 			}
@@ -982,7 +982,7 @@
 			}
 
 			// do not proceed on non-objects
-			if (!elem || typeof elem  !== 'object' || !elem.nodeType) {
+			if (!elem || typeof elem !== 'object' || !elem.nodeType) {
 				return;
 			}
 
@@ -1021,14 +1021,14 @@
 
 			// overwrite width and height if we can get it from style
 			var styleWidth = getStyleSize(style.width);
-			if (styleWidth  !== false) {
+			if (styleWidth !== false) {
 				size.width = styleWidth +
 					// add padding and border unless it's already including it
 					(isBorderBoxSizeOuter ? 0 : paddingWidth + borderWidth);
 			}
 
 			var styleHeight = getStyleSize(style.height);
-			if (styleHeight  !== false) {
+			if (styleHeight !== false) {
 				size.height = styleHeight +
 					// add padding and border unless it's already including it
 					(isBorderBoxSizeOuter ? 0 : paddingHeight + borderHeight);
@@ -1109,7 +1109,7 @@
 
 	function docReady(fn) {
 		// throw out non-functions
-		if (typeof fn  !== 'function') {
+		if (typeof fn !== 'function') {
 			return;
 		}
 
@@ -1127,7 +1127,7 @@
 	// triggered on various doc ready events
 	function onReady(event) {
 		// bail if already triggered or IE8 document is not ready just yet
-		var isIE8NotReady = event.type === 'readystatechange' && document.readyState  !== 'complete';
+		var isIE8NotReady = event.type === 'readystatechange' && document.readyState !== 'complete';
 		if (docReady.isReady || isIE8NotReady) {
 			return;
 		}
@@ -1377,7 +1377,7 @@
 
 	utils.removeFrom = function(ary, obj) {
 		var index = utils.indexOf(ary, obj);
-		if (index  != -1) {
+		if (index != -1) {
 			ary.splice(index, 1);
 		}
 	};
@@ -1401,7 +1401,7 @@
 
 		function setText(elem, text) {
 			// only check setTextProperty once
-			setTextProperty = setTextProperty || (document.documentElement.textContent  !== undefined ? 'textContent' : 'innerText');
+			setTextProperty = setTextProperty || (document.documentElement.textContent !== undefined ? 'textContent' : 'innerText');
 			elem[setTextProperty] = text;
 		}
 		return setText;
@@ -1410,7 +1410,7 @@
 	// ----- getParent ----- //
 
 	utils.getParent = function(elem, selector) {
-		while (elem  != document.body) {
+		while (elem != document.body) {
 			elem = elem.parentNode;
 			if (matchesSelector(elem, selector)) {
 				return elem;
@@ -2466,7 +2466,7 @@
 	var supportsConditionalCSS = Flickity.supportsConditionalCSS = (function() {
 		var supports;
 		return function checkSupport() {
-			if (supports  !== undefined) {
+			if (supports !== undefined) {
 				return supports;
 			}
 			if (!getComputedStyle) {
@@ -2480,7 +2480,7 @@
 			document.head.appendChild(style);
 			var afterContent = getComputedStyle(document.body, ':after').content;
 			// check if able to get :after content
-			supports = afterContent.indexOf('foo')  != -1;
+			supports = afterContent.indexOf('foo') != -1;
 			document.head.removeChild(style);
 			return supports;
 		};
@@ -2502,7 +2502,7 @@
 
 		var afterContent = getComputedStyle(this.element, ':after').content;
 		// activate if :after { content: 'flickity' }
-		if (afterContent.indexOf('flickity')  != -1) {
+		if (afterContent.indexOf('flickity') != -1) {
 			this.activate();
 		} else {
 			this.deactivate();
@@ -2515,7 +2515,7 @@
 	Flickity.prototype.onkeydown = function(event) {
 		// only work if element is in focus
 		if (!this.options.accessibility ||
-			(document.activeElement && document.activeElement  != this.element)) {
+			(document.activeElement && document.activeElement != this.element)) {
 			return;
 		}
 
@@ -2713,7 +2713,7 @@
 	Unipointer.prototype.onmousedown = function(event) {
 		// dismiss clicks from right or middle buttons
 		var button = event.button;
-		if (button && (button  !== 0 && button  !== 1)) {
+		if (button && (button !== 0 && button !== 1)) {
 			return;
 		}
 		this._pointerDown(event, event);
@@ -2741,7 +2741,7 @@
 
 		this.isPointerDown = true;
 		// save pointer identifier to match up touch events
-		this.pointerIdentifier = pointer.pointerId  !== undefined ?
+		this.pointerIdentifier = pointer.pointerId !== undefined ?
 			// pointerId for pointer events, touch.indentifier for touch events
 			pointer.pointerId : pointer.identifier;
 
@@ -2918,8 +2918,8 @@
 	// utility function for getting x/y cooridinates from event, because IE8
 	Unipointer.getPointerPoint = function(pointer) {
 		return {
-			x: pointer.pageX  !== undefined ? pointer.pageX : pointer.clientX,
-			y: pointer.pageY  !== undefined ? pointer.pageY : pointer.clientY
+			x: pointer.pageX !== undefined ? pointer.pageX : pointer.clientX,
+			y: pointer.pageY !== undefined ? pointer.pageY : pointer.clientY
 		};
 	};
 
@@ -2984,7 +2984,7 @@
 	}
 
 	function getParentLink(elem) {
-		while (elem  != document.body) {
+		while (elem != document.body) {
 			elem = elem.parentNode;
 			if (elem.nodeName == 'A') {
 				return elem;
@@ -3107,7 +3107,7 @@
 		var isTouchstartNode = event.type == 'touchstart' &&
 			(allowTouchstartNodes[targetNodeName] || getParentLink(event.target));
 		// do not prevent default on touchstart nodes or <select>
-		if (!isTouchstartNode && targetNodeName  != 'SELECT') {
+		if (!isTouchstartNode && targetNodeName != 'SELECT') {
 			preventDefaultEvent(event);
 		}
 	};
@@ -3241,8 +3241,8 @@
 
 	Unidragger.getPointerPoint = function(pointer) {
 		return {
-			x: pointer.pageX  !== undefined ? pointer.pageX : pointer.clientX,
-			y: pointer.pageY  !== undefined ? pointer.pageY : pointer.clientY
+			x: pointer.pageX !== undefined ? pointer.pageX : pointer.clientX,
+			y: pointer.pageY !== undefined ? pointer.pageY : pointer.clientY
 		};
 	};
 
@@ -3369,7 +3369,7 @@
 
 		// kludge to blur focused inputs in dragger
 		var focused = document.activeElement;
-		if (focused && focused.blur && focused  != this.element) {
+		if (focused && focused.blur && focused != this.element) {
 			focused.blur();
 		}
 		this.pointerDownFocus(event);
@@ -3691,7 +3691,7 @@
 		delete this.tapElement;
 	};
 
-	var isPageOffset = window.pageYOffset  !== undefined;
+	var isPageOffset = window.pageYOffset !== undefined;
 	/**
 	 * pointer up
 	 * @param {Event} event
@@ -3775,7 +3775,7 @@
 		var supports;
 
 		function checkSupport() {
-			if (supports  !== undefined) {
+			if (supports !== undefined) {
 				return supports;
 			}
 			var div = document.createElement('div');
@@ -4099,7 +4099,7 @@
 	PageDots.prototype.onTap = function(instance, event) {
 		var target = event.target;
 		// only care about dot clicks
-		if (target.nodeName  != 'LI') {
+		if (target.nodeName != 'LI') {
 			return;
 		}
 
@@ -4651,7 +4651,7 @@
 		// set nav selected class
 		this.removeNavSelectedElement();
 		// stop if companion has more cells than this one
-		if (this.selectedIndex  != index) {
+		if (this.selectedIndex != index) {
 			return;
 		}
 		this.navSelectedElement = this.cells[index].element;
@@ -4740,7 +4740,7 @@
 
 		var $ = window.jQuery;
 		var console = window.console;
-		var hasConsole = typeof console  !== 'undefined';
+		var hasConsole = typeof console !== 'undefined';
 
 		// -------------------------- helpers -------------------------- //
 
@@ -4943,9 +4943,9 @@
 
 			// If complete is true and browser supports natural sizes,
 			// try to check for image status manually.
-			if (this.img.complete && this.img.naturalWidth  !== undefined) {
+			if (this.img.complete && this.img.naturalWidth !== undefined) {
 				// report based on naturalWidth
-				this.confirm(this.img.naturalWidth  !== 0, 'naturalWidth');
+				this.confirm(this.img.naturalWidth !== 0, 'naturalWidth');
 				return;
 			}
 

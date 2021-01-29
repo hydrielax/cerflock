@@ -5,6 +5,17 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
+	<link rel="alternate" hreflang="en" href="/en/bonus" />
+	<link rel="alternate" hreflang="fr" href="/fr/bonus" />
+	<link rel="canonical" href="https://www.cerflock.fr/fr/bonus" />
+	<link rel="manifest" href="/manifest.json">
+	<title>Bonus - Cerf'Lock Holmes</title>
+
+	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
 
 	<link rel="stylesheet" href="/css/style.css" />
 	<link rel="stylesheet" href="/css/topnav.css" />
@@ -13,13 +24,6 @@
 	<script type="text/javascript">
 		checkLanguage("en", "program");
 	</script>
-
-	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
-	<title>Cerf'Lock Holmes - Program</title>
 </head>
 
 <body>
@@ -31,7 +35,7 @@
 		<nav>
 
 			<a href="tel:+33123456789" class="quick-access" title="Call us!">
-				<div class="icon"><img src="/data/allos.svg" alt="Call us!"></div>
+				<div class="icon"><img src="/data/tel.svg" alt="Call us!"></div>
 			</a>
 			<a href="/fr/program" onclick="changeLanguage()" class="quick-access" title="En Français dans le texte...!">
 				<div class="icon"><img src="/data/fr.svg" alt="Version française"></div>
@@ -105,7 +109,8 @@
 			à déjeuner au Holborn ; nous partîmes ensemble en fiacre.</p>
 
 		<p>« A quoi avez-vous donc passé le temps, Watson ? me demanda-t-il sans dissimuler son étonnement, tandis que nous roulions avec une bruit de ferraille à travers les rues encombrées de Londres. Vous êtes aussi mince qu’une latte et aussi brun qu’une noix
-			! »</p>
+			! »
+		</p>
 
 		<p>Je lui racontai brièvement mes aventures.</p>
 
@@ -120,7 +125,7 @@
 				<div id="footer1">
 					<h2 class="titlefont">Cerf'Lock Holmes</h2>
 					<p>© Château Porc 2021</p>
-					<p><a href="legal">Legal mentions</a></p>
+					<p><a href="/en/legal">Legal mentions</a></p>
 					<p><i>This site has been made with does, love, and fun!</i></p>
 				</div>
 				<div id="footer2">

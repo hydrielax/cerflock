@@ -33,6 +33,9 @@
 
 @media screen and (max-width:800px) {
 	/*on réduit les marges si l'écran est trop petit*/
+	#carousel {
+		height: 70vh;
+	}
 	#carousel div.content {
 		padding-left: 20px;
 		padding-right: 20px;

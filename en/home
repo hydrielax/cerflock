@@ -5,6 +5,17 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
+	<link rel="alternate" hreflang="en" href="/en/home" />
+	<link rel="alternate" hreflang="fr" href="/fr/home" />
+	<link rel="canonical" href="https://www.cerflock.fr/fr/home" />
+	<link rel="manifest" href="/manifest.json">
+	<title>Cerf'Lock Holmes</title>
+
+	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
 
 	<link rel="stylesheet" href="/css/style.css" />
 	<link rel="stylesheet" href="/css/topnav.css" />
@@ -16,13 +27,6 @@
 	<script type="text/javascript">
 		checkLanguage("en", "/fr/home");
 	</script>
-
-	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
-	<title>Cerf'Lock Holmes</title>
 </head>
 
 <body>
@@ -34,7 +38,7 @@
 		<nav>
 
 			<a href="tel:+33123456789" class="quick-access" title="Call us!">
-				<div class="icon"><img src="/data/allos.svg" alt="Call us!"></div>
+				<div class="icon"><img src="/data/tel.svg" alt="Call us!"></div>
 			</a>
 			<a href="/fr/home" onclick="changeLanguage()" class="quick-access" title="En Français dans le texte...!">
 				<div class="icon"><img src="/data/fr.svg" alt="Version française"></div>
@@ -59,7 +63,7 @@
 				<span>Members</span>
 			</a>
 			<a href="/en/campaigns">
-				<div class="icon"><img src="/datacampaigns.svg" alt=""></div>
+				<div class="icon"><img src="/data/campaigns.svg" alt=""></div>
 				<span>Campaigns</span>
 			</a>
 			<a href="/en/allos">
@@ -121,7 +125,7 @@
 				<div id="footer1">
 					<h2 class="titlefont">Cerf'Lock Holmes</h2>
 					<p>© Château Porc 2021</p>
-					<p><a href="legal">Legal mentions</a></p>
+					<p><a href="/en/legal">Legal mentions</a></p>
 					<p><i>This site has been made with does, love, and fun!</i></p>
 				</div>
 				<div id="footer2">

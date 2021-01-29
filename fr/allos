@@ -5,6 +5,17 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
+	<link rel="alternate" hreflang="en" href="/en/allos" />
+	<link rel="alternate" hreflang="fr" href="/fr/allos" />
+	<link rel="canonical" href="https://www.cerflock.fr/fr/allos" />
+	<link rel="manifest" href="/manifest.json">
+	<title>Allos - Cerf'Lock Holmes</title>
+
+	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
 
 	<link rel="stylesheet" href="/css/style.css" />
 	<link rel="stylesheet" href="/css/topnav.css" />
@@ -14,13 +25,6 @@
 	<script type="text/javascript">
 		checkLanguage("fr", "allos");
 	</script>
-
-	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
-	<title>Cerf'Lock Holmes - Allos</title>
 </head>
 
 <body>
@@ -32,7 +36,7 @@
 		<nav>
 
 			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
-				<div class="icon"><img src="/data/allos.svg" alt="Appelez-nous !"></div>
+				<div class="icon"><img src="/data/tel.svg" alt="Appelez-nous !"></div>
 			</a>
 			<a href="/en/allos" onclick="changeLanguage()" class="quick-access" title="In English, please!">
 				<div class="icon"><img src="/data/en.png" alt="English version"></div>
@@ -57,7 +61,7 @@
 				<span>Membres</span>
 			</a>
 			<a href="/fr/campaigns">
-				<div class="icon"><img src="/datacampaigns.svg" alt=""></div>
+				<div class="icon"><img src="/data/campaigns.svg" alt=""></div>
 				<span>Campagnes</span>
 			</a>
 			<a href="/fr/allos" class="active">
@@ -84,7 +88,7 @@
 		<div class="jeu">
 			<div class="carte">
 				<div class="image">
-					<img src="/data/allo-echec.jpg" alt="Image de jeu d'échecs">
+					<img src="/data/allo/echec.jpg" alt="Image de jeu d'échecs">
 				</div>
 				<div class="texte">
 					<h2>Allô Échecs</h2>
@@ -93,7 +97,7 @@
 			</div>
 			<div class="carte">
 				<div class="image">
-					<img src="/data/allo-karaoke.jpg" alt="Image de Karaoké">
+					<img src="/data/allo/karaoke.jpg" alt="Image de Karaoké">
 				</div>
 				<div class="texte">
 					<h2>Allô Karaoké</h2>
@@ -102,7 +106,7 @@
 			</div>
 			<div class="carte">
 				<div class="image">
-					<img src="/data/allo-escape.jpg" alt="Image d'escape game">
+					<img src="/data/allo/escape.jpg" alt="Image d'escape game">
 				</div>
 				<div class="texte">
 					<h2>Allô Escape Game</h2>
@@ -111,7 +115,7 @@
 			</div>
 			<div class="carte">
 				<div class="image">
-					<img src="/data/allo-magie.jpg" alt="Image de magie">
+					<img src="/data/allo/magie.jpg" alt="Image de magie">
 				</div>
 				<div class="texte">
 					<h2>Allô Magie</h2>
@@ -120,7 +124,7 @@
 			</div>
 			<div class="carte">
 				<div class="image">
-					<img src="/data/allo-pictionnary.jpg" alt="Dessin de JB">
+					<img src="/data/allo/pictionnary.jpg" alt="Dessin de JB">
 				</div>
 				<div class="texte">
 					<h2>Allô Pictionnary</h2>
@@ -129,7 +133,16 @@
 			</div>
 			<div class="carte">
 				<div class="image">
-					<img src="/data/allo-prank.jpg" alt="Cerf Mystérieux dans le noir">
+					<img src="/data/allo/tandem.jpg" alt="Vélo Tandem">
+				</div>
+				<div class="texte">
+					<h2>Allô Tandem</h2>
+					<p>Envie de faire un tour à vélo ? Cerf'Lock te propose encore mieux : un tour en tandem !</p>
+				</div>
+			</div>
+			<div class="carte">
+				<div class="image">
+					<img src="/data/allo/prank.jpg" alt="Cerf Mystérieux dans le noir">
 				</div>
 				<div class="texte">
 					<h2>Allô Mystère</h2>
@@ -146,7 +159,7 @@
 				<div id="footer1">
 					<h2 class="titlefont">Cerf'Lock Holmes</h2>
 					<p>© Château Porc 2021</p>
-					<p><a href="legal">Mentions légales</a></p>
+					<p><a href="/fr/legal">Mentions légales</a></p>
 					<p><i>Fait avec des biches, de l'amour, de l'humour et du fun !</i></p>
 				</div>
 				<div id="footer2">

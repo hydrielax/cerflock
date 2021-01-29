@@ -1,0 +1,49 @@
+{
+	"short_name": "Cerf'Lock",
+	"name": "Cerf'Lock Holmes",
+	"description": "L'application officielle de la liste Cerf'Lock Holmes !",
+	"dir": "ltr",
+	"lang": "fr",
+	"theme_color": "#872D0C",
+	"background_color": "#0C1237",
+	"display": "standalone",
+	"Scope": "/",
+	"orientation": "any",
+	"icons": [{
+			"src": "/data/favicon_16.ico",
+			"type": "image/ico",
+			"sizes": "16x16"
+		},
+		{
+			"src": "/data/favicon_32.png",
+			"type": "image/png",
+			"sizes": "32x32"
+		},
+		{
+			"src": "/data/favicon_48.png",
+			"type": "image/png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "/data/favicon_96.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "/data/favicon_144.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "/data/favicon_192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/data/favicon_512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "https://www.cerflock.fr"
+}

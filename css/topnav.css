@@ -131,6 +131,11 @@ nav a:hover div.icon img {
 	filter: brightness(1.2);
 }
 
+.dark nav a:hover div.icon img {
+	/*icônes éclairées quand on passe la souris*/
+	filter: brightness(1.2) grayscale(0.2);
+}
+
 nav a#titre div.icon img {
 	/* logo Cerf'Lock qui dépasse de sa case*/
 	max-width: none;
@@ -194,11 +199,11 @@ nav a:hover span::after {
   CAS MENU OUVERT
 ----------------------*/
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 800px) {
 	/* le menu ne s'ouvre que si on est en mode mobile*/
 	nav.responsive {
 		/*on allonge la barre rouge d'en-tête*/
-		height: 23.8rem;
+		height: 20.4rem;
 		max-height: 100vh;
 		overflow: auto;
 	}
@@ -225,7 +230,7 @@ nav a:hover span::after {
 
 /* si la largeur de l'écran est supérieure à 800 px */
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 800px) {
 	/*liens cliquables : on les affiche tous*/
 	nav a {
 		display: flex;
