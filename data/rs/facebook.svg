@@ -7,15 +7,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 100 75"
+   viewBox="-204.79995 -341.33325 1365.333 1357.0401"
    version="1.1"
-   id="svg8"
-   sodipodi:docname="menu.svg"
-   width="100"
-   height="75"
+   alt="Facebook"
+   id="svg4"
+   sodipodi:docname="facebook.svg"
+   width="1365.333"
+   height="1357.04"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
   <metadata
-     id="metadata12">
+     id="metadata10">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,6 +27,8 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <defs
+     id="defs8" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -35,39 +38,22 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1013"
-     id="namedview10"
+     inkscape:window-width="759"
+     inkscape:window-height="480"
+     id="namedview6"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="35.333333"
-     inkscape:cx="8"
-     inkscape:cy="6"
+     inkscape:zoom="0.15527349"
+     inkscape:cx="60.662569"
+     inkscape:cy="651.58189"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg8" />
-  <defs
-     id="defs3051">
-    <style
-       type="text/css"
-       id="current-color-scheme">
-      .ColorScheme-Text {
-        color:#232629;
-      }
-      </style>
-  </defs>
-  <g
-     transform="matrix(6.25,0,0,6.25,-18.75,-31.25)"
-     id="g6"
-     style="">
-    <path
-       style="stroke:none"
-       d="M 3,5 V 7 H 19 V 5 H 3 m 0,5 v 2 H 19 V 10 H 3 m 0,5 v 2 H 19 V 15 H 3"
-       class="ColorScheme-Text"
-       id="path4" />
-  </g>
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <path
+     d="m 1160.5331,341.33375 c 0,-377.026996 -305.64005,-682.667 -682.66605,-682.667 -377.027,0 -682.667,305.640004 -682.667,682.667 0,340.738 249.641,623.16 576.00001,674.37305 V 538.66675 h -173.333 v -197.333 h 173.333 v -150.4 c 0,-171.093996 101.91699,-265.599996 257.85299,-265.599996 74.69,0 152.814,13.333 152.814,13.333 V 106.66675 h -86.083 c -84.804,0 -111.25,52.623 -111.25,106.61 v 128.057 h 189.333 l -30.267,197.333 h -159.067 v 477.04005 c 326.359,-51.21305 576.00005,-333.63505 576.00005,-674.37305"
+     id="path2" />
 </svg>

@@ -55,7 +55,7 @@ html.dark {
 	--text-color: #E0E0E0;
 	--text-color-opposite: #101010;
 	--text-color-light: #FAFAFA;
-	--text-color-dark: #101010;
+	--text-color-dark: #000000;
 	--box-color: #0b2d53;
 	--box-color-lighter: #0d3766;
 }
@@ -95,40 +95,47 @@ main {
 	max-width: 1200px;
 }
 
-@media screen and (max-width:500px) {
-	/*on réduit les marges quand l'écran est tout petit*/
-	main {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'grenze', serif;
+	line-height: 1em;
+	margin: 0;
+	margin-top: 0.2em;
+	margin-bottom: 0.4em;
 }
 
 h1 {
 	/*titres de niveau 1*/
 	font-family: 'Grenze Gotisch', 'Grenze', serif;
 	font-size: 4rem;
-	margin: 0;
 }
 
 h2 {
 	/*titres de niveau 2*/
-	font-family: 'Grenze', serif;
 	font-size: 2.3rem;
-	margin: 0;
 }
 
 h3 {
 	/*titres de niveau 3*/
-	font-family: 'Grenze', serif;
 	font-size: 2rem;
-	margin: 0;
 }
 
 h4 {
 	/*titres de niveau 3*/
-	font-family: 'Grenze', serif;
 	font-size: 1.5rem;
-	margin: 0;
+}
+
+@media screen and (max-width:500px) {
+	/*on réduit les marges quand l'écran est tout petit*/
+	main {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	h1 {
+		font-size: 3.5rem;
+	}
 }
 
 ul {
@@ -207,6 +214,18 @@ button:hover {
 	font-family: 'Grenze Gotisch', 'Grenze', serif;
 }
 
+.box {
+	border: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	border-color: var(--text-color-dark);
+	text-align: center;
+	align-items: center;
+	background: var(--box-color);
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
 
 /*------------------------ 
   PIED DE PAGE
@@ -281,7 +300,8 @@ footer #footer2 p {
 	line-height: 2.3rem;
 }
 
-footer #footer2 button svg {
+footer #footer2 button svg,
+footer #footer2 button img {
 	overflow: visible;
 	/*images des réseaux sociaux*/
 	height: 1.5em;
@@ -312,7 +332,7 @@ footer #footer2 button:hover {
 	bottom: 20px;
 	right: 20px;
 	position: fixed;
-	z-index: 1;
+	z-index: 3;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -336,6 +356,28 @@ footer #footer2 button:hover {
 	/*paramètres de l'image du bouton énigme (le point d'interrogation)*/
 	width: 50px;
 	margin: auto;
+}
+
+#popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#popup .box {
+	width: 70%;
+	max-width: 1200px;
+	min-width: 300px;
+	height: 70%;
+	margin: auto;
+	display: block;
+	overflow: auto;
+	border-radius: 10%;
 }
 
 

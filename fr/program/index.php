@@ -17,10 +17,10 @@
 	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
 	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
 
-	<link rel="stylesheet" href="/css/style.css" />
-	<link rel="stylesheet" href="/css/topnav.css" />
+	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
+	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
 
-	<script type="text/javascript" src="/js/scripts.js"></script>
+	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
 	<script type="text/javascript">
 		checkLanguage("fr", "program");
 	</script>
@@ -35,36 +35,36 @@
 		<nav>
 
 			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
-				<div class="icon"><img src="/data/tel.svg" alt="Appelez-nous !"></div>
+				<div class="icon"><img src="/data/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
 			<a href="/en/program" onclick="changeLanguage()" class="quick-access" title="In English, please!">
 				<div class="icon"><img src="/data/en.png" alt="English version"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
-				<div class="icon"><img src="/data/dark.svg" alt="Activer/Désactiver le mode nuit"></div>
+				<div class="icon"><img src="/data/dark.svg" class="svg" alt="Activer/Désactiver le mode nuit"></div>
 			</a>
 
 			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
-				<div class="icon"><img src="/data/menu.svg" alt="Menu"></div>
+				<div class="icon"><img src="/data/menu.svg" class="svg" alt="Menu"></div>
 			</a>
 			<a href="/fr/home" id="titre">
 				<div class="icon"><img src="/data/logo_rond.png" alt=""></div>
 				<span>Cerf'Lock Holmes</span>
 			</a>
 			<a href="/fr/program" class="active">
-				<div class="icon"><img src="/data/programme.svg" alt=""></div>
+				<div class="icon"><img src="/data/programme.svg" class="svg page" alt=""></div>
 				<span>Programme</span>
 			</a>
 			<a href="/fr/members">
-				<div class="icon"><img src="/data/membres.svg" alt=""></div>
+				<div class="icon"><img src="/data/membres.svg" class="svg page" alt=""></div>
 				<span>Membres</span>
 			</a>
 			<a href="/fr/campaigns">
-				<div class="icon"><img src="/data/campaigns.svg" alt=""></div>
+				<div class="icon"><img src="/data/campaigns.svg" class="svg page" alt=""></div>
 				<span>Campagnes</span>
 			</a>
 			<a href="/fr/allos">
-				<div class="icon"><img src="/data/allos.svg" alt=""></div>
+				<div class="icon"><img src="/data/allos.svg" class="svg page" alt=""></div>
 				<span>Allos</span>
 			</a>
 		</nav>
@@ -174,40 +174,26 @@
 					<p>
 						<a href="https://www.facebook.com/sotb2020" target="_blank" class="hidden" title="Facebook" id="facebook">
 							<button style="--first-color:#1877f2;">
-								<svg viewBox="-204.79995 -341.33325 788.85904 1365.3329" version="1.1" alt="Facebook">
-									<path d="m 876.16697,343.59539 c 0,-377.026996 -305.64,-682.667 -682.666,-682.667 -377.027,0 -682.667,305.640004 -682.667,682.667 0,340.738 249.641,623.16 576.000006,674.37301 V 540.92839 h -173.333 v -197.333 h 173.333 v -150.4 c 0,-171.093996 101.916994,-265.599996 257.852994,-265.599996 74.69,0 152.814,13.333 152.814,13.333 V 108.92839 h -86.083 c -84.804,0 -111.25,52.623 -111.25,106.61 v 128.057 h 189.333 l -30.267,197.333 h -159.067 v 477.04001 c 326.359,-51.21301 576,-333.63501 576,-674.37301"/>
-								</svg>
+								<img src="/data/rs/facebook.svg" class="svg" />
 								Facebook
 							</button>
 						</a>
 						<a href="https://www.youtube.com/channel/UCXkxERW_Eq3eXeSNH2yEp9A" target="_blank" class="hidden" title="Youtube" id="youtube">
 							<button style="--first-color: #e20d0d;">
-								<svg version="1.1" viewBox="0 0 71.412065 50">
-									<defs>
-										<clipPath clipPathUnits="userSpaceOnUse" id="clipPath837">
-											<polygon points="48.6,24.3 48.6,60.7 80.2,42.5 " style="display:none;" clip-path="none"/>
-											<path d="M -5,-5 H 126.40051 V 90 H -5 Z M 48.6,24.3 V 60.7 L 80.2,42.5 Z"/>
-										</clipPath>
-									</defs>
-									<g transform="scale(0.58823529)">
-										<path d="M 118.9,13.3 C 117.5,8.1 113.4,4 108.2,2.6 98.7,0 60.7,0 60.7,0 60.7,0 22.7,0 13.2,2.5 8.1,3.9 3.9,8.1 2.5,13.3 0,22.8 0,42.5 0,42.5 0,42.5 0,62.3 2.5,71.7 3.9,76.9 8,81 13.2,82.4 22.8,85 60.7,85 60.7,85 c 0,0 38,0 47.5,-2.5 5.2,-1.4 9.3,-5.5 10.7,-10.7 2.5,-9.5 2.5,-29.2 2.5,-29.2 0,0 0.1,-19.8 -2.5,-29.3 z" clip-path="url(#clipPath837)" />
-									</g>
-								</svg>Youtube</button>
+								<img src="/data/rs/youtube.svg" class="svg" />
+								Youtube
+							</button>
 						</a>
 						<br>
 						<a href="https://open.spotify.com/playlist/6mOcAqZZDB6RzSHoNwz7tp" target="_blank" class="hidden" title="Spotify - Biche Party" id="spotify1">
 							<button style="--first-color:#1aaf4e;">
-								<svg version="1.1" viewBox="0 0 168 168">
-									<path d="m83.996 0.277c-46.249 0-83.743 37.493-83.743 83.742 0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l0.001-0.004zm38.404 120.78c-1.5 2.46-4.72 3.24-7.18 1.73-19.662-12.01-44.414-14.73-73.564-8.07-2.809 0.64-5.609-1.12-6.249-3.93-0.643-2.81 1.11-5.61 3.926-6.25 31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-0.903-8.148-4.35-1.04-3.453 0.907-7.093 4.354-8.143 30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-0.001zm0.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219-1.254-4.14 1.08-8.513 5.221-9.771 29.581-8.98 78.756-7.245 109.83 11.202 3.73 2.209 4.95 7.016 2.74 10.733-2.2 3.722-7.02 4.949-10.73 2.739z"/>
-								   </svg>
+								<img src="/data/rs/spotify.svg" class="svg" />
 								Biche Party
 							</button>
 						</a>
 						<a href="https://open.spotify.com/playlist/1Xn8tMqHAQYBKv0SsroFRT" target="_blank" class="hidden" title="Spotify - Cocktail Auditif" id="spotify2">
 							<button style="--first-color:#1aaf4e;">
-								<svg version="1.1" viewBox="0 0 168 168">
-									<path d="m83.996 0.277c-46.249 0-83.743 37.493-83.743 83.742 0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l0.001-0.004zm38.404 120.78c-1.5 2.46-4.72 3.24-7.18 1.73-19.662-12.01-44.414-14.73-73.564-8.07-2.809 0.64-5.609-1.12-6.249-3.93-0.643-2.81 1.11-5.61 3.926-6.25 31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-0.903-8.148-4.35-1.04-3.453 0.907-7.093 4.354-8.143 30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-0.001zm0.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219-1.254-4.14 1.08-8.513 5.221-9.771 29.581-8.98 78.756-7.245 109.83 11.202 3.73 2.209 4.95 7.016 2.74 10.733-2.2 3.722-7.02 4.949-10.73 2.739z"/>
-								   </svg>
+								<img src="/data/rs/spotify.svg" class="svg" />
 								Cocktail Auditif
 							</button>
 						</a>
@@ -216,6 +202,10 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		convert();
+	</script>
 </body>
 
 </html>

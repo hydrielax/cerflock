@@ -5,12 +5,12 @@
 	<meta name="viewport" content="width=device-width" />
 	<link rel="canonical" href="https://www.cerflock.fr/fr/etude-rouge/index.html" />
 
-	<link rel="stylesheet" href="/css/style.css" />
-	<link rel="stylesheet" href="/css/topnav.css" />
+	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
+	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
 	<link rel="stylesheet" href="/css/books.css" />
 	<!--link href="style.css" rel="stylesheet" type="text/css" /-->
 
-	<script type="text/javascript" src="/js/scripts.js"></script>
+	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
 	<script type="text/javascript">
 		checkLanguage("fr", "program");
 	</script>
@@ -33,36 +33,36 @@
 		<nav>
 
 			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
-				<div class="icon"><img src="/data/tel.svg" alt="Appelez-nous !"></div>
+				<div class="icon"><img src="/data/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
 			<a href="/en/program" onclick="changeLanguage()" class="quick-access" title="In English, please!">
 				<div class="icon"><img src="/data/en.png" alt="English version"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
-				<div class="icon"><img src="/data/dark.svg" alt="Activer/Désactiver le mode nuit"></div>
+				<div class="icon"><img src="/data/dark.svg" class="svg" alt="Activer/Désactiver le mode nuit"></div>
 			</a>
 
 			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
-				<div class="icon"><img src="/data/menu.svg" alt="Menu"></div>
+				<div class="icon"><img src="/data/menu.svg" class="svg" alt="Menu"></div>
 			</a>
 			<a href="/fr/home" id="titre">
 				<div class="icon"><img src="/data/logo_rond.png" alt=""></div>
 				<span>Cerf'Lock Holmes</span>
 			</a>
 			<a href="/fr/program">
-				<div class="icon"><img src="/data/programme.svg" alt=""></div>
+				<div class="icon"><img src="/data/programme.svg" class="svg page" alt=""></div>
 				<span>Programme</span>
 			</a>
 			<a href="/fr/members">
-				<div class="icon"><img src="/data/membres.svg" alt=""></div>
+				<div class="icon"><img src="/data/membres.svg" class="svg page" alt=""></div>
 				<span>Membres</span>
 			</a>
 			<a href="/fr/campaigns">
-				<div class="icon"><img src="/data/campaigns.svg" alt=""></div>
+				<div class="icon"><img src="/data/campaigns.svg" class="svg page" alt=""></div>
 				<span>Campagnes</span>
 			</a>
 			<a href="/fr/allos">
-				<div class="icon"><img src="/data/allos.svg" alt=""></div>
+				<div class="icon"><img src="/data/allos.svg" class="svg page" alt=""></div>
 				<span>Allos</span>
 			</a>
 		</nav>
@@ -1982,6 +1982,10 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		convert();
+	</script>
 </body>
 
 </html>

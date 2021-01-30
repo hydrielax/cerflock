@@ -13,7 +13,7 @@ header {
 	left: 0;
 	right: 0;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
-	z-index: 2;
+	z-index: 1;
 }
 
 nav {
@@ -94,6 +94,7 @@ nav a div.icon {
 	height: 2.8rem;
 	padding: 0;
 	margin: 0 0.3rem;
+	fill: var(--text-color-dark);
 	/*positionnement de la case*/
 	display: flex;
 	justify-content: center;
@@ -101,19 +102,29 @@ nav a div.icon {
 	font-size: 1rem;
 }
 
+nav a div.icon .svg.page {
+	fill: var(--text-color);
+}
+
 nav a.quick-access div.icon {
 	/*case moins large pour l'accès rapide*/
 	width: 1.9rem;
 }
 
-nav a div.icon img {
+nav a.active div.icon .svg.page {
+	fill: var(--text-color-dark);
+}
+
+nav a div.icon img,
+nav a div.icon svg {
 	/*redimensionnement de l'image*/
 	max-height: 2rem;
 	max-width: 2rem;
 	margin: auto;
 }
 
-nav a.quick-access div.icon img {
+nav a.quick-access div.icon img,
+nav a.quick-access div.icon svg {
 	/*redimensionnement pour les images de l'accès rapide*/
 	max-height: 1.5rem;
 	max-width: 1.9rem;
@@ -121,22 +132,26 @@ nav a.quick-access div.icon img {
 	transition: transform .5s 0s;
 }
 
-nav a.quick-access:hover div.icon img {
+nav a.quick-access:hover div.icon img,
+nav a.quick-access:hover div.icon svg {
 	/*animation de rotation des boutons d'accès rapide*/
 	transform: rotate(180deg);
 }
 
-nav a:hover div.icon img {
+nav a:hover div.icon img,
+nav a:hover div.icon svg {
 	/*icônes éclairées quand on passe la souris*/
 	filter: brightness(1.2);
 }
 
-.dark nav a:hover div.icon img {
+.dark nav a:hover div.icon img,
+.dark nav a:hover div.icon svg {
 	/*icônes éclairées quand on passe la souris*/
 	filter: brightness(1.2) grayscale(0.2);
 }
 
-nav a#titre div.icon img {
+nav a#titre div.icon img,
+nav a#titre div.icon svg {
 	/* logo Cerf'Lock qui dépasse de sa case*/
 	max-width: none;
 	max-height: none;
