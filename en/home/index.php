@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 
 <html>
+<?php $path = $_SERVER['PHP_SELF']; $file = basename (dirname( $path)); ?>
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="alternate" hreflang="en" href="/en/home" />
-	<link rel="alternate" hreflang="fr" href="/fr/home" />
-	<link rel="canonical" href="https://www.cerflock.fr/fr/home" />
+	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
+	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
+	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Cerf'Lock Holmes</title>
 
-	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
+	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="/data/favicons/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
 
 	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
 	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/carousel.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/carousel.css') . '" />'; ?>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" />
+	<?php echo '<link rel="stylesheet" type="text/css" href="/css/cartes.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/cartes.css') . '" />'; ?>
 
-	<?php echo '<script type="text/javascript" src="/js/flickity.pkgd.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/flickity.pkdj.js') .'"></script>' ?>
 	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
-	<script type="text/javascript">
-		checkLanguage("en", "/fr/home");
-	</script>
+	
 </head>
 
 <body>
@@ -38,89 +35,146 @@
 		<nav>
 
 			<a href="tel:+33123456789" class="quick-access" title="Call us!">
-				<div class="icon"><img src="/data/tel.svg" class="svg" alt="Call us!"></div>
+				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Call us!"></div>
 			</a>
-			<a href="/fr/home" onclick="changeLanguage()" class="quick-access" title="En Français dans le texte...!">
-				<div class="icon"><img src="/data/fr.svg" alt="Version française"></div>
+			<a href="/fr/<?php echo $file; ?>" class="quick-access" title="En Français dans le texte...!">
+				<div class="icon"><img src="/data/icons/fr.svg" alt="Version française"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Join the dark side...">
-				<div class="icon"><img src="/data/dark.svg" class="svg" alt="Enable/Disable dark mode"></div>
+				<div class="icon"><img src="/data/icons/dark.svg" class="svg" alt="Enable/Disable dark mode"></div>
 			</a>
 
 			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
-				<div class="icon"><img src="/data/menu.svg" class="svg" alt="Menu"></div>
+				<div class="icon"><img src="/data/icons/menu.svg" class="svg" alt="Menu"></div>
 			</a>
 			<a href="/en/home" class="active" id="titre">
 				<div class="icon"><img src="/data/logo_rond.png" alt=""></div>
 				<span>Cerf'Lock Holmes</span>
 			</a>
 			<a href="/en/program">
-				<div class="icon"><img src="/data/programme.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/programme.svg" class="svg page" alt=""></div>
 				<span>Program</span>
 			</a>
 			<a href="/en/members">
-				<div class="icon"><img src="/data/membres.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/membres.svg" class="svg page" alt=""></div>
 				<span>Members</span>
 			</a>
 			<a href="/en/campaigns">
-				<div class="icon"><img src="/data/campaigns.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/campaigns.svg" class="svg page" alt=""></div>
 				<span>Campaigns</span>
 			</a>
 			<a href="/en/allos">
-				<div class="icon"><img src="/data/allos.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/allos.svg" class="svg page" alt=""></div>
 				<span>Allos</span>
 			</a>
 
 		</nav>
 	</header>
 
-	<button id="boutonEnigme" onclick="showEnigme()" type="button" title="Open an enigm">
-		<svg viewBox="0 0 24 24" alt="Enigm">
-		<g transform="translate(1,1)">
-		<path 
-		   d="M 10.96875 3 C 9.21782 3 7.56187 3.4216019 6 4.2636719 L 6.7773438 6.0507812 C 7.5582637 5.6672613 8.2600456 5.3933025 8.8847656 5.2265625 C 9.5177356 5.0598325 10.162692 4.9765625 10.820312 4.9765625 C 11.806753 4.9765625 12.563734 5.1968119 13.089844 5.6386719 C 13.615944 6.0805419 13.878906 6.7136725 13.878906 7.5390625 C 13.878906 7.9809325 13.822111 8.369625 13.707031 8.703125 C 13.591951 9.036605 13.394724 9.369635 13.115234 9.703125 C 12.835754 10.036615 12.247563 10.586476 11.351562 11.353516 C 10.251483 12.356846 9.10046 14.139 9 16 L 11 16 L 10.994141 15.96875 C 10.994141 15.21007 11.125612 14.601138 11.388672 14.142578 C 11.659952 13.675688 12.201805 13.087576 13.015625 12.378906 C 14.010295 11.536836 14.673153 10.903726 15.001953 10.478516 C 15.338993 10.053316 15.589506 9.6041363 15.753906 9.1289062 C 15.918406 8.6536762 16 8.1071944 16 7.4902344 C 16 6.0728944 15.55227 4.97119 14.65625 4.1875 C 13.76024 3.39546 12.53061 3 10.96875 3 z M 9 17 L 9 19 L 11 19 L 11 17 L 9 17 z "
-		   />  
-	   </g></svg>
-	</button>
+	<img src="/data/photos/groupe-fun.jpg"  style="width:100%;max-height:100vh;object-fit:cover;object-position: center bottom;">
 
-	<section id="carousel" class="gallery js-flickity" data-flickity-options='{"autoPlay": 5000}'>
-		<!--, "wrapAround": true-->
-		<div class="gallery-cell" style="background-image: url('https://images2.alphacoders.com/509/thumb-1920-509099.jpg');">
-			<div class="content">
-				<h1>Discover Cerf'Lock Holmes!</h1>
+	<main style="padding-top:1rem;">
+		<div style="display:flex;flex-wrap: wrap;">
+			<div style="flex-basis: 200px;flex-grow: 1;margin-right: 2rem;">
+				<h1>Welcome!</h1>
+				<p>Welcome on the offical website of Cerf'Lock Holmes!</p>
+				<p>We candidate for the 2021 BDE of Centrale Nantes, and we are just the best list of all the universe 😉</p>
+				<p>So, are you ready to investigate with us?</p>
+			</div>
+			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;">
+				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;" class="youtube" 
+				src="https://www.youtube-nocookie.com/embed/ObIiAPKLvhU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
 			</div>
 		</div>
-		<div class="gallery-cell" style="background-image: url('https://images7.alphacoders.com/782/782847.jpg');">
-			<div class="content">
-				<h1>A list where we all enjoy life...</h1>
-			</div>
-		</div>
-		<div class="gallery-cell" style="background-image: url('/data/adrien.jpg');">
-			<div class="content">
-				<h1>The Increadible Listers!</h1>
-				<b>Discover the members of the list of Cerf'Lock!</b>
-				<a href="/en/members" class="hidden"> <button>See members</button></a>
-			</div>
-		</div>
-	</section>
-
-	<main>
-		<h1>Welcome!</h1>
-		<p>Welcome on the offical website of Cerf'Lock Holmes! We candidate for the 2021 BDE of Centrale Nantes, and we are just the best list of all the universe!</p>
-		<p>So, are you ready to investigate with us?</p>
-		<ul>
-			<li>Join us to our<a href="/en/campaigns">events</a>!</li>
-			<li>Boring? <a href="/en/allos">Call us!</a></li>
-			<li>You want to know what we have prepared if we are elected? You can read our <a href="/fr/program">program</a>!</li>
-			<li>Anf finally if you want to see our faces, it's <a href="/fr/members">here</a>!</li>
-		</ul>
-		<br>
 		<br><br>
+		<h2>Discover our mysterious events...</h2>
+		<p>Want to have fun and get away from this gloomy atmosphere? Don't worry, Cerf'Lock has concocted some surprises for you!</p>
+		<br>
+		<style>
+			.jeu {
+				grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+			}
+			.carte h2 {
+				position: relative;
+				top: -4rem;
+				color: var(--text-color-light);
+				text-shadow: 2px 2px 8px var(--text-color-dark);
+				height: 0;
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<div class="jeu">
+			<a href="/en/campaigns#grande-enigme" class="carte">
+				<img src="/data/photos/enigme.jpg" alt="Inspector Lestrade investigate">
+				<h2>The Great Enigm</h2>
+			</a>
+			<a href="/en/campaigns#soiree" class="carte">
+				<img src="/data/photos/soiree.jpg" alt="The greeat parties of Cerf'Lock!">
+				<h2>The BDE Party</h2>
+			</a>
+			<a href="/en/allos" class="carte">
+				<img src="/data/photos/zoom.jpg" alt="A beautiful JB captured during a zoom session ;)">
+				<h2>The "Allôs"</h2>
+			</a>
+		</div>
+		<br>
+		<h1>Do you want more?</h1>
+		<p>Because we are never out of ideas, you can still discover all these bonuses prepared just for you!</p>
+		<br>
+		<div class="jeu">
+			<a href="/en/campaigns/film" class="carte">
+				<div class="image">
+					<img src="/data/photos/film.jpg" alt="Joshua and a camera">
+				</div>
+				<div class="texte">
+					<h3>The movie</h3>
+					<p>Want to know everything behind the scenes of our awesome movie? Click here!</p>
+				</div>
+			</a>
+			<a href="/en/program" class="carte">
+				<div class="image">
+					<img src="/data/photos/adrien-loin.jpg" alt="Adrien looking far far away...">
+				</div>
+				<div class="texte">
+					<h3>The Program</h3>
+					<p>Our actions are not limited to the campaigns! Cerf'Lock is always one step ahead ...</p>
+				</div>
+			</a>
+			<a href="/en/members" class="carte">
+				<div class="image">
+					<img src="/data/photos/groupe.jpg" alt="Group photo">
+				</div>
+				<div class="texte">
+					<h3>Members</h3>
+					<p>Who are we? Discover the members of the list!</p>
+				</div>
+			</a>
+			<a href="https://www.youtube.com/channel/UCXkxERW_Eq3eXeSNH2yEp9A" target="_blank" class="carte">
+				<div class="image">
+					<img src="/data/photos/youtube.jpg" alt="Camera Picture">
+				</div>
+				<div class="texte">
+					<h3>Youtube</h3>
+					<p>Discover or rediscover all of our campaign and pre-campaign videos!</p>
+				</div>
+			</a>
+			<a href="https://www.facebook.com/sotb2020" target="_blank" class="carte">
+				<div class="image">
+					<img src="/data/photos/facebook.jpg" alt="facebook Picture">
+				</div>
+				<div class="texte">
+					<h3>Facebook</h3>
+					<p>Follow all our latest news on the social networks!</p>
+				</div>
+			</a>
+		</div>
 	</main>
-
 	<footer>
 		<div id="piedDePage">
-			<img id="footerlogo" src="/data/logo.png" alt="Cerf'Lock Holmes" />
+			<img id="footerlogo" src="/data/logo.png" alt="Logo de Cerf'Lock Holmes" loading="lazy"/>
 			<div id="footertext">
 				<div id="footer1">
 					<h2 class="titlefont">Cerf'Lock Holmes</h2>

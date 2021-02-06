@@ -2218,7 +2218,7 @@
 
 	Flickity.prototype.setGallerySize = function() {
 		if (this.options.setGallerySize) {
-			this.viewport.style.height = this.maxCellHeight + 'px';
+			//this.viewport.style.height = this.maxCellHeight + 'px';
 		}
 	};
 

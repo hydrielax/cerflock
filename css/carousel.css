@@ -13,6 +13,7 @@
 	background-position: center;
 	display: grid;
 	align-items: end;
+	background-attachment: fixed;
 }
 
 .dark #carousel .gallery-cell {
@@ -73,6 +74,15 @@
 main {
 	/*on enlève l'écart au-dessus du main*/
 	padding-top: 0;
+}
+
+#carousel a {
+	color: var(--text-color-light);
+}
+
+#carousel a:hover {
+	text-decoration: none;
+	background-color: var(--first-color);
 }
 
 @media screen and (max-aspect-ratio: 9/10) {

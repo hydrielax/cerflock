@@ -62,6 +62,7 @@ html.dark {
 
 .dark img {
 	filter: grayscale(0.2);
+	-webkit-filter: grayscale(0.2);
 }
 
 
@@ -78,20 +79,29 @@ html {
 
 body {
 	/*Aspect général de la page*/
+	background: url('/data/bg-light.png');
 	background-color: var(--bg-color);
+	background-repeat: repeat;
+	background-attachment: fixed;
 	color: var(--text-color);
-	font-family: 'Merriweather', sans-serif;
+	font-family: 'Merriweather', serif;
 	/*Aspect technique*/
 	margin: 0px;
 	min-height: 100vh;
 	padding: 0;
 }
 
+.dark body {
+	background: url('/data/bg-dark.png');
+	background-color: var(--bg-color);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
 main {
 	/*contenu de la page (hors en-tête, pied de page, etc...)*/
-	padding: 50px;
+	padding: 4rem 50px;
 	margin: 0 auto;
-	padding-top: 4rem;
 	max-width: 1200px;
 }
 
@@ -142,34 +152,28 @@ ul {
 	list-style-type: square;
 }
 
-a {
-	/*liens hypertextes*/
-	/*text-decoration: none;*/
-	color: var(--first-color-to-text);
-	/*
-	padding-left: 0.2em;
-	padding-right: 0.2em;
-	*/
-	text-decoration: none;
+li {
+	margin-bottom: 0.3em;
 }
 
-a:hover {
-	/*liens hypertextes quand on passe la souris dessus*/
-	/*background-color: var(--first-color);
-	color: var(--text-color-light);*/
-	text-decoration: underline;
+a {
+	color: var(--first-color-to-text);
+}
+
+@media (hover: hover) {
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		/*liens hypertextes quand on passe la souris dessus*/
+		text-decoration: underline;
+	}
 }
 
 a.hidden {
 	padding: 0;
 	text-decoration: none;
 	color: unset;
-	cursor: unset
-}
-
-a.hidden:hover {
-	background-color: transparent;
-	overflow: hidden;
 }
 
 i {
@@ -189,25 +193,40 @@ button {
 	align-items: center;
 	display: inline-flex;
 	height: 2rem;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Merriweather', serif;
 	transition: transform 0.5s;
 	backface-visibility: hidden;
+	-webkit-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
 }
 
-button:hover {
-	background-color: var(--text-color-light);
-	color: var(--first-color);
-	fill: var(--first-color);
-	border: 2px solid var(--first-color);
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
-	transform: scale(1.1);
-	font-weight: bold;
+@media (hover: hover) {
+	button:hover {
+		background-color: var(--text-color-light);
+		color: var(--first-color);
+		fill: var(--first-color);
+		border: 2px solid var(--first-color);
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+		transform: scale(1.1);
+		font-weight: bold;
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);
+	}
 }
 
 ::selection {
 	/*couleur du texte quand on le sélectionne à la souris*/
 	background-color: var(--first-color);
 	color: var(--text-color-light);
+}
+
+h2:target {
+	padding-top: 4rem;
+	margin-top: calc(0.2em - 4rem);
 }
 
 .titlefont {
@@ -219,11 +238,35 @@ button:hover {
 	border-width: 1px;
 	border-radius: 10px;
 	border-color: var(--text-color-dark);
-	text-align: center;
-	align-items: center;
 	background: var(--box-color);
 	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
+	padding: 1rem;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+@media (hover:hover) {
+	.box:hover {
+		background-color: var(--box-color-lighter);
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+	}
+}
+
+details summary {
+	display: flex;
+	list-style: none;
+}
+
+details summary::-webkit-details-marker {
+	display: none;
+}
+
+details summary:focus {
+	outline: none;
 }
 
 
@@ -235,6 +278,7 @@ footer {
 	/*le bandeau de bas de page*/
 	background-color: var(--third-color);
 	padding: 1rem 50px;
+	/*margin-top: 5rem;*/
 	/*padding-right: calc(4.5rem + 20px);*/
 }
 
@@ -312,6 +356,7 @@ footer #footer2 button img {
 
 footer #footer2 button:hover {
 	filter: brightness(130%);
+	-webkit-filter: brightness(130%);
 }
 
 
@@ -320,13 +365,15 @@ footer #footer2 button:hover {
   -----------------*/
 
 #boutonEnigme {
-	/*paramètres du bouton rond d'énigmes*/
+	/*paramètresduboutonrondd'énigmes*/
 	/*apparence*/
-	/*background-color: var(--first-color);*/
+	/*background-color: var(--first-color);
+	*/
 	width: 4.5rem;
 	height: 4.5rem;
 	border-radius: 200px;
-	/*box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);*/
+	/*box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+	*/
 	/*position*/
 	padding: 0;
 	bottom: 20px;
@@ -338,14 +385,23 @@ footer #footer2 button:hover {
 	align-items: center;
 	/*animations*/
 	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
 }
 
 #boutonEnigme:hover {
-	/*quand on passe la souris sur le bouton d'énigmes*/
+	/*quandonpasselasourissurleboutond'énigmes*/
 	/*box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
-	background-color: var(--first-color-lighter);*/
+	background-color: var(--first-color-lighter);
+	*/
 	transform: rotate(360deg) scale(1.1);
 	border-width: 3px;
+	-webkit-transform: rotate(360deg) scale(1.1);
+	-moz-transform: rotate(360deg) scale(1.1);
+	-ms-transform: rotate(360deg) scale(1.1);
+	-o-transform: rotate(360deg) scale(1.1);
 }
 
 #boutonEnigme:focus {

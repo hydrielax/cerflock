@@ -1,4 +1,4 @@
-https://www.cerflock.fr/fr/home
-https://www.cerflock.fr/fr/program
-https://www.cerflock.fr/fr/campaigns
-https://www.cerflock.fr/fr/allos
+https://www.cerflock.fr/fr/home/index.php
+https://www.cerflock.fr/fr/program/index.php
+https://www.cerflock.fr/fr/campaigns/index.php
+https://www.cerflock.fr/fr/allos/index.php

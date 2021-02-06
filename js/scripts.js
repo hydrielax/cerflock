@@ -105,24 +105,6 @@ function setCookie(sName, sValue) {
 }
 
 
-//changer la langue du site
-function changeLanguage() {
-	var langue = getCookie("langue");
-	if (langue === "en") setCookie("langue", "fr")
-	else setCookie("langue", "en");
-}
-
-function checkLanguage(lg, page) {
-	var langue = getCookie("langue");
-	if (langue === null) {
-		setCookie("langue", lg);
-	} else {
-		if (langue === "fr" && lg === "en") window.location.href = "/fr/" + page;
-		if (langue === "en" && lg === "fr") window.location.href = "/en/" + page;
-	}
-}
-
-
 if ('serviceWorker' in navigator) {
 	// enregistrer le service worker 
 	navigator.serviceWorker.register('/service-worker.js');

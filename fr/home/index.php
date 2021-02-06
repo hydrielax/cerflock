@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 
 <html>
+<?php $path = $_SERVER['PHP_SELF']; $file = basename (dirname( $path)); ?>
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="alternate" hreflang="en" href="/en/home" />
-	<link rel="alternate" hreflang="fr" href="/fr/home" />
-	<link rel="canonical" href="https://www.cerflock.fr/fr/home" />
+	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
+	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
+	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Cerf'Lock Holmes</title>
 
-	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
+	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="/data/favicons/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
 
-	<!--link rel="stylesheet" href="/css/style.css" /-->
 	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
 	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/carousel.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/carousel.css') . '" />'; ?>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" />
+	<?php echo '<link rel="stylesheet" type="text/css" href="/css/cartes.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/cartes.css') . '" />'; ?>
 
-	<?php echo '<script type="text/javascript" src="/js/flickity.pkgd.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/flickity.pkdj.js') .'"></script>' ?>
 	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
-	<script type="text/javascript">
-		checkLanguage("fr", "home");
-	</script>
 </head>
 
 <body>
@@ -39,89 +34,147 @@
 		<nav>
 
 			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
-				<div class="icon"><img src="/data/tel.svg" class="svg" alt="Appelez-nous !"></div>
+				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
-			<a href="/en/home" onclick="changeLanguage()" class="quick-access" title="In English, please!">
-				<div class="icon"><img src="/data/en.png" alt="English version"></div>
+			<a href="/en/<?php echo $file; ?>" class="quick-access" title="In English, please!">
+				<div class="icon"><img src="/data/icons/en.png" alt="English version"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
-				<div class="icon"><img src="/data/dark.svg" class="svg" class="svg" alt="Activer/Désactiver le mode nuit"></div>
+				<div class="icon"><img src="/data/icons/dark.svg" class="svg" class="svg" alt="Activer/Désactiver le mode nuit"></div>
 			</a>
 
 			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
-				<div class="icon"><img src="/data/menu.svg" class="svg" class="svg" alt="Menu"></div>
+				<div class="icon"><img src="/data/icons/menu.svg" class="svg" class="svg" alt="Menu"></div>
 			</a>
 			<a href="/fr/home" class="active" id="titre">
 				<div class="icon"><img src="/data/logo_rond.png" alt=""></div>
 				<span>Cerf'Lock Holmes</span>
 			</a>
 			<a href="/fr/program">
-				<div class="icon"><img src="/data/programme.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/programme.svg" class="svg page" alt=""></div>
 				<span>Programme</span>
 			</a>
 			<a href="/fr/members">
-				<div class="icon"><img src="/data/membres.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/membres.svg" class="svg page" alt=""></div>
 				<span>Membres</span>
 			</a>
 			<a href="/fr/campaigns">
-				<div class="icon"><img src="/data/campaigns.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/campaigns.svg" class="svg page" alt=""></div>
 				<span>Campagnes</span>
 			</a>
 			<a href="/fr/allos">
-				<div class="icon"><img src="/data/allos.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/allos.svg" class="svg page" alt=""></div>
 				<span>Allos</span>
 			</a>
 		</nav>
 	</header>
 
-	<button id="boutonEnigme" onclick="showEnigme()" type="button" title="Ouvrir une énigme">
-		<svg viewBox="0 0 24 24" alt="Énigme">
-		<g transform="translate(1,1)">
-		<path 
-		   d="M 10.96875 3 C 9.21782 3 7.56187 3.4216019 6 4.2636719 L 6.7773438 6.0507812 C 7.5582637 5.6672613 8.2600456 5.3933025 8.8847656 5.2265625 C 9.5177356 5.0598325 10.162692 4.9765625 10.820312 4.9765625 C 11.806753 4.9765625 12.563734 5.1968119 13.089844 5.6386719 C 13.615944 6.0805419 13.878906 6.7136725 13.878906 7.5390625 C 13.878906 7.9809325 13.822111 8.369625 13.707031 8.703125 C 13.591951 9.036605 13.394724 9.369635 13.115234 9.703125 C 12.835754 10.036615 12.247563 10.586476 11.351562 11.353516 C 10.251483 12.356846 9.10046 14.139 9 16 L 11 16 L 10.994141 15.96875 C 10.994141 15.21007 11.125612 14.601138 11.388672 14.142578 C 11.659952 13.675688 12.201805 13.087576 13.015625 12.378906 C 14.010295 11.536836 14.673153 10.903726 15.001953 10.478516 C 15.338993 10.053316 15.589506 9.6041363 15.753906 9.1289062 C 15.918406 8.6536762 16 8.1071944 16 7.4902344 C 16 6.0728944 15.55227 4.97119 14.65625 4.1875 C 13.76024 3.39546 12.53061 3 10.96875 3 z M 9 17 L 9 19 L 11 19 L 11 17 L 9 17 z "
-		   />  
-	   </g></svg>
-	</button>
+	<img src="/data/photos/groupe-fun.jpg"  style="width:100%;max-height:100vh;object-fit:cover;object-position: center bottom;">
 
-	<section id="carousel" class="gallery js-flickity" data-flickity-options='{"autoPlay": 5000, "resize": true}'>
-		<!--, "wrapAround": true-->
-		<div class="gallery-cell" style="background-image: url('https://images2.alphacoders.com/509/thumb-1920-509099.jpg');">
-			<div class="content">
-				<h1>Découvrez les Cerf'Lock Holmes !</h1>
+	<main style="padding-top:1rem;">
+		<div style="display:flex;flex-wrap: wrap;">
+			<div style="flex-basis: 200px;flex-grow: 1;margin-right: 2rem;">
+				<h1>Bienvenue&nbsp;!</h1>
+				<p>Bienvenue sur le site officiel des Cerf'Lock Holmes !</p>
+				<p>Candidats au BDE de Centrale Nantes pour l'année 2021, nous sommes juste la meilleure liste de tout l'univers 😉</p>
+				<p>Alors, êtes-vous prêts à mener l'enquête avec nous ?</p>
+			</div>
+			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;">
+				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;" class="youtube" 
+				src="https://www.youtube-nocookie.com/embed/ObIiAPKLvhU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
 			</div>
 		</div>
-		<div class="gallery-cell" style="background-image: url('https://images7.alphacoders.com/782/782847.jpg');">
-			<div class="content">
-				<h1>Une liste où il fait bon vivre...</h1>
-			</div>
-		</div>
-		<div class="gallery-cell" style="background-image: url('/data/adrien.jpg');">
-			<div class="content">
-				<h1>Des Listeux incroyables !</h1>
-				<b>Découvrez les membres de la liste de Cerf'Lock !</b>
-				<a href="/fr/members" class="hidden"> <button>Voir les membres</button></a>
-			</div>
-		</div>
-	</section>
-
-	<main>
-		<h1>Bienvenue !</h1>
-		<p>Bienvenue sur le site officiel des Cerf'Lock Holmes ! Candidats au BDE de Centrale Nantes pour l'année 2021, nous sommes juste la meilleure liste de tout l'univers.</p>
-		<p>Alors, prêt à mener l'enquête avec nous ?</p>
-		<ul>
-			<li>Rejoins-nous à nos <a href="/fr/campaigns">events</a> !</li>
-			<li>Tu t'ennuies ? <a href="/fr/allos">Appelle-nous !</a></li>
-			<li>Tu veux savoir ce qu'on te réserve si on est élu ? On t'a préparé tout un <a href="/fr/program">programme</a> !</li>
-
-			<li>Et enfin si tu veux voir nos jolis minois, c'est <a href="/fr/members">ici</a> !</li>
-		</ul>
-		<br>
 		<br><br>
+		<h2>Découvre nos mystérieux events...</h2>
+		<p>Envie de t'amuser et sortir un peu de cette atmosphère morose ? 
+			Ne t'inquiète pas, Cerf'Lock t'as concocté quelques surprises !</p>
+		<br>
+		<style>
+			.jeu {
+				grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+			}
+			.carte h2 {
+				position: relative;
+				top: -4rem;
+				color: var(--text-color-light);
+				text-shadow: 2px 2px 8px var(--text-color-dark);
+				height: 0;
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<div class="jeu">
+			<a href="/fr/campaigns#grande-enigme" class="carte">
+				<img src="/data/photos/enigme.jpg" alt="L'inspecteur Lestrade ebquête">
+				<h2>La Grande Énigme</h2>
+			</a>
+			<a href="/fr/campaigns#soiree" class="carte">
+				<img src="/data/photos/soiree.jpg" alt="Les grandes soirées de Cerf'Lock !">
+				<h2>La Soirée BDE</h2>
+			</a>
+			<a href="/fr/allos" class="carte">
+				<img src="/data/photos/zoom.jpg" alt="Un magnifique JB capturé en plein Zoom ;)">
+				<h2>Les Allos</h2>
+			</a>
+		</div>
+		<br>
+		<h1>Tu en veux encore ?</h1>
+		<p>Parce qu'on est jamais à cours d'idées, tu peux encore découvrir tous ces bonus préparés rien que pour toi !</p>
+		<br>
+		<div class="jeu">
+			<a href="/fr/campaigns/film" class="carte">
+				<div class="image">
+					<img src="/data/photos/film.jpg" alt="Image de Joshua tenant une caméra">
+				</div>
+				<div class="texte">
+					<h3>Le film</h3>
+					<p>Tu veux tout savoir sur les coulisses de notre super film ? Clique ici !</p>
+				</div>
+			</a>
+			<a href="/fr/program" class="carte">
+				<div class="image">
+					<img src="/data/photos/adrien-loin.jpg" alt="Image d'Adrien regardant au loin">
+				</div>
+				<div class="texte">
+					<h3>Le Programme</h3>
+					<p>Nos actions ne se limitent pas qu'aux campagnes ! Cerf'Lock garde toujours un coup d'avance...</p>
+				</div>
+			</a>
+			<a href="/fr/members" class="carte">
+				<div class="image">
+					<img src="/data/photos/groupe.jpg" alt="Photo de groupe des membres">
+				</div>
+				<div class="texte">
+					<h3>Les Membres</h3>
+					<p>Tu veux savoir qui nous sommes ? Découvre-nous !</p>
+				</div>
+			</a>
+			<a href="https://www.youtube.com/channel/UCXkxERW_Eq3eXeSNH2yEp9A" target="_blank" class="carte">
+				<div class="image">
+					<img src="/data/photos/youtube.jpg" alt="Image de caméra">
+				</div>
+				<div class="texte">
+					<h3>Youtube</h3>
+					<p>Découvre ou redécouvre toutes nos vidéos des campagnes et des précampagnes !</p>
+				</div>
+			</a>
+			<a href="https://www.facebook.com/sotb2020" target="_blank" class="carte">
+				<div class="image">
+					<img src="/data/photos/facebook.jpg" alt="Image Facebook">
+				</div>
+				<div class="texte">
+					<h3>Facebook</h3>
+					<p>Suis toutes nos dernières actus sur les réseaux !</p>
+				</div>
+			</a>
+		</div>
 	</main>
 
 	<footer>
 		<div id="piedDePage">
-			<img id="footerlogo" src="/data/logo.png" alt="Cerf'Lock Holmes" />
+			<img id="footerlogo" src="/data/logo.png" alt="Logo de Cerf'Lock Holmes" loading="lazy"/>
 			<div id="footertext">
 				<div id="footer1">
 					<h2 class="titlefont">Cerf'Lock Holmes</h2>
@@ -162,13 +215,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<div id="popup">
-		<div class="box">
-			<h1>La Grande Énigme</h1>
-			<p>Participez à la grande énigme !!!</p>
-		</div>
-	</div>
 
 	<script>
 		convert();

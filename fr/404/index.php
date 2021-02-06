@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 
 <html>
+<?php $path = $_SERVER['PHP_SELF']; $file = basename (dirname( $path)); ?>
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="alternate" hreflang="en" href="/en/404" />
-	<link rel="alternate" hreflang="fr" href="/fr/404" />
-	<link rel="canonical" href="https://www.cerflock.fr/fr/404" />
+	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
+	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
+	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Erreur 404 - Cerf'Lock Holmes</title>
 
-	<link rel="shortcut icon" href="/data/favicon_16.ico" type="image/x-icon" />
-	<link rel="icon" href="/data/favicon_32.png" sizes="32x32" />
-	<link rel="icon" href="/data/favicon_48.png" sizes="48x48" />
-	<link rel="icon" href="/data/favicon_96.png" sizes="96x96" />
-	<link rel="icon" href="/data/favicon_144.png" sizes="144x144" />
+	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
+	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
+	<link rel="icon" href="/data/favicons/favicon_48.png" sizes="48x48" />
+	<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
+	<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
 
 	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
 	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
 
 	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
-	<script type="text/javascript">
-		checkLanguage("fr", "404");
-	</script>
+	
 </head>
 
 <body>
@@ -35,43 +34,41 @@
 		<nav>
 
 			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
-				<div class="icon"><img src="/data/tel.svg" class="svg" alt="Appelez-nous !"></div>
+				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
-			<a href="/en/404" onclick="changeLanguage()" class="quick-access" title="In English, please!">
-				<div class="icon"><img src="/data/en.png" alt="English version"></div>
+			<a href="/en/<?php echo $file; ?>" class="quick-access" title="In English, please!">
+				<div class="icon"><img src="/data/icons/en.png" alt="English version"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
-				<div class="icon"><img src="/data/dark.svg" class="svg" alt="Activer/Désactiver le mode nuit"></div>
+				<div class="icon"><img src="/data/icons/dark.svg" class="svg" alt="Activer/Désactiver le mode nuit"></div>
 			</a>
 
 			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
-				<div class="icon"><img src="/data/menu.svg" class="svg" alt="Menu"></div>
+				<div class="icon"><img src="/data/icons/menu.svg" class="svg" alt="Menu"></div>
 			</a>
 			<a href="/fr/home" id="titre">
 				<div class="icon"><img src="/data/logo_rond.png" alt=""></div>
 				<span>Cerf'Lock Holmes</span>
 			</a>
 			<a href="/fr/program">
-				<div class="icon"><img src="/data/programme.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/programme.svg" class="svg page" alt=""></div>
 				<span>Programme</span>
 			</a>
 			<a href="/fr/members">
-				<div class="icon"><img src="/data/membres.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/membres.svg" class="svg page" alt=""></div>
 				<span>Membres</span>
 			</a>
 			<a href="/fr/campaigns">
-				<div class="icon"><img src="/data/campaigns.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/campaigns.svg" class="svg page" alt=""></div>
 				<span>Campagnes</span>
 			</a>
 			<a href="/fr/allos">
-				<div class="icon"><img src="/data/allos.svg" class="svg page" alt=""></div>
+				<div class="icon"><img src="/data/icons/allos.svg" class="svg page" alt=""></div>
 				<span>Allos</span>
 			</a>
 		</nav>
 	</header>
-
-	<button id="boutonEnigme" onclick="showEnigme()" type="button"><img src="/data/question.svg" alt="Ouvrir une énigme"></button>
-
+	
 	<main style="text-align:center;">
 		<h1>Erreur 404</h1>
 		<h3>Désolé, MoriArty a dérobé cette page...</h3>
@@ -81,7 +78,7 @@
 
 	<footer>
 		<div id="piedDePage">
-			<img id="footerlogo" src="/data/logo.png" alt="Cerf'Lock Holmes" />
+			<img id="footerlogo" src="/data/logo.png" alt="Logo de Cerf'Lock Holmes" loading="lazy"/>
 			<div id="footertext">
 				<div id="footer1">
 					<h2 class="titlefont">Cerf'Lock Holmes</h2>
