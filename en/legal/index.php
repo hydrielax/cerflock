@@ -6,6 +6,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
+	<meta name="robots" content="noindex">
 	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
 	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
@@ -33,7 +34,7 @@
 	<header>
 		<nav>
 
-			<a href="tel:+33123456789" class="quick-access" title="Call us!">
+			<a href="tel:+33783653406" class="quick-access" title="Call us!">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Call us!"></div>
 			</a>
 			<a href="/fr/<?php echo $file; ?>" class="quick-access" title="En Français dans le texte...!">
@@ -70,20 +71,33 @@
 		</nav>
 	</header>
 
-
 	<main>
-		<h1>Mentions Légales</h1>
-		<h2>Propriété intellectuelle</h2>
-		<p>Tout le contenu de ce site est la propriété de l'association <i>Château Porc</i>, qui est derrière la liste <i>Cerf'Lock Holmes</i>, candidate au BDE de Centrale Nantes. Pour toute réutilisation de son contenu, n'hésitez pas à nous faire une demande
-			par mail : <a href="mailto:contact@cerflock.fr">contact@cerflock.fr</a>.</p>
-		<h2>Cookies</h2>
-		<p>Ce site utilise exactement trois cookies :</p>
+		<h1>Legal Mentions</h1>
+		<p>Here is some information we have to post: happy reading!</p>
+		<h2>Contact</h2>
+		<p>For any question or request for information, you can contact us by the following means:</p>
 		<ul>
-			<li>le premier pour enregistrer votre choix de langue</li>
-			<li>et les deux autres pour enregistrer votre choix du mode jour/nuit.</li>
+			<li>by mail: <a href="mailto:contact@cerflock.fr">contact@cerflock.fr</a></li>
+			<li>by phone: <a href="tel:+33783653406">+33 7 83 65 34 06</a></li>
 		</ul>
-		<p>Conformément à la loi européenne, votre consentement n'est pas requis pour ce type de cookies. Si vous vouliez néanmoins les éviter, toutes mes excuses mais je n'avais vraiment pas le temps de coder un formulaire d'acceptation 😅 J'espère néanmoins
-			que vous n'y verrez pas trop d'inconvénients !</p>
+		<h2>Cookies</h2>
+		<p>This site uses exactly two cookies, to record your choice of day/night mode. In accordance with European law, your consent is not required for this type of cookies. Their sole purpose is to keep your display preferences when you change page on the site. In order to preserve your privacy, we do not use any audience measurement cookies.</p>
+		<h2>Site editor</h2>
+		<p>This site was created by Alexis Delage for the Château Porc association, domiciled with Mr. Cassel, apartment 1003, 2 rue Nathalie Sarraute, 44200 Nantes. The publication director is Adrien Gaillard, president of the association.</p>
+		<h2>Site host</h2>
+		<p>This site is hosted by 1 & 1 IONOS SARL, 7 place de la Gare, BP 70109, 57200 Sarreguemines C.</p>
+		<h2>Intellectual property</h2>
+		<p>All texts and images on this site are the exclusive property of the Château Porc association, except for the following exceptions:
+		</p>
+		<ul>
+			<li>some images of the pages <a href="/en/allos">Allos</a> and <a href="/en/home">Home</a> are royalty-free images that can be reused, taken from the sites <a href="https://pixabay.com" target="_blank">Pixabay</a> and <a href="https://www.pexels.com">Pexels</a> (for more details, please contact us);</li>
+			<li>the images of the navigation menu (visible only on mobile) come from the Flaticon site.</li>
+		</ul>
+		<h2>Did you know ?</h2>
+		<p>Before we choosed the name <i>Cerf'Lock Holmes,</i> our list was called <i>Sex 
+			on the Biche</i> (you can also find <a href="https://en.sexonthebiche.fr" target="_blank">
+			the <i>Sex on the Biche</i> website here</a>). But before all of that, our first name was <i>Château Porc,</i> 
+			which has been choosed as the offical name of the association.</p>
 	</main>
 
 	<footer>

@@ -6,6 +6,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
+	<meta name="robots" content="noindex">
 	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
 	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
@@ -33,7 +34,7 @@
 	<header>
 		<nav>
 
-			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
+			<a href="tel:+33783653406" class="quick-access" title="Appelez-nous !">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
 			<a href="/en/<?php echo $file; ?>" class="quick-access" title="In English, please!">
@@ -76,8 +77,8 @@
 		<div class="jeu">
 			<?php 
 				$handle = fopen("https://www.cerflock.fr/data/membres.csv", "r");
-				$lost = fgetcsv($handle, 1000, ',', '"');
-				while (($membre = fgetcsv($handle, 1000, ',', '"')) !== FALSE) {
+				$lost = fgetcsv($handle, 3000, ',', '"');
+				while (($membre = fgetcsv($handle, 3000, ',', '"')) !== FALSE) {
 					if ($membre[0] == "Adrien") {
 						echo '<a href="/fr/membres/adrien/"';
 					} else {

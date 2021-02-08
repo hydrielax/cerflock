@@ -34,7 +34,7 @@
 	<header>
 		<nav>
 
-			<a href="tel:+33123456789" class="quick-access" title="Call us!">
+			<a href="tel:+33783653406" class="quick-access" title="Call us!">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Call us!"></div>
 			</a>
 			<a href="/fr/<?php echo $file; ?>" class="quick-access" title="En Français dans le texte...!">
@@ -83,7 +83,7 @@
 			</div>
 			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;">
 				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
-				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;" class="youtube" 
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;" class="carte" 
 				src="https://www.youtube-nocookie.com/embed/ObIiAPKLvhU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
 				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
 			</div>
@@ -125,13 +125,13 @@
 		<p>Because we are never out of ideas, you can still discover all these bonuses prepared just for you!</p>
 		<br>
 		<div class="jeu">
-			<a href="/en/campaigns/film" class="carte">
+			<a href="/en/campaigns#movie" class="carte">
 				<div class="image">
 					<img src="/data/photos/film.jpg" alt="Joshua and a camera">
 				</div>
 				<div class="texte">
 					<h3>The movie</h3>
-					<p>Want to know everything behind the scenes of our awesome movie? Click here!</p>
+					<p>Want to see again and again our trailer and our fantastic movie? Click here!</p>
 				</div>
 			</a>
 			<a href="/en/program" class="carte">

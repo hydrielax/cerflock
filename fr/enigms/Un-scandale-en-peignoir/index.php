@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 
 <html>
-<?php $path = $_SERVER['PHP_SELF']; $file = basename (dirname( $path)); ?>
+<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" + basename (dirname( $path)); ?>
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
+	<meta name="robots" content="noindex">
 	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
 	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
-	<title>Bonus - Cerf'Lock Holmes</title>
+	<title>Énigme n°2 - Cerf'Lock Holmes</title>
 
 	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
 	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
@@ -20,9 +21,9 @@
 
 	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
 	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
+	<?php echo '<link rel="stylesheet" type="text/css" href="/css/cartes.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/cartes.css') . '" />'; ?>
 
 	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
-	
 </head>
 
 <body>
@@ -33,7 +34,7 @@
 	<header>
 		<nav>
 
-			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
+			<a href="tel:+33783653406" class="quick-access" title="Appelez-nous !">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
 			<a href="/en/<?php echo $file; ?>" class="quick-access" title="In English, please!">
@@ -70,13 +71,27 @@
 	</header>
 
 	<main>
-		<h1>Bonus</h1>
-		<h2>Livres</h2>
-		<p>Comment ? Vous ne connaissez pas les aventures de Sherlock Holmes ? Découvrez les romans d'Arthur Conan Doyle ci-dessous !</p>
-		<ul>
-			<li><a href="/fr/etude-rouge">Une Étude en Rouge</a></li>
-			<li><a href="/fr/signe-quatre">Le signe des Quatre</a></li>
-		</ul>
+		<h1>Énigme n°2</h1>
+		<p><i>Félicitations ! Tu as trouvé la première énigme !!!</i></p>
+		<p>Stupéfaction chez les Cerfs-Volants ! Après autopsie, on a découvert que Serge Lelama, le regretté et bien aimé chef du gang des Cerfs-Volants, a été empoisonné !</p>
+		<p>Cerf'Lock s'est aussitôt mis la recherche de l'assassin ! Mais avant, plus important encore : comment Serge a-t-il été empoisonné ? Avec quelle substance ?</p>
+		<p>Cerf'Lock étant un grand chimiste, il a effectué des analyses sur le corps de l'ancien boss des Cerfs-Volants... Sauras-tu toi aussi trouver quel poison a tué notre chef bien-aimé ?</p>
+		<div class="box" style="background:var(--box-color);">
+			<h2>Rapport d'autopsie</h2>
+			<p>Après avoir pratiqué un examen en bonne et dûe forme du corps, les éléments suivants ont été trouvés.</p>
+			<h4>Aspect extérieur :</h4>
+			<ul>
+				<li>sous la plante du pied, un tatouage écrit en noir figurait, portant le texte (assez étrange !) suivant : <b>« CNT-CNC »</b> ;</li>
+				<li>sur sa nuque, à l'arrière du coup, un autre numéro était inscrit au fer rouge (sûrement un souvenir de ses années passées en prison) : <b>« 2019 »</b> ;</li>
+				<li>À noter que l'état de ses mains et de ses pieds montraient que l'homme avait très probablement l'habitude de travailler à la <b>campagne</b>.</li>
+			</ul>
+			<h4>Cause estimée du décès :</h4>
+			<p>Des traces de brûlures le long de l'œsophage, ainsi que l'état des poumons nous montrent très clairement que nous avons affaire à un empoisonnement. Malheureusement, ce poison a dû être ingéré dissous dans un autre liquide, ce qui nous empêche d'identifier le poison utilisé.</p>
+			<p><i>Autopsie pratiquée par Molly Hooper.</i></p>
+		</div>
+		<br>
+		<p>Alors, as-tu trouvé comme Cerf'Lock le poison utilisé ?</p>
+		
 	</main>
 
 	<footer>

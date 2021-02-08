@@ -20,6 +20,7 @@
 
 	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
 	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
+	<?php echo '<link rel="stylesheet" type="text/css" href="/css/cartes.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/cartes.css') . '" />'; ?>
 
 	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
 	
@@ -33,7 +34,7 @@
 	<header>
 		<nav>
 
-			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
+			<a href="tel:+33783653406" class="quick-access" title="Appelez-nous !">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
 			<a href="/en/<?php echo $file; ?>" class="quick-access" title="In English, please!">
@@ -71,15 +72,102 @@
 
 	<main>
 		<h1>Campagnes</h1>
-		<h2 id="grande-enigme">La Grande Énigme</h2>
-		<p>Tout au long des campagnes, nous vous proposons de jouer à la « Grande Énigme » ! Le principe est simple : nous avons dissimulé plusieurs indices sur le site, à travers des liens, des images, etc...</p>
-		<p>Afin de vous aider dans votre quête, nous publierons chaque jour un indice pour vous permettre d'avancer dans vos recherches...
-		</p>
-		<h2 id="soiree">La Soirée BDE</h2>
-		<p>Ne manquez pas la soirée BDE, le ... février à ... ! Nous ferons...</p>
-		<h2>Partenariats</h2>
-		<p>La friperie ... est partenaire de la liste Cerf'Lock Holmes pour les campagnes ! En plus d'avoir des vêtements cools et sympas, vous contribuer à diminuer l'impact environnement du textile en participant à leur réutilisation, alors n'hésitez plus !
-		</p>
+
+		<style>h2{font-size: 2.6rem;margin-top:1rem;}</style>
+		<div style="display:flex;flex-wrap: wrap;">
+			<div id="grande-enigme" class="carte wohover" style="background:var(--box-color);flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;margin-right:2rem;margin-bottom:1rem;">
+				<div class="texte">
+					<h2>La Grande Énigme</h2>
+				</div>
+				<div class="image">
+					<img src="/data/photos/serge.jpg" alt="feu Serge Lelama, boss regretté des Cerfs-Volants
+" />
+				</div>	
+				<div class="texte">
+					<p>Stupeur et stupéfaction chez les Cerfs-Volants
+ ! D'après le rapport de l'autopsie, le vénéré chef du gang, Serge Lelama, ne serait pas 
+						mort de vieillesse... Mais d'empoisonnement !</p>
+					<p>Comment est-ce possible ? Qui se cache derrière ce terrible assassinat du chef bien-aimé du plus grand gang nantais ? 
+						Aide Cerf'Lock à mener l'enquête pour découvrir la vérité !</p>						
+					<p>Pour ce faire, trouve les énigmes cachées qui apparaîtront chaque jour sur le site ! Dans sa grande mansuétude, Cerf'Lock
+						te donnera quelques pistes pour les trouver sur sa <a href="https://www.facebook.com/sotb2020" target="_blank">page facebook</a>...</p>
+					<p>Trouveras-tu la vérité ?</p>
+				</div>
+			</div>
+			<div id="soiree" class="carte wohover" style="background:var(--box-color);flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;margin-right:2rem;margin-bottom:1rem;">	
+				<div class="texte">
+					<h2>La Soirée BDE</h2>
+				</div>					
+				<div class="image">
+					<img src="/data/photos/soiree.jpg" alt="Une photo de gens qui s'ambiancent en soirée" />
+				</div>
+				<div class="texte">
+					<p>On vous attend samedi soir pour la plus grande soirée des campagnes, dès 18h !</p>
+					<p>Avec les Dindes et les Djangoat Unchained, nous ambiancerons la soirée au rythme
+						de plusieurs défis et jeux pour égayer un peu cette période 😘</p>
+					<p>Qu'est-ce qu'on va faire exactement ? Mystère... On ne va quand même pas te gâcher la 
+						surprise !</p>
+				</div>
+			</div>
+		</div>
+
+		<br id="movie">
+		<h2>Le film officiel !</h2>
+		<p>Notre film t'as plu ? Tu peux le revoir ci-dessous, ainsi que son trailer !</p>
+		<!--p>Notre film sortira en exclusivité samedi soir ! Mais que va-t-il s'y passer ? Découvrez-en un petit extrait avec notre trailer !</p-->
+		<div style="display:flex;flex-wrap: wrap;">
+			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-right:2rem;margin-bottom: 2rem;max-height:80vh;">
+				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;" class="carte" 
+				src="https://www.youtube-nocookie.com/embed/ObIiAPKLvhU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
+			</div>
+			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-right:2rem;margin-bottom:2rem;">
+				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;" class="carte" 
+				src="https://www.youtube-nocookie.com/embed/ObIiAPKLvhU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
+			</div>
+		</div>
+		<br>
+		<h2>Remerciements</h2>
+		<p>On tenait à remercier les personnes suivantes pour leur aide précieuse au film :</p>
+		<div class="jeu">
+			<div class="carte">
+				<div class="image">
+					<img src="/data/friperie.png" alt="Logo Friperie" />
+				</div>
+				<div class="texte">
+					<h3>Destock' Vintage</h3>
+					<p>Cette superbe friperie, située en plein centre de Nantes, propose plein de beaux vêtements de seconde main, pour
+						se faire plaisir et aider la planète !</p>
+					<p><a href="https://www.facebook.com/DestockVintage" target="_blank">Leur page Facebook</a></p>
+				</div>
+			</div>
+			<div class="carte">
+				<div class="image">
+					<img src="/data/fontaine.jpg" alt="Logo Philippe Fontaine" />
+				</div>
+				<div class="texte">
+					<h3>Philippe Fontaine</h3>
+					<p>Expert en cerfs-volants, nous l'avons rencontré le jour même du tournage ! C'est son cerf-volant que vous 
+						pouvez apercevoir dans le film 😉</p>
+					<p><a href="https://www.facebook.com/philippe.fontaine.921" target="_blank">Sa page Facebook</a>
+					</p>
+				</div>
+			</div>
+			<div class="carte">
+				<div class="image">
+					<img src="/data/maxime-aymane-tuc.jpg" alt="Photo de Maxime, Aymane et Tuc" />
+				</div>
+				<div class="texte">
+					<h3>Maxime, Aymane et Tuc</h3>
+					<p>Comment ne pas les citer ? Ces trois EI+++ sont toujours là pour les autres, et on tenait à le remercier 
+						pour leur implication dans le film !<p>
+					<p><a href="https://www.facebook.com/groups/977708136084935" target="_blank">Le neurchi de Maxime</a></p>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<footer>

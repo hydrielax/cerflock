@@ -6,6 +6,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
+	<meta name="robots" content="noindex">
 	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
 	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
@@ -33,7 +34,7 @@
 	<header>
 		<nav>
 
-			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
+			<a href="tel:+33783653406" class="quick-access" title="Appelez-nous !">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
 			<a href="/en/<?php echo $file; ?>" class="quick-access" title="In English, please!">
@@ -76,7 +77,7 @@
 		<p>Pour toute question ou demande d'information, vous pouvez nous contacter par les moyens suivants :</p>
 		<ul>
 			<li>par courriel : <a href="mailto:contact@cerflock.fr">contact@cerflock.fr</a></li>
-			<li>par téléphone : <a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+			<li>par téléphone : <a href="tel:+33783653406">+33 7 83 65 34 06</a></li>
 		</ul>
 		<h2>Cookies</h2>
 		<p>Ce site utilise exactement deux cookies, pour enregistrer votre choix du mode jour/nuit. 
@@ -84,21 +85,15 @@
 			Ils ont pour unique but de conserver vos préférences d'affichage lorsque vous changer de page sur 
 			le site. Afin de préserver votre vie privée, nous n'utilisons aucun cookie de mesure d'audience.</p>
 		<h2>Éditeur du site</h2>
-		<p>Ce site est édité par l'association Château Porc, domiciliée chez M. Cassel, appartement 1003, 2 
-			rue Nathalie Sarraute, 44200 Nantes. Le directeur de pubication est Adrien Gaillard, président de l'association.</p>
+		<p>Ce site a été créé par Alexis Delage pour l'association Château Porc, domiciliée chez M. Cassel, appartement 1003, 2 
+			rue Nathalie Sarraute, 44200 Nantes. Le directeur de publication est Adrien Gaillard, président de l'association.</p>
 		<h2>Hébergeur du site</h2>
 		<p>Ce site est hébergé par 1&1 IONOS SARL, 7 place de la Gare, BP 70109, 57200 Sarreguemines C.</p>
 		<h2>Propriété intellectuelle</h2>
-		<p>L'ensemble des textes et images de ce site sont la propriété exclusive de l'association Château Porc, 
-			sauf pour les exceptions suivantes :
+		<p>L'ensemble des textes et images de ce site sont la propriété exclusive de l'association Château Porc, sauf pour les exceptions suivantes :
 		</p>
 		<ul>
-			<li>les images de la page <a href="/fr/allos">Allos</a> sont des images libres de droit pouvant 
-				être réutilisées, issues du site <a href="https://pixabay.com" target="_blank">Pixabay</a> pour le 
-				tandem et du site <a href="https://www.pexels.com">Pexels</a> pour les autres ;</li>
-			<li>les textes et images des œuvres de Arthur Conan Doyle reproduites sur ce site sont soumises aux
-				 règles stipulées au bas de leurs pages respectives ;
-			</li>
+			<li>certaines images des pages <a href="/fr/allos">Allos</a> et <a href="/fr/home">Accueil</a> sont des images libres de droit pouvant être réutilisées, issues du site <a href="https://pixabay.com" target="_blank">Pixabay</a> et <a href="https://www.pexels.com">Pexels</a> (pour plus de détails, merci de nous contacter) ;</li>
 			<li>les images du menu de navigation (visibles uniquement sur mobile) sont issues du site Flaticon.</li>
 		</ul>
 		<h2>Le saviez-vous ?</h2>
@@ -106,9 +101,6 @@
 			on the Biche</i> (vous pouvez d'ailleurs retrouver <a href="https://www.sexonthebiche.fr" target="_blank">
 			le site des Sex on the Biche</a> ici). Mais encore avant, au tout début, nous avions pour fake fake nom <i>Château Porc,</i> 
 			qui a donc été retenu pour le nom officiel de l'association.</p>
-		<h2>Vous avez tout lu ?</h2>
-		<p>Bravo ! Pour vous récompenser, nous avons caché sur cette page un lien vers une page secrète, saurez-vous le trouver ?</p>
-
 	</main>
 
 	<footer>

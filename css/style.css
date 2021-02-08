@@ -224,11 +224,6 @@ button {
 	color: var(--text-color-light);
 }
 
-h2:target {
-	padding-top: 4rem;
-	margin-top: calc(0.2em - 4rem);
-}
-
 .titlefont {
 	font-family: 'Grenze Gotisch', 'Grenze', serif;
 }

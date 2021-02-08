@@ -34,7 +34,7 @@
 	<header>
 		<nav>
 
-			<a href="tel:+33123456789" class="quick-access" title="Call us!">
+			<a href="tel:+33783653406" class="quick-access" title="Call us!">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Call us!"></div>
 			</a>
 			<a href="/fr/<?php echo $file; ?>" class="quick-access" title="En Français dans le texte...!">
@@ -92,12 +92,13 @@
 	<main>
 		<div style="display:flow-root;">
 			<h1 style="float:left;">Allôs</h1>
-			<a class="hidden gros-bouton" href="tel:+33123456789">
+			<a class="hidden gros-bouton" href="tel:+33783653406">
 				<button class="gros-bouton">Call us!</button>
 			</a>
 		</div>
 		<p style="margin-top:0;">
-			The <i>Allos</i> are a famous event of the Centrale Nantes' campaigns: you call us fot the <i>allô</i> you want, and we try to answer your demand as soon as possible! To participate, you just have to call this number: <a href="tel:+33123456789">01.23.45.67.89</a>!
+			The <i>Allos</i> are a famous event of the Centrale Nantes' campaigns: you call us fot the <i>allô</i> you want, and we try to answer your demand as soon as possible! To participate, you just have to call this number: <a href="tel:+33783653406">07.83.65.34.06
+</a>!
 			You can call on thursday afternoon, and during all the weekend of the campaigns😉 Choose your <i>allô</i> in the list below!
 		</p>
 		<div class="jeu">

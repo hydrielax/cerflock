@@ -1,14 +1,8 @@
 # Block Page Membres
 User-agent: *
-Disallow: /
-Allow: /fr/home/
-Allow: /en/home/
-Allow: /fr/program/
-Allow: /en/program/
-Allow: /fr/campaigns/
-Allow: /en/campaigns/
-Allow: /fr/allos/
-Allow: /fr/allos/
+Disallow: /data/
+Allow: /data/photos/groupe-big.jpg
+Allow: /data/photos/groupe-fun.jpg
 Allow: /data/logo.png
 
 Sitemap: https://www.cerflock.fr/sitemap.txt

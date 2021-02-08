@@ -33,7 +33,7 @@
 	<header>
 		<nav>
 
-			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
+			<a href="tel:+33783653406" class="quick-access" title="Appelez-nous !">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
 			<a href="/en/<?php echo $file; ?>" class="quick-access" title="In English, please!">
@@ -81,7 +81,7 @@
 			</div>
 			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;">
 				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
-				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;" class="youtube" 
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;" class="carte" 
 				src="https://www.youtube-nocookie.com/embed/ObIiAPKLvhU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
 				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
 			</div>
@@ -107,7 +107,8 @@
 		</style>
 		<div class="jeu">
 			<a href="/fr/campaigns#grande-enigme" class="carte">
-				<img src="/data/photos/enigme.jpg" alt="L'inspecteur Lestrade ebquête">
+				<img src="/data/photos/serge.jpg" alt="feu Serge Lelama, chef regretté des Cerfs-Volants
+">
 				<h2>La Grande Énigme</h2>
 			</a>
 			<a href="/fr/campaigns#soiree" class="carte">
@@ -124,13 +125,13 @@
 		<p>Parce qu'on est jamais à cours d'idées, tu peux encore découvrir tous ces bonus préparés rien que pour toi !</p>
 		<br>
 		<div class="jeu">
-			<a href="/fr/campaigns/film" class="carte">
+			<a href="/fr/campaigns#movie" class="carte">
 				<div class="image">
 					<img src="/data/photos/film.jpg" alt="Image de Joshua tenant une caméra">
 				</div>
 				<div class="texte">
 					<h3>Le film</h3>
-					<p>Tu veux tout savoir sur les coulisses de notre super film ? Clique ici !</p>
+					<p>Envie de voir et revoir notre trailer et notre super film ? Clique ici !</p>
 				</div>
 			</a>
 			<a href="/fr/program" class="carte">

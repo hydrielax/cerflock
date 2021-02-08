@@ -34,7 +34,7 @@
 	<header>
 		<nav>
 
-			<a href="tel:+33123456789" class="quick-access" title="Appelez-nous !">
+			<a href="tel:+33783653406" class="quick-access" title="Appelez-nous !">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
 			<a href="/en/<?php echo $file; ?>" class="quick-access" title="In English, please!">
@@ -90,12 +90,13 @@
 	<main>
 		<div style="display:flow-root;">
 			<h1 style="float:left;">Allô ?</h1>
-			<a class="hidden gros-bouton" href="tel:+33123456789">
+			<a class="hidden gros-bouton" href="tel:+33783653406">
 				<button class="gros-bouton">Appelle-nous !</button>
 			</a>
 		</div>
 		<p style="margin-top:0;">
-			Tu veux discuter ou nous poser un défi ? Alors n'hésite plus et appelle-nous au <a href="tel:+33123456789">01.23.45.67.89</a> ! Les allos auront lieu jeudi après-midi et le weekend 😉 Tu peux nous demander ce que tu veux parmi la liste ci-dessous !
+			Tu veux discuter ou nous poser un défi ? Alors n'hésite plus et appelle-nous au <a href="tel:+33783653406">07.83.65.34.06
+</a> ! Les allos auront lieu jeudi après-midi et le weekend 😉 Tu peux nous demander ce que tu veux parmi la liste ci-dessous !
 		</p>
 		<div class="jeu">
 			<?php 
