@@ -55,7 +55,7 @@
 				<div class="icon"><img src="/data/icons/programme.svg" class="svg page" alt=""></div>
 				<span>Program</span>
 			</a>
-			<a href="/en/members" class="active">
+			<a href="/en/members">
 				<div class="icon"><img src="/data/icons/membres.svg" class="svg page" alt=""></div>
 				<span>Members</span>
 			</a>
@@ -77,14 +77,25 @@
 		<br>
 		<div class="jeu">
 			<?php 
-				for ($i = 1; $i < 32; $i++) {
-					echo "<div class='carte";
-					if ($i == 2 || $i == 4 || $i == 6 || $i == 9 ||
-						$i == 13 || $i == 15 || $i == 19 || $i == 22 ||
-						$i == 26) {
+				for ($i = 1; $i < 33; $i++) {
+					if ($i == 18) {
+						echo "<a href='/en/enigms/Elementaire-mon-cerf-Watson'";
+					} else {
+						echo "<div";
+					}
+
+					echo " class='carte";
+
+					if ($i == 2 || $i == 4 || $i == 6 || $i == 9 || $i == 13 || $i == 15 || $i == 18 ||$i == 19 || $i == 22 || $i == 26) {
 							echo " carte-haute";
 					}
-					echo "'><img src='/data/adrien/adrien_" . $i . ".jpg' alt='' /></div>";
+
+					echo "'><img src='/data/adrien/adrien_" . $i . ".jpg' alt='' /></";
+					if ($i == 18) {
+						echo "a>";
+					} else {
+						echo "div>";
+					}
 				}
 			?>
 		</div>

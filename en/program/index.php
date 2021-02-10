@@ -90,7 +90,7 @@
 				<li><b>to work closely</b> with the various ecological clubs and associations of the school all along the year</li>
 				<li>to renew the <b>Ecology Lecture</b> at the beginning of the school year and <b>the kit for more eco-friendly campaigns</b></li>
 				<li> to work on a <b>guide of ecological alternatives</b> that would be given to all the clubs of the school</li>
-				<li>to set up <b>workshop on the climate fresco </b>at the start of the school year in collaboration with the administration and the involved associations (ideally mandatory during a specific workshop for the new students when they arrive at the school — if the sanitary situation make it possible)</li>
+				<li>to set up workshop on the <b>climate fresco</b> at the start of the school year in collaboration with the administration and the involved associations, especially for those who don't have such a workshop in their study programme</li>
 				<li>to join forces with the environmental clubs and associations of the school to <b>inform and educate </b>students about environment, especially for world days or theme weeks</li>
 				<li> to support the <b>spread of carbon accounting</b> for all community activities in Centrale Nantes</li>
 			</ul>
@@ -111,7 +111,7 @@
 		<br>
 		<details class="box" >
 			<summary><h2>For Students 🎓</h2></summary>
-			<p>And finally, what would be a Student Association without students associating? Yes, the joke was better in french, I'm sorry. Find our secret page to enjoy a better english joke. Anyway, we commit ourselves: </p>
+			<p>And finally, what would be a Student Association without students associating? Yes, the joke was better in french, I'm sorry. Anyway, we commit ourselves: </p>
 			<ul>
 				<li>to work on a better <b>integration</b> of the international students</li>
 				<li>to <b>promote</b> the engineering field in the disadvantaged areas</li>

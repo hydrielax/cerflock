@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" + basename (dirname( $path)); ?>
+<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" . basename (dirname( $path)); ?>
 
 <head>
 	<meta charset="UTF-8" />

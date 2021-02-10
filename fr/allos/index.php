@@ -95,15 +95,18 @@
 			</a>
 		</div>
 		<p style="margin-top:0;">
-			Tu veux discuter ou nous poser un défi ? Alors n'hésite plus et appelle-nous au <a href="tel:+33783653406">07.83.65.34.06
-</a> ! Les allos auront lieu jeudi après-midi et le weekend 😉 Tu peux nous demander ce que tu veux parmi la liste ci-dessous !
+			Tu veux discuter ou nous poser un défi ? Alors n'hésite plus et appelle-nous au <a href="tel:+33783653406">07.83.65.34.06</a> ! Les allos auront lieu jeudi après-midi et le weekend 😉 Tu peux nous demander ce que tu veux parmi la liste ci-dessous !
 		</p>
 		<div class="jeu">
 			<?php 
 				$handle = fopen("https://www.cerflock.fr/data/allos.csv", "r");
 				$lost = fgetcsv($handle, 1000, ',', '"');
 				while (($allo = fgetcsv($handle, 1000, ',', '"')) !== FALSE) {
-					echo "<div class='carte wohover'><div class=image><img src='/data/allos/" . $allo[4] . ".jpg' alt='Image du " . $allo[0] . "'>";
+					echo "<div class='carte wohover";
+					if ($allo[4] == "uber") {
+						echo " carte-haute";
+					}
+					echo "'><div class=image><img src='/data/allos/" . $allo[4] . ".jpg' alt='Image du " . $allo[0] . "'>";
 					echo "</div><div class=texte><h2>" . $allo[0] . "</h2>";
 					echo "<p>" . $allo[2] . "</p></div></div>";
 				}

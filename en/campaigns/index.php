@@ -79,7 +79,7 @@
 		<div style="display:flex;flex-wrap: wrap;">
 			<div id="grande-enigme" class="carte wohover" style="background:var(--box-color);flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;margin-right:2rem;margin-bottom:1rem;">
 				<div class="texte">
-					<h2>The Great Enigm</h2>
+					<h2>The Great Enigma</h2>
 				</div>
 				<div class="image">
 					<img src="/data/photos/serge.jpg" alt="feu Serge Lelama, boss regretté des Cerfs-Volants
@@ -90,7 +90,7 @@
 						dead of old age... But of poisoning!</p>
 					<p>How is it possible? Who is behind this terrible assassination of the beloved leader of the largest Nantes gang?
 						Help Cerf'Lock investigate and uncover the truth!</p>						
-					<p>To do this, find the hidden enigms that will appear every day on the site! In his great gentleness, Cerf'Lock
+					<p>To do so, find the hidden enigmas that will appear every day on the site! In his great gentleness, Cerf'Lock
 						will give you some tips to find them on his <a href="https://www.facebook.com/sotb2020" target="_blank">facebook page</a>...</p>
 					<p>Will you find the truth?</p>
 				</div>
@@ -103,7 +103,7 @@
 					<img src="/data/photos/soiree.jpg" alt="Une photo de gens qui s'ambiancent en soirée" />
 				</div>
 				<div class="texte">
-					<p>We are waiting for you on Saturday evening  on 6 p.m. for the biggest party of the campaigns!</p>
+					<p>We are waiting for you on Saturday evening at 9 p.m. for the biggest party of the campaigns!</p>
 					<p>With the Turkeys and the Djangoat Unchained, we will set the tone for the evening to the rhythm of several challenges 
 						and games to brighten up this period a little 😘</p>
 					<p>What exactly are we going to do? Mystery... We are not going to spoil your surprise!</p>
@@ -113,24 +113,24 @@
 
 		<br id="movie">
 		<h2>The official movie!</h2>
-		<p>Did you like our film? You can watch it again below, as well as its trailer!</p>
+		<p>Did you like our trailer? You can now discover the entire film right here, or watch again our trailer if you want!</p>
 		<div style="display:flex;flex-wrap: wrap;">
 			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-right:2rem;margin-bottom: 2rem;">
 				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
-				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;" class="carte" 
-				src="https://www.youtube-nocookie.com/embed/ObIiAPKLvhU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" 
+				src="https://www.youtube.com/embed/0r3XtQbaBTk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
 				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
 			</div>
 			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-right:2rem;margin-bottom:2rem;">
 				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
-				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;" class="carte" 
-				src="https://www.youtube-nocookie.com/embed/ObIiAPKLvhU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" 
+				src="https://www.youtube.com/embed/0r3XtQbaBTk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
 				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
 			</div>
 		</div>
 		<br>
 		<h2>Thanks</h2>
-		<p>We would like to thank the following people for their invaluable help with the film:</p>
+		<p>For helping us on the movie, we would like to thank:</p>
 		<div class="jeu">
 			<div class="carte">
 				<div class="image">
@@ -158,9 +158,9 @@
 					<img src="/data/maxime-aymane-tuc.jpg" alt="Photo de Maxime, Aymane et Tuc" />
 				</div>
 				<div class="texte">
-					<h3>Maxime Gras</h3>
-					<p>How not to quote him? With his particular style, he is always there for others, and we wanted to thank him for his involvement in the film!<p>
-					<p><a href="https://www.facebook.com/groups/977708136084935" target="_blank">His <i>neurchi</i></a></p>
+					<h3>Maxime, Aymane and Tuc</h3>
+					<p>They forced us (except Tuc 😍) to assign them a role in the movie... and so they have. Thanks to them!<p>
+					<p><a href="https://www.facebook.com/groups/977708136084935" target="_blank">Maxime's <i>neurchi</i></a></p>
 				</div>
 			</div>
 		</div>

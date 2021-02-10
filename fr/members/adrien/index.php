@@ -77,14 +77,25 @@
 		<br>
 		<div class="jeu">
 			<?php 
-				for ($i = 1; $i < 32; $i++) {
-					echo "<div class='carte";
-					if ($i == 2 || $i == 4 || $i == 6 || $i == 9 ||
-						$i == 13 || $i == 15 || $i == 19 || $i == 22 ||
-						$i == 26) {
+				for ($i = 1; $i < 33; $i++) {
+					if ($i == 18) {
+						echo "<a href='/fr/enigms/Elementaire-mon-cerf-Watson'";
+					} else {
+						echo "<div";
+					}
+
+					echo " class='carte";
+
+					if ($i == 2 || $i == 4 || $i == 6 || $i == 9 || $i == 13 || $i == 15 || $i == 18 ||$i == 19 || $i == 22 || $i == 26) {
 							echo " carte-haute";
 					}
-					echo "'><img src='/data/adrien/adrien_" . $i . ".jpg' alt='' /></div>";
+
+					echo "'><img src='/data/adrien/adrien_" . $i . ".jpg' alt='' /></";
+					if ($i == 18) {
+						echo "a>";
+					} else {
+						echo "div>";
+					}
 				}
 			?>
 		</div>

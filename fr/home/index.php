@@ -76,13 +76,13 @@
 			<div style="flex-basis: 200px;flex-grow: 1;margin-right: 2rem;">
 				<h1>Bienvenue&nbsp;!</h1>
 				<p>Bienvenue sur le site officiel des Cerf'Lock Holmes !</p>
-				<p>Candidats au BDE de Centrale Nantes pour l'année 2021, nous sommes juste la meilleure liste de tout l'univers 😉</p>
+				<p>Candidats au BDE de Centrale Nantes pour l'année 2021, nous sommes déterminés à vous faire vibrer durant ces campagnes !</p>
 				<p>Alors, êtes-vous prêts à mener l'enquête avec nous ?</p>
 			</div>
 			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;">
 				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
-				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;" class="carte" 
-				src="https://www.youtube-nocookie.com/embed/ObIiAPKLvhU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" 
+				src="https://www.youtube.com/embed/0r3XtQbaBTk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
 				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
 			</div>
 		</div>
@@ -122,7 +122,7 @@
 		</div>
 		<br>
 		<h1>Tu en veux encore ?</h1>
-		<p>Parce qu'on est jamais à cours d'idées, tu peux encore découvrir tous ces bonus préparés rien que pour toi !</p>
+		<p>Parce qu'on n'est jamais à court d'idées, tu peux encore découvrir tous ces bonus préparés rien que pour toi !</p>
 		<br>
 		<div class="jeu">
 			<a href="/fr/campaigns#movie" class="carte">

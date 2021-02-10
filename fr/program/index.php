@@ -89,8 +89,7 @@
 				<li>Travailler tout au long du mandat en étroite <b>collaboration</b> avec les différents clubs et assos écolos de l’école</li>
 				<li>Reconduire l’<b>amphi écologie</b> de début d’année et le <b>kit pour des campagnes écoresponsables</b></li>
 				<li>Travailler à l’élaboration d’un <b>guide d’alternatives écologiques</b> qui serait diffusé aux différents clubs de l’école</li>
-				<li>Organiser en partenariat avec l’administration et les associations concernées des ateliers de <b>fresque du climat</b> à la rentrée (dans l’idéal de manière obligatoire au cours d’un atelier dédié pour les nouveaux étudiants à leur rentrée — sous
-					l’hypothèse d’une situation sanitaire compatible)</li>
+				<li>Organiser en partenariat avec l’administration et les associations concernées des ateliers de <b>fresque du climat</b> à la rentrée, notamment pour ceux n’ayant pas un tel atelier prévu dans leur cursus</li>
 				<li>Nous <b>associer</b> aux clubs et assos écolos de l'école pour <b>informer</b> et <b>former</b> les élèves en matière d'environnement, notamment à l'occasion de journées mondiales ou semaines thématiques</li>
 				<li><b>Encourager la généralisation du bilan carbone</b> à toutes les activités associatives nantraliennes</li>
 			</ul>

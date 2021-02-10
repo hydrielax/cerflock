@@ -106,7 +106,11 @@
 				$handle = fopen("https://www.cerflock.fr/data/allos.csv", "r");
 				$lost = fgetcsv($handle, 1000, ',', '"');
 				while (($allo = fgetcsv($handle, 1000, ',', '"')) !== FALSE) {
-					echo "<div class='carte wohover'><div class=image><img src='/data/allos/" . $allo[4] . ".jpg' alt='Picture of " . $allo[1] . "'>";
+					echo "<div class='carte wohover";
+					if ($allo[4] == "uber") {
+						echo " carte-haute";
+					}
+					echo "'><div class=image><img src='/data/allos/" . $allo[4] . ".jpg' alt='Picture of " . $allo[1] . "'>";
 					echo "</div><div class=texte><h2>" . $allo[1] . "</h2>";
 					echo "<p>" . $allo[3] . "</p></div></div>";
 				}

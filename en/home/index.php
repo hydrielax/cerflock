@@ -78,13 +78,13 @@
 			<div style="flex-basis: 200px;flex-grow: 1;margin-right: 2rem;">
 				<h1>Welcome!</h1>
 				<p>Welcome on the offical website of Cerf'Lock Holmes!</p>
-				<p>We candidate for the 2021 BDE of Centrale Nantes, and we are just the best list of all the universe 😉</p>
+				<p>We forme a list which candidate for the 2021 BDE of Centrale Nantes, and we are motivated to shake you during these campaigns!</p>
 				<p>So, are you ready to investigate with us?</p>
 			</div>
 			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;">
 				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
-				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;" class="carte" 
-				src="https://www.youtube-nocookie.com/embed/ObIiAPKLvhU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" 
+				src="https://www.youtube.com/embed/0r3XtQbaBTk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
 				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
 			</div>
 		</div>
@@ -108,8 +108,8 @@
 		</style>
 		<div class="jeu">
 			<a href="/en/campaigns#grande-enigme" class="carte">
-				<img src="/data/photos/enigme.jpg" alt="Inspector Lestrade investigate">
-				<h2>The Great Enigm</h2>
+				<img src="/data/photos/serge.jpg" alt="Our beloved boss Serge Lelama">
+				<h2>The Great Enigma</h2>
 			</a>
 			<a href="/en/campaigns#soiree" class="carte">
 				<img src="/data/photos/soiree.jpg" alt="The greeat parties of Cerf'Lock!">
@@ -122,7 +122,7 @@
 		</div>
 		<br>
 		<h1>Do you want more?</h1>
-		<p>Because we are never out of ideas, you can still discover all these bonuses prepared just for you!</p>
+		<p>Because we are never out of ideas, you can also discover all these bonuses prepared just for you!</p>
 		<br>
 		<div class="jeu">
 			<a href="/en/campaigns#movie" class="carte">
@@ -167,7 +167,7 @@
 				</div>
 				<div class="texte">
 					<h3>Facebook</h3>
-					<p>Follow all our latest news on the social networks!</p>
+					<p>Follow all our latest news on social networks!</p>
 				</div>
 			</a>
 		</div>

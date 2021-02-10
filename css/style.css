@@ -359,17 +359,31 @@ footer #footer2 button:hover {
   BOUTON ENIGME
   -----------------*/
 
+
+/*
 #boutonEnigme {
 	/*paramètresduboutonrondd'énigmes*/
-	/*apparence*/
-	/*background-color: var(--first-color);
+
+
+/*apparence*/
+
+
+/*background-color: var(--first-color);
 	*/
+
+
+/*
 	width: 4.5rem;
 	height: 4.5rem;
 	border-radius: 200px;
 	/*box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 	*/
-	/*position*/
+
+
+/*position*/
+
+
+/*
 	padding: 0;
 	bottom: 20px;
 	right: 20px;
@@ -379,6 +393,9 @@ footer #footer2 button:hover {
 	justify-content: center;
 	align-items: center;
 	/*animations*/
+
+
+/*
 	transition: all 0.2s ease;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
@@ -388,9 +405,14 @@ footer #footer2 button:hover {
 
 #boutonEnigme:hover {
 	/*quandonpasselasourissurleboutond'énigmes*/
-	/*box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+
+
+/*box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
 	background-color: var(--first-color-lighter);
 	*/
+
+
+/*
 	transform: rotate(360deg) scale(1.1);
 	border-width: 3px;
 	-webkit-transform: rotate(360deg) scale(1.1);
@@ -405,6 +427,9 @@ footer #footer2 button:hover {
 
 #boutonEnigme svg {
 	/*paramètres de l'image du bouton énigme (le point d'interrogation)*/
+
+
+/*
 	width: 50px;
 	margin: auto;
 }
@@ -430,6 +455,7 @@ footer #footer2 button:hover {
 	overflow: auto;
 	border-radius: 10%;
 }
+*/
 
 
 /* CHANGER LA BARRE DE DEFILEMENT */

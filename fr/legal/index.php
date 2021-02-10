@@ -110,7 +110,7 @@
 				<div id="footer1">
 					<h2 class="titlefont">Cerf'Lock Holmes</h2>
 					<p>© Château Porc 2021</p>
-					<p><a href="/fr/bonus">Mentions légales</a></p>
+					<p><a href="/fr/enigms/Un-scandale-en-peignoir">Mentions légales</a></p>
 					<p><i>Fait avec des biches, de l'amour, de l'humour et du fun !</i></p>
 				</div>
 				<div id="footer2">

@@ -84,7 +84,7 @@
 					} else {
 						echo '<div';
 					}
-					echo " class=carte><div class=image><img src='/data/photos_membres/" . $membre[0] . " " . $membre[1] . ".jpg' alt=''>";
+					echo " class=carte><div class=image><img src='/data/photos_membres/" . $membre[6] . ".png' alt=''>";
 					echo "</div><div class=texte><h3>" . $membre[0] . " " . $membre[1] . "</h3>";
 					echo "<h4>" . $membre[2] . "</h4>";
 					echo "<p style='font-size:0.9em;'>" . $membre[4] . "</p></div>";

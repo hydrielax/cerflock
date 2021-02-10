@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" + basename (dirname( $path)); ?>
+<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" . basename (dirname( $path)); ?>
 
 <head>
 	<meta charset="UTF-8" />
@@ -74,7 +74,7 @@
 		<h1>Énigme n°1</h1>
 		<p><i>Félicitations ! Tu as trouvé la première énigme !!!</i></p>
 		<p>Stupéfaction chez les Cerfs-Volants ! Après autopsie, on a découvert que Serge Lelama, le regretté et bien aimé chef du gang des Cerfs-Volants, a été empoisonné !</p>
-		<p>Cerf'Lock s'est aussitôt mis la recherche de l'assassin ! Mais avant, plus important encore : comment Serge a-t-il été empoisonné ? Avec quelle substance ?</p>
+		<p>Cerf'Lock s'est aussitôt mis à la recherche de l'assassin ! Mais avant, plus important encore : comment Serge a-t-il été empoisonné ? Avec quelle substance ?</p>
 		<p>Cerf'Lock étant un grand chimiste, il a effectué des analyses sur le corps de l'ancien boss des Cerfs-Volants... Sauras-tu toi aussi trouver quel poison a tué notre chef bien-aimé ?</p>
 		<div class="box" style="background:var(--box-color);">
 			<h2>Rapport d'autopsie</h2>
@@ -82,7 +82,7 @@
 			<h4>Aspect extérieur :</h4>
 			<ul>
 				<li>sous la plante du pied, un tatouage écrit en noir figurait, portant le texte (assez étrange !) suivant : <b>« CNT-CNC »</b> ;</li>
-				<li>sur sa nuque, à l'arrière du coup, un autre numéro était inscrit au fer rouge (sûrement un souvenir de ses années passées en prison) : <b>« 2019 »</b> ;</li>
+				<li>sur sa nuque, à l'arrière du cou, un autre numéro était inscrit au fer rouge (sûrement un souvenir de ses années passées en prison) : <b>« 2019 »</b> ;</li>
 				<li>À noter que l'état de ses mains et de ses pieds montraient que l'homme avait très probablement l'habitude de travailler à la <b>campagne</b>.</li>
 			</ul>
 			<h4>Cause estimée du décès :</h4>

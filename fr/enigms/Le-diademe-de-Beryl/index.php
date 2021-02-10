@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" + basename (dirname( $path)); ?>
+<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" . basename (dirname( $path)); ?>
 
 <head>
 	<meta charset="UTF-8" />
@@ -11,7 +11,7 @@
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
 	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
-	<title>Énigme n°1 - Cerf'Lock Holmes</title>
+	<title>Énigme n°3 - Cerf'Lock Holmes</title>
 
 	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
 	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
@@ -71,27 +71,8 @@
 	</header>
 
 	<main>
-		<h1>Énigme n°1</h1>
-		<p><i>Félicitations ! Tu as trouvé la première énigme !!!</i></p>
-		<p>Stupéfaction chez les Cerfs-Volants ! Après autopsie, on a découvert que Serge Lelama, le regretté et bien aimé chef du gang des Cerfs-Volants, a été empoisonné !</p>
-		<p>Cerf'Lock s'est aussitôt mis la recherche de l'assassin ! Mais avant, plus important encore : comment Serge a-t-il été empoisonné ? Avec quelle substance ?</p>
-		<p>Cerf'Lock étant un grand chimiste, il a effectué des analyses sur le corps de l'ancien boss des Cerfs-Volants... Sauras-tu toi aussi trouver quel poison a tué notre chef bien-aimé ?</p>
-		<div class="box" style="background:var(--box-color);">
-			<h2>Rapport d'autopsie</h2>
-			<p>Après avoir pratiqué un examen en bonne et dûe forme du corps, les éléments suivants ont été trouvés.</p>
-			<h4>Aspect extérieur :</h4>
-			<ul>
-				<li>sous la plante du pied, un tatouage écrit en noir figurait, portant le texte (assez étrange !) suivant : <b>« CNT-CNC »</b> ;</li>
-				<li>sur sa nuque, à l'arrière du coup, un autre numéro était inscrit au fer rouge (sûrement un souvenir de ses années passées en prison) : <b>« 2019 »</b> ;</li>
-				<li>À noter que l'état de ses mains et de ses pieds montraient que l'homme avait très probablement l'habitude de travailler à la <b>campagne</b>.</li>
-			</ul>
-			<h4>Cause estimée du décès :</h4>
-			<p>Des traces de brûlures le long de l'œsophage, ainsi que l'état des poumons nous montrent très clairement que nous avons affaire à un empoisonnement. Malheureusement, ce poison a dû être ingéré dissous dans un autre liquide, ce qui nous empêche d'identifier le poison utilisé.</p>
-			<p><i>Autopsie pratiquée par Molly Hooper.</i></p>
-		</div>
-		<br>
-		<p>Alors, as-tu trouvé comme Cerf'Lock le poison utilisé ?</p>
-		
+		<h1>Énigme n°3</h1>
+				
 	</main>
 
 	<footer>
