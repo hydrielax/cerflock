@@ -11,7 +11,7 @@
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
 	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
-	<title>Riddle n°1 - Cerf'Lock Holmes</title>
+	<title>Riddle n°3 - Cerf'Lock Holmes</title>
 
 	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
 	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
@@ -72,27 +72,23 @@
 	</header>
 
 	<main>
-		<h1>Riddle n°1</h1>
-		<p><i>Congratulations! You found the first riddle!</i></p>
-		<p>The Stealing Deers Gang is stunned! The autopsy reveals that the regretted and beloved leader of the Gang, Serge Lelama, has been poisoned.</p>
-		<p>Cerf'Lock immediately goes on the track of the killer! But there is an even more important question: how was Serge poisoned? More precisely, with which substance?</p>
-		<p>Cerf’Lock being an excellent chemist, he did some analysis on the body of the former boss of the Stealing Deers… Will you find, like the great detective, which poison killed our beloved leader?</p>
-		<div class="box" style="background:var(--box-color);">
-			<h2>Autopsy report</h2>
-			<p>After having performed an autopsy in proper form, the following elements have been found.</p>
-			<h4>External appearance:</h4>
-			<ul>
-				<li>Under the foot sole is written a black tattoo strangely saying <b>“CNT-CNC”</b>;</li>
-				<li>Behind the neck is written the number <b>“2019”</b>. Origin : burnt at the stake. Might be inherited from prison years;</li>
-				<li>Notice that the state of hands and feets shows that the man probably used to participate in <b>campaigns</b>.</li>
-			</ul>
-			<h4>Suspected cause of death :</h4>
-			<p>The burn marks along the oesophagus and the state of lungs show clearly a death due to poisoning. The poison must have been dissolved in another liquid before ingestion, which doesn’t allow us to identify the poison.</p>
-			<p><i>Autopsy performed by Molly Hooper.</i></p>
+		<h1>Riddle n°3</h1>
+		<p>The investigation is moving well! We know which poison has been used and how Serge, the beloved leader of the Stealing Deers Gang, has swallowed it. Cerf’Lock is now wondering <b>where</b> the murder could have happened. Can you help him?</p>
+		<br>
+		<div class="box">
+		<p>My first is a Latin letter, which is the Greek variant of the one which gives the last syllable of the name used to designate the set of all the letters.</p>
+		<p>My second is a strictly positive integer that is neither a prime number nor a multiple of prime numbers.</p>
+		<p>My third is the neutral element of the only usual commutative, associative and invertible binary operation on the set of integers.</p>
+		<p>Finally, my fourth is the greatest exponent of 2 made up of a single figure.</p>
 		</div>
 		<br>
-		<p>Well then, have you found the used poison?</p>
-		
+		<p>So, did you find it? Congratulations! See you tomorrow for the last riddle!
+		You will then be able to send us your answers through a form.</p>
+
+		<details class="box" open="false">
+			<summary>Answer</summary>
+			<p>It's a room of the Centrale Residence: the B108.</p>
+		</details>
 	</main>
 
 	<footer>
@@ -119,16 +115,16 @@
 								<img src="/data/rs/youtube.svg" class="svg" />Youtube</button>
 						</a>
 						<br>
-						<a href="https://open.spotify.com/playlist/6mOcAqZZDB6RzSHoNwz7tp" target="_blank" class="hidden" title="Spotify - Biche Party" id="spotify1">
-							<button style="--first-color:#1aaf4e;">
-								<img src="/data/rs/spotify.svg" class="svg" />
-								Biche Party
+						<a href="https://www.instagram.com/cerflock_holmes/" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
+							<button style="--first-color:#ef0075;">
+								<img src="/data/rs/instagram.svg" class="svg" />
+								Instagram
 							</button>
 						</a>
-						<a href="https://open.spotify.com/playlist/1Xn8tMqHAQYBKv0SsroFRT" target="_blank" class="hidden" title="Spotify - Cocktail Auditif" id="spotify2">
+						<a href="https://open.spotify.com/playlist/1fcV5tWk0cSRl4hKsOmDF4?si=MKbTxA8QTn2oF3V94aSTGQ" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
 							<button style="--first-color:#1aaf4e;">
 								<img src="/data/rs/spotify.svg" class="svg" />
-								Cocktail Auditif
+								Spotify
 							</button>
 						</a>
 					</p>

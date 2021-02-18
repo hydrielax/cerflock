@@ -87,6 +87,7 @@
 		<h2>Éditeur du site</h2>
 		<p>Ce site a été créé par Alexis Delage pour l'association Château Porc, domiciliée chez M. Cassel, appartement 1003, 2 
 			rue Nathalie Sarraute, 44200 Nantes. Le directeur de publication est Adrien Gaillard, président de l'association.</p>
+		<p>Si vous êtes intéressés par le code source du site, vous pouvez le retrouver sur <a href="https://github.com/hydrielax/cerflock">Github</a>.</p>
 		<h2>Hébergeur du site</h2>
 		<p>Ce site est hébergé par 1&1 IONOS SARL, 7 place de la Gare, BP 70109, 57200 Sarreguemines C.</p>
 		<h2>Propriété intellectuelle</h2>
@@ -116,7 +117,7 @@
 				<div id="footer2">
 					<h2>Nos Réseaux !</h2>
 					<p>
-						<a href="https://www.facebook.com/sotb2020" target="_blank" class="hidden" title="Facebook" id="facebook">
+						<a href="https://www.facebook.com/cerflock" target="_blank" class="hidden" title="Facebook" id="facebook">
 							<button style="--first-color:#1877f2;">
 								<img src="/data/rs/facebook.svg" class="svg" />
 								Facebook
@@ -127,16 +128,16 @@
 								<img src="/data/rs/youtube.svg" class="svg" />Youtube</button>
 						</a>
 						<br>
-						<a href="https://open.spotify.com/playlist/6mOcAqZZDB6RzSHoNwz7tp" target="_blank" class="hidden" title="Spotify - Biche Party" id="spotify1">
-							<button style="--first-color:#1aaf4e;">
-								<img src="/data/rs/spotify.svg" class="svg" />
-								Biche Party
+						<a href="https://www.instagram.com/cerflock_holmes/" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
+							<button style="--first-color:#ef0075;">
+								<img src="/data/rs/instagram.svg" class="svg" />
+								Instagram
 							</button>
 						</a>
-						<a href="https://open.spotify.com/playlist/1Xn8tMqHAQYBKv0SsroFRT" target="_blank" class="hidden" title="Spotify - Cocktail Auditif" id="spotify2">
+						<a href="https://open.spotify.com/playlist/1fcV5tWk0cSRl4hKsOmDF4?si=MKbTxA8QTn2oF3V94aSTGQ" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
 							<button style="--first-color:#1aaf4e;">
 								<img src="/data/rs/spotify.svg" class="svg" />
-								Cocktail Auditif
+								Spotify
 							</button>
 						</a>
 					</p>

@@ -6,6 +6,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
+	<meta property="og:image" content="https://www.cerflock.fr/data/photos/serge.jpg">
+	
 	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
 	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
@@ -90,7 +92,7 @@
 					<p>Comment est-ce possible ? Qui se cache derrière ce terrible assassinat du chef bien-aimé du plus grand gang nantais ? 
 						Aide Cerf'Lock à mener l'enquête pour découvrir la vérité !</p>						
 					<p>Pour ce faire, trouve les énigmes cachées qui apparaîtront chaque jour sur le site ! Dans sa grande mansuétude, Cerf'Lock
-						te donnera quelques pistes pour les trouver sur sa <a href="https://www.facebook.com/sotb2020" target="_blank">page facebook</a>...</p>
+						te donnera quelques pistes pour les trouver sur sa <a href="https://www.facebook.com/cerflock" target="_blank">page facebook</a>...</p>
 					<p>Trouveras-tu la vérité ?</p>
 				</div>
 			</div>
@@ -99,16 +101,44 @@
 					<h2>La Soirée BDE</h2>
 				</div>					
 				<div class="image">
-					<img src="/data/photos/soiree.jpg" alt="Une photo de gens qui s'ambiancent en soirée" />
+					<img src="/data/photos/soiree_bde.jpg" alt="Une photo de gens qui s'ambiancent en soirée" />
 				</div>
 				<div class="texte">
-					<p>On vous attend samedi soir pour la plus grande soirée des campagnes, dès 21h !</p>
-					<p>Avec les Dindes et les Djangoat Unchained, nous ambiancerons la soirée au rythme
-						de plusieurs défis et jeux pour égayer un peu cette période 😘</p>
-					<p>Qu'est-ce qu'on va faire exactement ? Mystère... On ne va quand même pas te gâcher la 
-						surprise !</p>
+					<p>Félicitations à l'équipe bleu clair, qui a brillament remporté la chasse au trésor !!</p>
+					<p>Et merci au BDE d'avoir organisé cette soirée ! On espère juste que les portes n'ont pas trop souffert...</p>
 				</div>
 			</div>
+		</div>
+		<br id="indices">
+		<h2>Les Indices de la Grande Énigme</h3>
+		<p>Tu as loupé les indices sur Facebook ? Pas de panique, retrouve-les ici ! Ces indices te permettront de dénicher les énigmes correspondantes cachées sur ce site, alors bonne chance !</p>
+		<div class="jeu" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+			<div class="carte wohover">
+				<div class="texte">
+					<h3>Indice n°1</h3>
+					<p>Grand membre parmi les membres, Serge Lelama était vraiment beau garçon... Mais je crois qu'il n'a pas encore livré tous ses secrets ! Allez donc admirer son portrait 😉</p>
+				</div>
+			</div>
+			<div class="carte wohover">
+				<div class="texte">
+					<h3>Indice n°2</h3>
+					<p>Le saviez-vous ? Les mentions légales sont un élément obligatoire des sites internet. Et il peut parfois être très intéressant de les lire ! Voire même de les lire... deux fois 😉</p>
+				</div>
+			</div>
+			<div class="carte wohover">
+				<div class="texte">
+					<h3>Indice n°3</h3>
+				</div>
+				<div class="image">
+					<img src="/data/indice3.png" alt="Des lunettes, un nœud pap et un verre de vin">
+				</div>
+			</div>
+			<a href="/fr/enigms/Sa-dernière-gueule-de-bois" class="carte wohover">
+				<div class="texte">
+					<h3>Indice n°4</h3>
+					<p>Vous cherchez encore le lien pour la dernière énigme ? Il est pourtant caché juste sous vos yeux...</p>
+				</div>
+			</a>
 		</div>
 
 		<br id="movie">
@@ -124,9 +154,7 @@
 			</div>
 			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-right:2rem;margin-bottom:2rem;">
 				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
-				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" 
-				src="https://www.youtube.com/embed/0r3XtQbaBTk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" src="https://www.youtube.com/embed/FT2VKCnAJmg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 		<br>
@@ -165,6 +193,18 @@
 				</div>
 			</div>
 		</div>
+		<br>
+		<div style="display:flex;flex-wrap: wrap;">
+			<div style="flex-basis: 200px;flex-grow: 1;margin-right: 2rem;">
+				<h1>La chorée !</h1>
+				<p>Notre superbe chorée t'as impressionné⋅e ? Tu peux la revisionner ici !</p>
+				<p>On remercie au passage notre fantastique chorégraphe Léa ;)</p>
+			</div>
+			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;">
+				<svg viewBox="0 0 16.9 9" style="grid-area: 1/1/1/1;"></svg>
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" src="https://www.youtube.com/embed/9h3w5S1wXf8?start=2777" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
 	</main>
 
 	<footer>
@@ -180,7 +220,7 @@
 				<div id="footer2">
 					<h2>Nos Réseaux !</h2>
 					<p>
-						<a href="https://www.facebook.com/sotb2020" target="_blank" class="hidden" title="Facebook" id="facebook">
+						<a href="https://www.facebook.com/cerflock" target="_blank" class="hidden" title="Facebook" id="facebook">
 							<button style="--first-color:#1877f2;">
 								<img src="/data/rs/facebook.svg" class="svg" />
 								Facebook
@@ -193,16 +233,16 @@
 							</button>
 						</a>
 						<br>
-						<a href="https://open.spotify.com/playlist/6mOcAqZZDB6RzSHoNwz7tp" target="_blank" class="hidden" title="Spotify - Biche Party" id="spotify1">
-							<button style="--first-color:#1aaf4e;">
-								<img src="/data/rs/spotify.svg" class="svg" />
-								Biche Party
+						<a href="https://www.instagram.com/cerflock_holmes/" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
+							<button style="--first-color:#ef0075;">
+								<img src="/data/rs/instagram.svg" class="svg" />
+								Instagram
 							</button>
 						</a>
-						<a href="https://open.spotify.com/playlist/1Xn8tMqHAQYBKv0SsroFRT" target="_blank" class="hidden" title="Spotify - Cocktail Auditif" id="spotify2">
+						<a href="https://open.spotify.com/playlist/1fcV5tWk0cSRl4hKsOmDF4?si=MKbTxA8QTn2oF3V94aSTGQ" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
 							<button style="--first-color:#1aaf4e;">
 								<img src="/data/rs/spotify.svg" class="svg" />
-								Cocktail Auditif
+								Spotify
 							</button>
 						</a>
 					</p>

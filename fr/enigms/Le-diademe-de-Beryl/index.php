@@ -72,7 +72,20 @@
 
 	<main>
 		<h1>Énigme n°3</h1>
-				
+		<p>L’enquête avance ! On sait désormais quel poison a été utilisé, et comment Serge, le bien-aimé chef des Cerfs-Volants, a ingéré ce poison. Cerf’Lock se demande maintenant <b>où</b> Serge aurait pu ingérer ce poison… Peux-tu l’aider ?</p>
+		<br>
+		<div class="box">
+		<p>Mon premier est une lettre latine dont la variante grecque a donné la dernière syllabe du nom servant à désigner l’ensemble des lettres.</p>
+		<p>Mon second est un nombre entier strictement positif qui n’est ni premier, ni un multiple de nombres premiers.</p>
+		<p>Mon troisième est l’élément neutre de la seule loi usuelle commutative, associative et inversible de l’ensemble des entiers relatifs.</p>
+		<p>Mon quatrième, enfin, est la plus grande puissance de 2 constituée d’un seul chiffre.</p>
+		</div>
+		<br>
+		<p>Alors, tu as trouvé ? Félicitations ! Rendez-vous demain pour la dernière énigme !!!! Tu pourras alors nous envoyer tes réponses via un formulaire.</p>
+		<details class="box" open="false">
+			<summary>Solution</summary>
+			<p>Le lieu recherché est une chambre de la Rez : la B108.</p>
+		</details>
 	</main>
 
 	<footer>
@@ -88,7 +101,7 @@
 				<div id="footer2">
 					<h2>Nos Réseaux !</h2>
 					<p>
-						<a href="https://www.facebook.com/sotb2020" target="_blank" class="hidden" title="Facebook" id="facebook">
+						<a href="https://www.facebook.com/cerflock" target="_blank" class="hidden" title="Facebook" id="facebook">
 							<button style="--first-color:#1877f2;">
 								<img src="/data/rs/facebook.svg" class="svg" />
 								Facebook
@@ -101,16 +114,16 @@
 							</button>
 						</a>
 						<br>
-						<a href="https://open.spotify.com/playlist/6mOcAqZZDB6RzSHoNwz7tp" target="_blank" class="hidden" title="Spotify - Biche Party" id="spotify1">
-							<button style="--first-color:#1aaf4e;">
-								<img src="/data/rs/spotify.svg" class="svg" />
-								Biche Party
+						<a href="https://www.instagram.com/cerflock_holmes/" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
+							<button style="--first-color:#ef0075;">
+								<img src="/data/rs/instagram.svg" class="svg" />
+								Instagram
 							</button>
 						</a>
-						<a href="https://open.spotify.com/playlist/1Xn8tMqHAQYBKv0SsroFRT" target="_blank" class="hidden" title="Spotify - Cocktail Auditif" id="spotify2">
+						<a href="https://open.spotify.com/playlist/1fcV5tWk0cSRl4hKsOmDF4?si=MKbTxA8QTn2oF3V94aSTGQ" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
 							<button style="--first-color:#1aaf4e;">
 								<img src="/data/rs/spotify.svg" class="svg" />
-								Cocktail Auditif
+								Spotify
 							</button>
 						</a>
 					</p>

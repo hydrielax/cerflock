@@ -100,15 +100,45 @@
 					<h2>The BDE Party</h2>
 				</div>					
 				<div class="image">
-					<img src="/data/photos/soiree.jpg" alt="Une photo de gens qui s'ambiancent en soirée" />
+					<img src="/data/photos/soiree_bde.jpg" alt="Une photo de gens qui s'ambiancent en soirée" />
 				</div>
 				<div class="texte">
-					<p>We are waiting for you on Saturday evening at 9 p.m. for the biggest party of the campaigns!</p>
-					<p>With the Turkeys and the Djangoat Unchained, we will set the tone for the evening to the rhythm of several challenges 
-						and games to brighten up this period a little 😘</p>
-					<p>What exactly are we going to do? Mystery... We are not going to spoil your surprise!</p>
+					<p>Congratulations to the light blue team, who brilliantly won the treasure hunt !!</p>
+					<p>And thank you to the BDE for organizing this evening! We just hope the doors haven't suffered too much ...</p>
 				</div>
 			</div>
+		</div>
+		
+		<br id="indices">
+		<h2>The Clues of the Great Enigma</h3>
+		<p>You miss the clues on Facebook? Don't panic, you can find them here! These clues will allow you to find the corresponding puzzles hidden on this site, so good luck!</p>
+		<div class="jeu" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+			<div class="carte wohover">
+				<div class="texte">
+					<h3>Clue n°1</h3>
+					<p>As a great member among the members, Serge Lelama was a really handsome boy... But I think he has not yet revealed all his secrets! Maybe you can admire his portrait 😉</p>
+				</div>
+			</div>
+			<div class="carte wohover">
+				<div class="texte">
+					<h3>Clue n°2</h3>
+					<p>Did you know? Legal notices are a mandatory part of websites. And it can sometimes be very interesting to read them! Even read them... twice 😉</p>
+				</div>
+			</div>
+			<div class="carte wohover">
+				<div class="texte">
+					<h3>Clue n°3</h3>
+				</div>
+				<div class="image">
+					<img src="/data/indice3.png" alt="Des lunettes, un nœud pap et un verre de vin">
+				</div>
+			</div>
+			<a href="/en/enigms/Sa-dernière-gueule-de-bois" class="carte wohover">
+				<div class="texte">
+					<h3>Clue n°4</h3>
+					<p>Still looking for the link to the last riddle? Yet it is hidden right before your eyes...</p>
+				</div>
+			</a>
 		</div>
 
 		<br id="movie">
@@ -123,9 +153,7 @@
 			</div>
 			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-right:2rem;margin-bottom:2rem;">
 				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
-				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" 
-				src="https://www.youtube.com/embed/0r3XtQbaBTk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-				gyroscope; picture-in-picture" allowfullscreen="" frameborder="0"></iframe>
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" src="https://www.youtube.com/embed/FT2VKCnAJmg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 		<br>
@@ -164,6 +192,18 @@
 				</div>
 			</div>
 		</div>
+		<br>
+		<div style="display:flex;flex-wrap: wrap;">
+			<div style="flex-basis: 200px;flex-grow: 1;margin-right: 2rem;">
+				<h1>The choregraphy !</h1>
+				<p>Our beautiful chorea impressed you? You can watch it again here!</p>
+				<p>We thank in passing our fantastic choreographer Léa;)</p>
+			</div>
+			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;">
+				<svg viewBox="0 0 16.9 9" style="grid-area: 1/1/1/1;"></svg>
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" src="https://www.youtube.com/embed/9h3w5S1wXf8?start=2777" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<div id="piedDePage">
@@ -189,16 +229,16 @@
 								<img src="/data/rs/youtube.svg" class="svg" />Youtube</button>
 						</a>
 						<br>
-						<a href="https://open.spotify.com/playlist/6mOcAqZZDB6RzSHoNwz7tp" target="_blank" class="hidden" title="Spotify - Biche Party" id="spotify1">
-							<button style="--first-color:#1aaf4e;">
-								<img src="/data/rs/spotify.svg" class="svg" />
-								Biche Party
+						<a href="https://www.instagram.com/cerflock_holmes/" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
+							<button style="--first-color:#ef0075;">
+								<img src="/data/rs/instagram.svg" class="svg" />
+								Instagram
 							</button>
 						</a>
-						<a href="https://open.spotify.com/playlist/1Xn8tMqHAQYBKv0SsroFRT" target="_blank" class="hidden" title="Spotify - Cocktail Auditif" id="spotify2">
+						<a href="https://open.spotify.com/playlist/1fcV5tWk0cSRl4hKsOmDF4?si=MKbTxA8QTn2oF3V94aSTGQ" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
 							<button style="--first-color:#1aaf4e;">
 								<img src="/data/rs/spotify.svg" class="svg" />
-								Cocktail Auditif
+								Spotify
 							</button>
 						</a>
 					</p>

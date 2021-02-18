@@ -11,7 +11,7 @@
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
 	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
-	<title>Riddle n°1 - Cerf'Lock Holmes</title>
+	<title>Riddle n°4 - Cerf'Lock Holmes</title>
 
 	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
 	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
@@ -72,26 +72,39 @@
 	</header>
 
 	<main>
-		<h1>Riddle n°1</h1>
-		<p><i>Congratulations! You found the first riddle!</i></p>
-		<p>The Stealing Deers Gang is stunned! The autopsy reveals that the regretted and beloved leader of the Gang, Serge Lelama, has been poisoned.</p>
-		<p>Cerf'Lock immediately goes on the track of the killer! But there is an even more important question: how was Serge poisoned? More precisely, with which substance?</p>
-		<p>Cerf’Lock being an excellent chemist, he did some analysis on the body of the former boss of the Stealing Deers… Will you find, like the great detective, which poison killed our beloved leader?</p>
-		<div class="box" style="background:var(--box-color);">
-			<h2>Autopsy report</h2>
-			<p>After having performed an autopsy in proper form, the following elements have been found.</p>
-			<h4>External appearance:</h4>
-			<ul>
-				<li>Under the foot sole is written a black tattoo strangely saying <b>“CNT-CNC”</b>;</li>
-				<li>Behind the neck is written the number <b>“2019”</b>. Origin : burnt at the stake. Might be inherited from prison years;</li>
-				<li>Notice that the state of hands and feets shows that the man probably used to participate in <b>campaigns</b>.</li>
-			</ul>
-			<h4>Suspected cause of death :</h4>
-			<p>The burn marks along the oesophagus and the state of lungs show clearly a death due to poisoning. The poison must have been dissolved in another liquid before ingestion, which doesn’t allow us to identify the poison.</p>
-			<p><i>Autopsy performed by Molly Hooper.</i></p>
-		</div>
+		<h1>Riddle n°4</h1>
+		<p>Cerf’Lock received some unbelievable news this morning: a member of the Stealing Deers Gang is a traitor and actually from a rival gang, the <b>MoriArty</b>! Surely he is responsible for Serge Lelama’s death.</p>
+		<p>Furthermore, another information just came from the morgue: after a full review of his body, the following note has been found in Serge’s pocket.</p>
+		<p><i>“Few tips for my petty jokers:</i></p>
+		<ul>
+			<li><i>eat 5 fruit and vegetables a day</i></li>
+			<li><i>sleep at least 8 hours per night (to favor the production of growth hormones)</i></li>
+			<li><i>and don’t leave your shoes everywhere in the flat.”</i></li>
+		</ul>
+		<p>After this discovery, Cerf’Lock decided to visit a few suspects to identify the traitor. Will you find it too?</p>
+		<h3>8 a.m.: David Chalet</h3>
+		<p>Cerf’Lock bumped into a closed door, on which the following post-it is stuck: “Do not hesitate to slide a message under this door, I will answer you as soon as possible and I’ll come back to you when I have additional information.” Looking through the keyhole, Cerf’Lock observed a dusty pile of flip flops scattered like a true chaotic dump. Being absent so often definitely makes this member a not to be missed suspect in this case, thought the great detective.</p>
+		<h3>9 a.m.: Fabienne Hamon</h3>
+		<p>While Cerf’Lock intended to interview this other suspect, but it was eventually him who got interviewed. As soon as he arrived, she welcomed him saying “Hello, what’s your internal weather?” and added “Have you ever tried the gazpacho with vodka? Look: tomato cucumber, pepper, onion and of course… vodka! The ideal dish after party! I follow the advice of a great culinary expert and it’s the only thing I eat!” Noticing this gastronomic inventiveness, Cerf’Lock wondered whether Serge’s poisoning was rather food poisoning...</p>
+		<h3>10 a.m.: Sébastien Barlet</h3>
+		<p>Wanting to interview  this potential culprit, Cerf’Lock found him devastated, staggering in front of the Rez A. It turned out that the suspect stayed at the party until 4 a.m. at the “fun floor.” He answered each question Cerf’Lock asked with inaudible gurgles.</p>
+		<h3>11 a.m.: Emmanuel Rozière</h3>
+		<p>He had been seen on Serge’s death day drinking a glass with him in a bar. In addition to radically breaching the curfew, this made him an important suspect in this case. Cerf’Lock found him totally drunk with his brain upside-down. As he wanted to interview him, the suspect cut him right away: “No, no questions… Yes I’m a bit sluggish this morning, and so what! Nothing can compete with the power of concrete!” Surely he went to the same party as the previous suspect and just like him, did not go back to his place before 4 a.m.</p>
+		<h3>12 p.m.: Frédéric Dorel</h3>
+		<p>Cerf’Lock visited this other suspect while he was doing a voodoo invocation. “What’re you doing?” Cerf’Lock asked him. “Well it’s obvious , I’m creating a religion.” Seeing that Cerf’Lock was surprised by the armada of shoes paving his living room, he added: “This is a religion worshiping the shoes, this mess is necessary and salutary.”  Cerf’Lock wondered whether a religion worshiping poison could have led him to be guilty of Serge’s murder.</p>
+		<h3>1 p.m.: Arnaud Poitou</h3>
+		<p>Cerf’Lock found him elaborating a Machiavellian plan to fuck up Centrale Lyon. Cerf’Lock got amazed in front of his well organised and cleaned flat, with no signs of dust on the floor. A basket with three kinds of fruits was standing on the dresser and a sweet flavor of leek and pumpkin soup was in the air. Questioning him, Cerf’Lock found out that on the day when Serge died he had slept all day long, as he had got used to doing since September, getting up only an hour to look out for the Intercentrales resurgence.</p>
+		<h3>2 p.m.: Jean-Baptiste Avrillier</h3>
+		<p>Cerf’Lock found his last suspect in the middle of a photoshoot of a demolition site. He had large dark circles under his eyes. Cerf’lock also noticed one detail: he was wearing the same socks than Serge was, the day of his death. Very much happy to meet Cerf’Lock, the suspect offered him a selfie to capture this historic moment: the demolition of the building C. After this disturbing interview and rushing because of the curfew, Cerf’Lock found his way home, thinking.</p>
 		<br>
-		<p>Well then, have you found the used poison?</p>
+		<p>“Oh, yes, yes! he claimed suddenly, this is elementary!”</p>
+		<p>So, did you find it too?</p>
+		<br>
+		<br>
+		<details class="box" open="false">
+			<summary>Answer</summary>
+			<p>The traitor is Arnaud Poitou!</p>
+		</details>
 		
 	</main>
 
@@ -119,16 +132,16 @@
 								<img src="/data/rs/youtube.svg" class="svg" />Youtube</button>
 						</a>
 						<br>
-						<a href="https://open.spotify.com/playlist/6mOcAqZZDB6RzSHoNwz7tp" target="_blank" class="hidden" title="Spotify - Biche Party" id="spotify1">
-							<button style="--first-color:#1aaf4e;">
-								<img src="/data/rs/spotify.svg" class="svg" />
-								Biche Party
+						<a href="https://www.instagram.com/cerflock_holmes/" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
+							<button style="--first-color:#ef0075;">
+								<img src="/data/rs/instagram.svg" class="svg" />
+								Instagram
 							</button>
 						</a>
-						<a href="https://open.spotify.com/playlist/1Xn8tMqHAQYBKv0SsroFRT" target="_blank" class="hidden" title="Spotify - Cocktail Auditif" id="spotify2">
+						<a href="https://open.spotify.com/playlist/1fcV5tWk0cSRl4hKsOmDF4?si=MKbTxA8QTn2oF3V94aSTGQ" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
 							<button style="--first-color:#1aaf4e;">
 								<img src="/data/rs/spotify.svg" class="svg" />
-								Cocktail Auditif
+								Spotify
 							</button>
 						</a>
 					</p>

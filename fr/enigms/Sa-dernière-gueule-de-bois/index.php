@@ -11,7 +11,7 @@
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
 	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
-	<title>Énigme n°1 - Cerf'Lock Holmes</title>
+	<title>Énigme n°4 - Cerf'Lock Holmes</title>
 
 	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
 	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
@@ -71,26 +71,40 @@
 	</header>
 
 	<main>
-		<h1>Énigme n°1</h1>
-		<p><i>Félicitations ! Tu as trouvé la première énigme !!!</i></p>
-		<p>Stupéfaction chez les Cerfs-Volants ! Après autopsie, on a découvert que Serge Lelama, le regretté et bien aimé chef du gang des Cerfs-Volants, a été empoisonné !</p>
-		<p>Cerf'Lock s'est aussitôt mis la recherche de l'assassin ! Mais avant, plus important encore : comment Serge a-t-il été empoisonné ? Avec quelle substance ?</p>
-		<p>Cerf'Lock étant un grand chimiste, il a effectué des analyses sur le corps de l'ancien boss des Cerfs-Volants... Sauras-tu toi aussi trouver quel poison a tué notre chef bien-aimé ?</p>
-		<div class="box" style="background:var(--box-color);">
-			<h2>Rapport d'autopsie</h2>
-			<p>Après avoir pratiqué un examen en bonne et dûe forme du corps, les éléments suivants ont été trouvés.</p>
-			<h4>Aspect extérieur :</h4>
-			<ul>
-				<li>sous la plante du pied, un tatouage écrit en noir figurait, portant le texte (assez étrange !) suivant : <b>« CNT-CNC »</b> ;</li>
-				<li>sur sa nuque, à l'arrière du coup, un autre numéro était inscrit au fer rouge (sûrement un souvenir de ses années passées en prison) : <b>« 2019 »</b> ;</li>
-				<li>À noter que l'état de ses mains et de ses pieds montraient que l'homme avait très probablement l'habitude de travailler à la <b>campagne</b>.</li>
-			</ul>
-			<h4>Cause estimée du décès :</h4>
-			<p>Des traces de brûlures le long de l'œsophage, ainsi que l'état des poumons nous montrent très clairement que nous avons affaire à un empoisonnement. Malheureusement, ce poison a dû être ingéré dissous dans un autre liquide, ce qui nous empêche d'identifier le poison utilisé.</p>
-			<p><i>Autopsie pratiquée par Molly Hooper.</i></p>
-		</div>
+		<h1>Énigme n°4</h1>
+		<p>Ce matin, Cerf'Lock a reçu une nouvelle incroyable : il y a un traître parmi les Cerfs-Volants ! C'est un membre d'un gang rival : les <b>MoriArty</b>... C'est sûrement lui qui a tué Serge Lelama !</p>
+		<p>De plus, une autre information vient de nous parvenir depuis la morgue : après un examen approfondi, la note suivante a été trouvée dans la poche de Serge :</p>
+		<p><i>« Quelques conseils pour mes potits blagueurs :</i></p>
+		<ul>
+			<li><i>manger 5 fruits et légumes par jour</i></li>
+			<li><i>dormir au moins 8h par nuit (pour favoriser la production de l'hormone de la croissance)</i></li>
+			<li><i>et ne pas laisser traîner ses chaussures dans l'appart. »</i></li>
+		</ul>
+		<p>Suite à ces nouvelles découvertes, Cerf'Lock décide de rendre visite quelques suspects pour trouver le traître... Le trouveras-tu toi aussi ?</p>
+		<h3>8h : David Chalet</h3>
+		<p>Cerf'Lock se heurta à une porte close, sur laquelle était collé le post-it suivant : « N'hésitez pas à glisser un message sous cette porte, je vous répondrai dès que possible et reviendrai vers vous quand j'aurai des informations supplémentaires. » En zieutant à travers le trou de la serrure, Cerf'Lock observa une marée poussiéreuse de tongs, éparpillées dans un bazar sans nom. Décidément, pensa le grand détective, les absences répétées de ce membre font de lui un suspect incontournable de cette affaire !</p>
+		<h3>9h : Fabienne Hamon</h3>
+		<p>Alors que Cerf'Lock comptait interroger cette autre suspecte, c'est finalement lui qui se fit interroger. Dès son arrivée, elle l'accueillit d'un « Bonjour, quelle est ta météo intérieure ? » puis enchaîna sur un « As-tu déjà goûté au gaspacho à la vodka ? Regarde : tomate, concombre, poivron, oignon, et bien-sûr… vodka ! Le mets idéal pour un lendemain de soirée ! Sous l'influence d'un grand expert culinaire, je ne mange que ça ! » Face à cette inventivité gastronomique, Cerf'Lock se demanda si l'empoisonnement de Serge n'était pas plutôt une intoxication alimentaire...</p>
+		<h3>10h : Sébastien Barlet</h3>
+		<p>Désirant interroger ce coupable potentiel, Cerf'Lock le retrouva complètement ravagé, titubant devant la rez A. Il s'avéra que le suspect était resté en soirée jusqu'à 4h du mat' à l'étage du kiff. Il répondit à chaque question de Cerf'Lock par un gargouilli incompréhensible...</p>
+		<h3>11h : Emmanuel Rozière</h3>
+		<p>Il avait été aperçu le jour du décès de Serge en train de prendre un verre avec lui dans un bar. En plus d'enfreindre radicalement le couvre-feu, cela faisait de lui un suspect non négligeable dans l'affaire. Cerf'Lock le trouva complètement arraché, le cerveau dans les chaussettes. Quand il voulut l'interroger, celui-ci le coupa net : « Non, pas de questions… je suis un peu mou ce matin, oui et alors ? Rien ne peut rivaliser avec la puissance du béton ! » Très certainement, il avait dû se rendre à la même soirée que le suspect précédent, et n'était pas rentré avant ce dernier.</p>
+		<h3>12h : Frédéric Dorel</h3>
+		<p>Quand Cerf'Lock vint visiter cet autre suspect, celui-ci était en pleine invocation vaudou. « Mais que fais-tu ? » lui demanda Cerf'Lock. « Mais c'est évident, enfin, je crée une religion. » Voyant Cerf'Lock stupéfait devant l'armada de chaussures tapissant son salon, il enchaîna : « C'est une religion vénérant les chaussures, ce désordre est indispensable, et salutaire. » Cerf'Lock se demanda si une religion vénérant le poison n'aurait pas pu le conduire à se rendre coupable du meurtre de Serge.</p>
+		<h3>13h : Arnaud Poitou</h3>
+		<p>Cerf'Lock le dénicha en pleine élaboration d'un plan machiavélique pour niquer du lyonnais. Cerf'Lock s'émerveilla devant son appart parfaitement rangé et nettoyé, épuré de toute trace de poussière au sol. Un panier de trois fruits trônait sur le buffet, tandis qu'une douce odeur de soupe au potimarron et poireau flottait dans l'air. En l'interrogeant, Cerf'Lock apprit que le jour de la mort de Serge, il avait dormi toute la journée, comme il en avait pris l'habitude depuis septembre, ne se levant qu'une heure pour guetter la reprise des Intercentrales.</p>
+		<h3>14h : Jean-Baptiste Avrillier</h3>
+		<p>Cerf'Lock trouva son ultime suspect en pleine séance photo d'un chantier de démolition. Il arborait de larges cernes jusque sous les oreilles. Cerf'Lock nota également ce détail : il portait les mêmes chaussettes que Serge le jour de sa mort. Tout content de voir Cerf'Lock, le suspect lui proposa un selfie pour immortaliser ce moment historique : la destruction du bâtiment C. Suite à cette entrevue perturbante, et pressé par le couvre-feu, Cerf'Lock rentra chez lui, pensif.</p>
 		<br>
-		<p>Alors, as-tu trouvé comme Cerf'Lock le poison utilisé ?</p>
+		<p>« Mais si bien-sûr ! s'exclama-t-il soudain, mais c'est élémentaire ! »</p>
+		<p>Et vous, parviendrez-vous à dénicher le coupable ?</p>
+
+		<br><br>
+
+		<details class="box" open="false">
+			<summary>Solution</summary>
+			<p>Le traître est Arnaud Poitou !</p>
+		</details>
 		
 	</main>
 
@@ -107,7 +121,7 @@
 				<div id="footer2">
 					<h2>Nos Réseaux !</h2>
 					<p>
-						<a href="https://www.facebook.com/sotb2020" target="_blank" class="hidden" title="Facebook" id="facebook">
+						<a href="https://www.facebook.com/cerflock" target="_blank" class="hidden" title="Facebook" id="facebook">
 							<button style="--first-color:#1877f2;">
 								<img src="/data/rs/facebook.svg" class="svg" />
 								Facebook
@@ -120,16 +134,16 @@
 							</button>
 						</a>
 						<br>
-						<a href="https://open.spotify.com/playlist/6mOcAqZZDB6RzSHoNwz7tp" target="_blank" class="hidden" title="Spotify - Biche Party" id="spotify1">
-							<button style="--first-color:#1aaf4e;">
-								<img src="/data/rs/spotify.svg" class="svg" />
-								Biche Party
+						<a href="https://www.instagram.com/cerflock_holmes/" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
+							<button style="--first-color:#ef0075;">
+								<img src="/data/rs/instagram.svg" class="svg" />
+								Instagram
 							</button>
 						</a>
-						<a href="https://open.spotify.com/playlist/1Xn8tMqHAQYBKv0SsroFRT" target="_blank" class="hidden" title="Spotify - Cocktail Auditif" id="spotify2">
+						<a href="https://open.spotify.com/playlist/1fcV5tWk0cSRl4hKsOmDF4?si=MKbTxA8QTn2oF3V94aSTGQ" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
 							<button style="--first-color:#1aaf4e;">
 								<img src="/data/rs/spotify.svg" class="svg" />
-								Cocktail Auditif
+								Spotify
 							</button>
 						</a>
 					</p>

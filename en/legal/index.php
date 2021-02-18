@@ -84,6 +84,7 @@
 		<p>This site uses exactly two cookies, to record your choice of day/night mode. In accordance with European law, your consent is not required for this type of cookies. Their sole purpose is to keep your display preferences when you change page on the site. In order to preserve your privacy, we do not use any audience measurement cookies.</p>
 		<h2>Site editor</h2>
 		<p>This site was created by Alexis Delage for the Château Porc association, domiciled with Mr. Cassel, apartment 1003, 2 rue Nathalie Sarraute, 44200 Nantes. The publication director is Adrien Gaillard, president of the association.</p>
+		<p>If you are interrested in the source code of this website, you can find it on <a href="https://github.com/hydrielax/cerflock">Github</a>.</p>
 		<h2>Site host</h2>
 		<p>This site is hosted by 1 & 1 IONOS SARL, 7 place de la Gare, BP 70109, 57200 Sarreguemines C.</p>
 		<h2>Intellectual property</h2>
@@ -124,16 +125,16 @@
 								<img src="/data/rs/youtube.svg" class="svg" />Youtube</button>
 						</a>
 						<br>
-						<a href="https://open.spotify.com/playlist/6mOcAqZZDB6RzSHoNwz7tp" target="_blank" class="hidden" title="Spotify - Biche Party" id="spotify1">
-							<button style="--first-color:#1aaf4e;">
-								<img src="/data/rs/spotify.svg" class="svg" />
-								Biche Party
+						<a href="https://www.instagram.com/cerflock_holmes/" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
+							<button style="--first-color:#ef0075;">
+								<img src="/data/rs/instagram.svg" class="svg" />
+								Instagram
 							</button>
 						</a>
-						<a href="https://open.spotify.com/playlist/1Xn8tMqHAQYBKv0SsroFRT" target="_blank" class="hidden" title="Spotify - Cocktail Auditif" id="spotify2">
+						<a href="https://open.spotify.com/playlist/1fcV5tWk0cSRl4hKsOmDF4?si=MKbTxA8QTn2oF3V94aSTGQ" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
 							<button style="--first-color:#1aaf4e;">
 								<img src="/data/rs/spotify.svg" class="svg" />
-								Cocktail Auditif
+								Spotify
 							</button>
 						</a>
 					</p>

@@ -102,13 +102,19 @@
 				$handle = fopen("https://www.cerflock.fr/data/allos.csv", "r");
 				$lost = fgetcsv($handle, 1000, ',', '"');
 				while (($allo = fgetcsv($handle, 1000, ',', '"')) !== FALSE) {
-					echo "<div class='carte wohover";
 					if ($allo[4] == "uber") {
-						echo " carte-haute";
+						echo "<a href='/fr/allos/uber' class='carte carte-haute";
+					} else {
+						echo "<div class='carte wohover";
 					}
 					echo "'><div class=image><img src='/data/allos/" . $allo[4] . ".jpg' alt='Image du " . $allo[0] . "'>";
 					echo "</div><div class=texte><h2>" . $allo[0] . "</h2>";
-					echo "<p>" . $allo[2] . "</p></div></div>";
+					echo "<p>" . $allo[2] . "</p></div>";
+					if ($allo[4] == "uber") {
+						echo "</a>";
+					} else {
+						echo "</div>";
+					}
 				}
 				fclose($handle);
 			?>
@@ -128,7 +134,7 @@
 				<div id="footer2">
 					<h2>Nos Réseaux !</h2>
 					<p>
-						<a href="https://www.facebook.com/sotb2020" target="_blank" class="hidden" title="Facebook" id="facebook">
+						<a href="https://www.facebook.com/cerflock" target="_blank" class="hidden" title="Facebook" id="facebook">
 							<button style="--first-color:#1877f2;">
 								<img src="/data/rs/facebook.svg" class="svg" />
 								Facebook
@@ -141,16 +147,16 @@
 							</button>
 						</a>
 						<br>
-						<a href="https://open.spotify.com/playlist/6mOcAqZZDB6RzSHoNwz7tp" target="_blank" class="hidden" title="Spotify - Biche Party" id="spotify1">
-							<button style="--first-color:#1aaf4e;">
-								<img src="/data/rs/spotify.svg" class="svg" />
-								Biche Party
+						<a href="https://www.instagram.com/cerflock_holmes/" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
+							<button style="--first-color:#ef0075;">
+								<img src="/data/rs/instagram.svg" class="svg" />
+								Instagram
 							</button>
 						</a>
-						<a href="https://open.spotify.com/playlist/1Xn8tMqHAQYBKv0SsroFRT" target="_blank" class="hidden" title="Spotify - Cocktail Auditif" id="spotify2">
+						<a href="https://open.spotify.com/playlist/1fcV5tWk0cSRl4hKsOmDF4?si=MKbTxA8QTn2oF3V94aSTGQ" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">
 							<button style="--first-color:#1aaf4e;">
 								<img src="/data/rs/spotify.svg" class="svg" />
-								Cocktail Auditif
+								Spotify
 							</button>
 						</a>
 					</p>
