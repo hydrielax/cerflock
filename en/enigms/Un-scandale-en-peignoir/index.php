@@ -81,7 +81,7 @@
 		<br><br>
 		<p>Found it? Congratulations! Write the answer down, it will soon be useful 😉</p>
 		<br>
-		<details class="box" open="false">
+		<details class="box" style="width: max-content;">
 			<summary>Answer</summary>
 			<p>The poison has been placed in a <i>Sex-on-the-Biche cocktail</i> (cock - tel - Sex on the Biche).</p>
 		</details>

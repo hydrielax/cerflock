@@ -101,7 +101,7 @@
 
 		<br><br>
 
-		<details class="box" open="false">
+		<details class="box" style="width: max-content;">
 			<summary>Solution</summary>
 			<p>Le traître est Arnaud Poitou !</p>
 		</details>

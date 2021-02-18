@@ -92,7 +92,7 @@
 		<br>
 		<p>Alors, as-tu trouvé comme Cerf'Lock le poison utilisé ?</p>
 
-		<details class="box" open="false">
+		<details class="box" style="width: max-content;">
 			<summary>Solution</summary>
 			<p>Le poison utilisé est l'arsenic.</p>
 		</details>

@@ -101,7 +101,7 @@
 		<p>So, did you find it too?</p>
 		<br>
 		<br>
-		<details class="box" open="false">
+		<details class="box" style="width: max-content;">
 			<summary>Answer</summary>
 			<p>The traitor is Arnaud Poitou!</p>
 		</details>

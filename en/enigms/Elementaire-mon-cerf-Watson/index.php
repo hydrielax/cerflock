@@ -92,7 +92,7 @@
 		</div>
 		<br>
 		<p>Well then, have you found the used poison?</p>
-		<details class="box" open="false">
+		<details class="box" style="width: max-content;">
 			<summary>Answer</summary>
 			<p>The used poison is arsenic.</p>
 		</details>

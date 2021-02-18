@@ -82,7 +82,7 @@
 		</div>
 		<br>
 		<p>Alors, tu as trouvé ? Félicitations ! Rendez-vous demain pour la dernière énigme !!!! Tu pourras alors nous envoyer tes réponses via un formulaire.</p>
-		<details class="box" open="false">
+		<details class="box" style="width: max-content;">
 			<summary>Solution</summary>
 			<p>Le lieu recherché est une chambre de la Rez : la B108.</p>
 		</details>

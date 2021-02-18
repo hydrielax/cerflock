@@ -79,7 +79,7 @@
 		<br><br>
 		<p>Ça y est, tu l'as trouvé ? Félicitations ! Note la réponse dans un coin, ça te servira bientôt 😉</p>
 		<br>
-		<details class="box" open="false">
+		<details class="box" style="width: max-content;">
 			<summary>Solution</summary>
 			<p>Le poison a été glissé dans un <i>Cocktail Sex-on-the-Biche</i> (Coq - tel - sex on the biche).</p>
 		</details>

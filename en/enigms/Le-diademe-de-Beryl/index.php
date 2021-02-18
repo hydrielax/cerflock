@@ -85,7 +85,7 @@
 		<p>So, did you find it? Congratulations! See you tomorrow for the last riddle!
 		You will then be able to send us your answers through a form.</p>
 
-		<details class="box" open="false">
+		<details class="box" style="width: max-content;">
 			<summary>Answer</summary>
 			<p>It's a room of the Centrale Residence: the B108.</p>
 		</details>
