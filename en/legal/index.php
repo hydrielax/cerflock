@@ -96,7 +96,7 @@
 		</ul>
 		<h2>Did you know ?</h2>
 		<p>Before we choosed the name <i>Cerf'Lock Holmes,</i> our list was called <i>Sex 
-			on the Biche</i> (you can also find <a href="https://en.sexonthebiche.fr" target="_blank">
+			on the Biche</i> (you can also find <a href="https://sites.google.com/view/sexonthebiche-en" target="_blank">
 			the <i>Sex on the Biche</i> website here</a>). But before all of that, our first name was <i>Château Porc,</i> 
 			which has been choosed as the offical name of the association.</p>
 	</main>

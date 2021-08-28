@@ -99,7 +99,7 @@
 		</ul>
 		<h2>Le saviez-vous ?</h2>
 		<p>Avant d'avoir pour nom <i>Cerf'Lock Holmes,</i> notre liste avait pour fake nom <i>Sex 
-			on the Biche</i> (vous pouvez d'ailleurs retrouver <a href="https://www.sexonthebiche.fr" target="_blank">
+			on the Biche</i> (vous pouvez d'ailleurs retrouver <a href="https://sites.google.com/view/sexonthebiche" target="_blank">
 			le site des Sex on the Biche</a> ici). Mais encore avant, au tout début, nous avions pour fake fake nom <i>Château Porc,</i> 
 			qui a donc été retenu pour le nom officiel de l'association.</p>
 	</main>
