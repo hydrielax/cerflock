@@ -76,7 +76,7 @@
 		<h2>Contact</h2>
 		<p>Pour toute question ou demande d'information, vous pouvez nous contacter par les moyens suivants :</p>
 		<ul>
-			<li>par courriel : <a href="mailto:contact@cerflock.herokuapp.com">contact@cerflock.herokuapp.com</a></li>
+			<li>par courriel : <a href="mailto:sexeonthebiche@gmail.com">contact@cerflock.fr</a></li>
 			<li>par téléphone : <a href="tel:+33783653406">+33 7 83 65 34 06</a></li>
 		</ul>
 		<h2>Cookies</h2>
