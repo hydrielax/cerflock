@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width" />
 	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
+	<link rel="canonical" href="https://www.cerflock.herokuapp.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Allos - Cerf'Lock Holmes</title>
 
@@ -99,7 +99,7 @@
 		</p>
 		<div class="jeu">
 			<?php 
-				$handle = fopen("https://www.cerflock.fr/data/allos.csv", "r");
+				$handle = fopen("https://www.cerflock.herokuapp.fr/data/allos.csv", "r");
 				$lost = fgetcsv($handle, 1000, ',', '"');
 				while (($allo = fgetcsv($handle, 1000, ',', '"')) !== FALSE) {
 					if ($allo[4] == "uber") {

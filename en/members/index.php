@@ -9,7 +9,7 @@
 	<meta name="robots" content="noindex">
 	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
+	<link rel="canonical" href="https://www.cerflock.herokuapp.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Members - Cerf'Lock Holmes</title>
 
@@ -77,7 +77,7 @@
 		<br>
 		<div class="jeu">
 			<?php 
-				$handle = fopen("https://www.cerflock.fr/data/membres.csv", "r");
+				$handle = fopen("https://www.cerflock.herokuapp.fr/data/membres.csv", "r");
 				$lost = fgetcsv($handle, 3000, ',', '"');
 				while (($membre = fgetcsv($handle, 3000, ',', '"')) !== FALSE) {
 					if ($membre[0] == "Adrien") {

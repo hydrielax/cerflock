@@ -5,4 +5,4 @@ Allow: /data/photos/groupe-big.jpg
 Allow: /data/photos/groupe-fun.jpg
 Allow: /data/logo.png
 
-Sitemap: https://www.cerflock.fr/sitemap.txt
+Sitemap: https://www.cerflock.herokuapp.fr/sitemap.txt

@@ -9,7 +9,7 @@
 	<meta name="robots" content="noindex">
 	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
+	<link rel="canonical" href="https://www.cerflock.herokuapp.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Mentions Légales - Cerf'Lock Holmes</title>
 
@@ -76,7 +76,7 @@
 		<h2>Contact</h2>
 		<p>Pour toute question ou demande d'information, vous pouvez nous contacter par les moyens suivants :</p>
 		<ul>
-			<li>par courriel : <a href="mailto:contact@cerflock.fr">contact@cerflock.fr</a></li>
+			<li>par courriel : <a href="mailto:contact@cerflock.herokuapp.fr">contact@cerflock.herokuapp.fr</a></li>
 			<li>par téléphone : <a href="tel:+33783653406">+33 7 83 65 34 06</a></li>
 		</ul>
 		<h2>Cookies</h2>

@@ -6,11 +6,11 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<meta property="og:image" content="https://www.cerflock.fr/data/photos/serge.jpg">
+	<meta property="og:image" content="https://www.cerflock.herokuapp.fr/data/photos/serge.jpg">
 	
 	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://www.cerflock.fr/fr/<?php echo $file; ?>" />
+	<link rel="canonical" href="https://www.cerflock.herokuapp.fr/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Campagnes - Cerf'Lock Holmes</title>
 
