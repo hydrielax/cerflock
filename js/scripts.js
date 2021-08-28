@@ -101,7 +101,7 @@ function setCookie(sName, sValue) {
 	var today = new Date();
 	var expires = new Date();
 	expires.setTime(today.getTime() + (365 * 24 * 60 * 60 * 1000));
-	document.cookie = sName + "=" + encodeURIComponent(sValue) + ";path=/;expires=" + expires.toGMTString() + ";secure";
+	document.cookie = sName + "=" + encodeURIComponent(sValue) + ";path=/;expires=" + expires.toGMTString();
 }
 
 
