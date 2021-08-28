@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width" />
 	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
 	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://www.cerflock.herokuapp.com/fr/<?php echo $file; ?>" />
+	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/<?php echo $file; ?>" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Cerf'Lock Holmes</title>
 
