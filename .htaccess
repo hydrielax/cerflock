@@ -3,7 +3,7 @@ ErrorDocument 404 /fr/404/index.php
 
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !=443
-RewriteRule ^(.*)$ https://cerflock.herokuapp.fr/$1 [R=301,L]
+RewriteRule ^(.*)$ https://cerflock.herokuapp.com/$1 [R=301,L]
 
 <FilesMatch "\.(php)$">
     <IfModule mod_expires.c>
