@@ -38,7 +38,7 @@ function changeMode() {
 	if (actualMode === modeIfAutoEnable) {
 		setCookie("mode", "auto");
 	} else {
-		setCookie("mode", modeIfAutoEnable);
+		setCookie("mode", actualMode);
 	}
 }
 
