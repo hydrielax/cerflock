@@ -20,19 +20,25 @@ function changeMode() {
 	} else {
 		page.className = "";
 	}
+	var actualMode = page.className;
+	if (actualMode === "") actualMode = "light";
+
 	//on calcule mode auto
-	var auto = getCookie("auto");
-	var modeAuto = "light";
-	if (auto === "system") {
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches) modeAuto = "dark";
+	var autoSetting = getCookie("auto");
+	var modeIfAutoEnable = "light";
+	if (autoSetting === "system") {
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			modeIfAutoEnable = "dark";
+		}
 	} else {
-		if (!isDay()) modeAuto = "dark";
+		if (!isDay()) modeIfAutoEnable = "dark";
 	}
+
 	//on enregistre le mode
-	if (page.className === modeAuto) {
+	if (actualMode === modeIfAutoEnable) {
 		setCookie("mode", "auto");
 	} else {
-		setCookie("mode", page.className);
+		setCookie("mode", modeIfAutoEnable);
 	}
 }
 
@@ -48,21 +54,22 @@ function autoChangeMode() {
 	}
 
 	//on initialise le cookie auto (indique si on se base sur l'heure ou le thème système)
-	/*4 possibilités :
+	/*3 possibilités :
 		  - system : on suit le thème du système si celui-ci change automatiquement
-		  - light : le thème du système est light et ne change pas
-		  - dark : le thème du système est dark et ne change pas
-		  - hour : il n'y a pas de thème système
+		  - h-light : on se base sur les heures pour l'instant, dernier thème lu : blanc
+		  - h-dark : on se base sur les heures pour l'instant, dernier thème lu : noir
 	*/
 	var auto = getCookie("auto");
 	if (auto == null) {
 		if (window.matchMedia('(prefers-color-scheme: dark)').matches) setCookie("auto", "dark");
 		else setCookie("auto", "light");
-	} else {
-		if (auto === "light" && window.matchMedia('(prefers-color-scheme: dark)').matches ||
-			auto === "dark" && window.matchMedia('(prefers-color-scheme: light)').matches) {
-			setCookie("auto", "system");
-		}
+	} 
+	else if (
+		auto === "light" && window.matchMedia('(prefers-color-scheme: dark)').matches ||
+		auto === "dark" && window.matchMedia('(prefers-color-scheme: light)').matches) 
+	{
+		/* on détecte que le thème système de l'utilisateur a changé*/
+		setCookie("auto", "system");
 	}
 	auto = getCookie("auto");
 
