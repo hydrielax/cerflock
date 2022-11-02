@@ -16,3 +16,4 @@ Site web de la liste BDE *Cerf'Lock Holmes*, liste candidate au BDE de Centrale 
   * Si l'utilisateur change à nouveau de thème et que ce thème correspond au thème auto, alors on rebascule sur le thème auto.
 * Technologies : le site est construit en PHP, qui permet d'ajouter des scripts dans le HTML. En pratique c'est à éviter, il vaut mieux se contenter de HTML et construire des scripts en JavaScript.
 * Langues : le site propose une version anglaise et une version française
+* Le site web est installable en tant qu'appli (grâce aux fichiers `service-worker.js` et `manifest.json`
