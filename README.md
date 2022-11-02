@@ -20,3 +20,8 @@ Site web de la liste BDE *Cerf'Lock Holmes*, liste candidate au BDE de Centrale 
 * L'indexation des membres par les moteurs de recherche est désactivée grâce à la balise `
 	<meta name="robots" content="noindex">` sur la page html correspondante
 * L'indexation des image est désactivée grâce aux fichiers `robots.txt`
+
+## License
+
+Le code du site web peut être réutilisé et modifié sans aucune restriction, selon les termes de la licence MIT.
+Les images et le contenu rédactionnel sont cependant soumises au droit d'auteur et ne peuvent être réutilisées, partagées ou modifiées sans l'autorisation express des auteurs du site.
