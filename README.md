@@ -23,5 +23,5 @@ Site web de la liste BDE *Cerf'Lock Holmes*, liste candidate au BDE de Centrale 
 
 ## License
 
-Le code du site web peut être réutilisé et modifié sans aucune restriction, selon les termes de la licence MIT.
-Les images et le contenu rédactionnel sont cependant soumises au droit d'auteur et ne peuvent être réutilisées, partagées ou modifiées sans l'autorisation express des auteurs du site.
+* Le code du site web peut être réutilisé et modifié sans aucune restriction, selon les termes de la licence MIT.
+* Les images et le contenu rédactionnel sont cependant soumises au droit d'auteur et ne peuvent être réutilisées, partagées ou modifiées sans l'autorisation express des auteurs du site.
