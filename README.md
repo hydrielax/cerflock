@@ -1,6 +1,6 @@
 # Site Web des Cerf'Lock Holmes
 
-[cerflock.herokuapp.com](https://cerflock.herokuapp.com/)
+[cerflock.fr](https://cerflock.fr/)
 
 ## Description
 

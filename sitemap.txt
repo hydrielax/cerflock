@@ -1,4 +1,4 @@
-https://cerflock.herokuapp.com/fr/home/index.html
-https://cerflock.herokuapp.com/fr/program/index.html
-https://cerflock.herokuapp.com/fr/campaigns/index.html
-https://cerflock.herokuapp.com/fr/allos/index.html
+https://cerflock.fr/fr/home/index.html
+https://cerflock.fr/fr/program/index.html
+https://cerflock.fr/fr/campaigns/index.html
+https://cerflock.fr/fr/allos/index.html
