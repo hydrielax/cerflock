@@ -74,30 +74,30 @@
 		<h1>Adrien Gaillard</h1>
 		<p>Discover the Big Boss of Cerf'Lock Holmes!</p>
 		<br>
-		<div class="jeu">
-			<?php 
-				for ($i = 1; $i < 33; $i++) {
-					if ($i == 18) {
-						echo "<a href='/en/enigms/Elementaire-mon-cerf-Watson'";
-					} else {
-						echo "<div";
-					}
-
-					echo " class='carte";
-
-					if ($i == 2 || $i == 4 || $i == 6 || $i == 9 || $i == 13 || $i == 15 || $i == 18 ||$i == 19 || $i == 22 || $i == 26) {
-							echo " carte-haute";
-					}
-
-					echo "'><img src='/data/adrien/adrien_" . $i . ".jpg' alt='' /></";
-					if ($i == 18) {
-						echo "a>";
-					} else {
-						echo "div>";
-					}
+		<div id="root" class="jeu"></div>
+		<script>
+			const root = document.getElementById('root');
+			let contents = '';
+			for (let i=1 ; i < 33 ; i++) {
+				if (i === 18) {
+					contents += '<a href="/en/enigms/Elementaire-mon-cerf-Watson" ';
+				} else {
+					contents += '<div '
 				}
-			?>
-		</div>
+				if ([2, 4, 6, 9, 13, 15, 18, 19, 22, 26].includes(i)) {
+					contents += 'class="carte carte-haute">'
+				} else {
+					contents += 'class="carte">'
+				}
+				contents += `<img src="/data/adrien/adrien_${i}.jpg" alt="" />`
+				if (i === 18) {
+					contents += '</a>'
+				} else {
+					contents += '</div>'
+				}
+			}
+			root.innerHTML = contents;
+		</script>
 	</main>
 
 	<footer>
