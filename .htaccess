@@ -1,5 +1,5 @@
-DirectoryIndex fr/home/index.php home/index.php index.php
-ErrorDocument 404 /fr/404/index.php
+DirectoryIndex fr/home/index.html home/index.html index.html
+ErrorDocument 404 /fr/404/index.html
 
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !=443

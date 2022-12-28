@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/cartes.css?v=1" />
 
 	<script type="text/javascript" src="/js/scripts.js?v=1"></script>
-	
+	<script type="text/javascript" src="/js/papaparse.min.js"></script>
 </head>
 
 <body>
@@ -96,28 +96,38 @@
 		<p style="margin-top:0;">
 			Tu veux discuter ou nous poser un défi ? Alors n'hésite plus et appelle-nous au <a href="tel:+33783653406">07.83.65.34.06</a> ! Les allos auront lieu jeudi après-midi et le weekend 😉 Tu peux nous demander ce que tu veux parmi la liste ci-dessous !
 		</p>
-		<div class="jeu">
-			<?php 
-				$handle = fopen("https://cerflock.herokuapp.com/data/allos.csv", "r");
-				$lost = fgetcsv($handle, 1000, ',', '"');
-				while (($allo = fgetcsv($handle, 1000, ',', '"')) !== FALSE) {
-					if ($allo[4] == "uber") {
-						echo "<a href='/fr/allos/uber' class='carte carte-haute";
+		<div id="root" class="jeu"></div>
+		<script>
+			const root = document.getElementById('root');
+			Papa.parse('/data/allos.csv', {
+				download: true,
+				header: true,
+				step: function(row) {
+					let contents = root.innerHTML;
+					const data = row.data;
+					if (data['code'] == 'uber') {
+						contents += '<a href="/fr/allos/uber" class="carte carte-haute">';
 					} else {
-						echo "<div class='carte wohover";
+						contents += '<div class="carte wohover">';
 					}
-					echo "'><div class=image><img src='/data/allos/" . $allo[4] . ".jpg' alt='Image du " . $allo[0] . "'>";
-					echo "</div><div class=texte><h2>" . $allo[0] . "</h2>";
-					echo "<p>" . $allo[2] . "</p></div>";
-					if ($allo[4] == "uber") {
-						echo "</a>";
+					contents += `
+						<div class=image>
+							<img src="/data/allos/${data['code']}.jpg" alt="Image du ${data['name']}"/>
+						</div>
+						<div class="texte">
+							<h2>${data['name']}</h2>
+							<p>${data['description']}</p>
+						</div>
+					`
+					if (data['code'] == 'uber') {
+						contents += '</a>';
 					} else {
-						echo "</div>";
+						contents += '</div>';
 					}
-				}
-				fclose($handle);
-			?>
-		</div>
+					root.innerHTML = contents;
+				},
+			});
+		</script>
 	</main>
 
 	<footer>

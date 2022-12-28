@@ -23,6 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/cartes.css?v=1" />
 
 	<script type="text/javascript" src="/js/scripts.js?v=1"></script>
+	<script type="text/javascript" src="/js/papaparse.min.js"></script>
 </head>
 
 <body>
@@ -74,31 +75,41 @@
 		<h1>Members</h1>
 		<p>Discover the greatest inspectors of Centrale!</p>
 		<br>
-		<div class="jeu">
-			<?php 
-				$handle = fopen("https://cerflock.herokuapp.com/data/membres.csv", "r");
-				$lost = fgetcsv($handle, 3000, ',', '"');
-				while (($membre = fgetcsv($handle, 3000, ',', '"')) !== FALSE) {
-					if ($membre[0] == "Adrien") {
-						echo '<a href="/en/members/adrien/"';
-					} else if ($membre[0] == "Clément") {
-						echo '<a href="/en/enigms/Le-diademe-de-Beryl"';
+		<div id="root" class="jeu"></div>
+		<script>
+			const root = document.getElementById('root');
+			Papa.parse('/data/membres.csv', {
+				download: true,
+				header: true,
+				step: function(row) {
+					let contents = root.innerHTML;
+					const data = row.data;
+					if (data['Code'] == 'Adrien') {
+						contents += '<a href="/en/members/adrien" class="carte">';
+					} else if (data['Code'] == 'Clément') {
+						contents += '<a href="/en/enigms/Le-diademe-de-Beryl" class="carte">';
 					} else {
-						echo '<div';
+						contents += '<div class="carte">';
 					}
-					echo " class=carte><div class=image><img src='/data/photos_membres/" . $membre[6] . ".png' alt=''>";
-					echo "</div><div class=texte><h3>" . $membre[0] . " " . $membre[1] . "</h3>";
-					echo "<h4>" . $membre[3] . "</h4>";
-					echo "<p style='font-size:0.9em;'>" . $membre[5] . "</p></div>";
-					if ($membre[0] == "Adrien" || $membre[0] == "Clément") {
-						echo '</a>';
+					contents += `
+						<div class=image>
+							<img src="/data/photos_membres/${data['Code']}.png" alt=""/>
+						</div>
+						<div class="texte">
+							<h3>${data['Prénom']} ${data['Nom']}</h3>
+							<h4>${data['Rôle (en)']}</h4>
+							<p style="font-size:0.9em;">${data['Description EN']}</p>
+						</div>
+					`
+					if (['Adrien', 'Clément'].includes(data['Code'])) {
+						contents += '</a>';
 					} else {
-						echo '</div>';
+						contents += '</div>';
 					}
-				}
-				fclose($handle);
-			?>
-		</div>
+					root.innerHTML = contents;
+				},
+			});
+		</script>
 	</main>
 
 	<footer>
