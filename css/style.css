@@ -79,7 +79,7 @@ html {
 
 body {
 	/*Aspect général de la page*/
-	background: url('/data/bg-light.png');
+	background: url('/cerflock/data/bg-light.png');
 	background-color: var(--bg-color);
 	background-repeat: repeat;
 	background-attachment: fixed;
@@ -92,7 +92,7 @@ body {
 }
 
 .dark body {
-	background: url('/data/bg-dark.png');
+	background: url('/cerflock/data/bg-dark.png');
 	background-color: var(--bg-color);
 	background-repeat: repeat;
 	background-attachment: fixed;
