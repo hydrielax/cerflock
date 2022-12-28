@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
 <html>
-<?php $path = $_SERVER['PHP_SELF']; $file = basename (dirname( $path)); ?>
+<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" . basename (dirname( $path)); ?>
 
 <head>
-	<meta charset="UTF-8" />
+<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<meta name="robots" content="noindex">
-	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
-	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/<?php echo $file; ?>" />
+	<link rel="alternate" hreflang="en" href="/en/enigms/Le-diademe-de-Beryl/" />
+	<link rel="alternate" hreflang="fr" href="/fr/enigms/Le-diademe-de-Beryl/" />
+	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/enigms/Le-diademe-de-Beryl/" />
 	<link rel="manifest" href="/manifest.json">
-	<title>Members - Cerf'Lock Holmes</title>
+	<title>Riddle n°3 - Cerf'Lock Holmes</title>
 
 	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
 	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
@@ -19,11 +19,11 @@
 	<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
 	<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
 
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/cartes.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/cartes.css') . '" />'; ?>
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/topnav.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/cartes.css?v=1" />
 
-	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
+	<script type="text/javascript" src="/js/scripts.js?v=1"></script>
 </head>
 
 <body>
@@ -31,13 +31,13 @@
 		autoChangeMode();
 	</script>
 
-	<header>
+<header>
 		<nav>
 
 			<a href="tel:+33783653406" class="quick-access" title="Call us!">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Call us!"></div>
 			</a>
-			<a href="/fr/<?php echo $file; ?>" class="quick-access" title="En Français dans le texte...!">
+			<a href="/fr/enigms/Le-diademe-de-Beryl/" class="quick-access" title="En Français dans le texte...!">
 				<div class="icon"><img src="/data/icons/fr.svg" alt="Version française"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Join the dark side...">
@@ -55,7 +55,7 @@
 				<div class="icon"><img src="/data/icons/programme.svg" class="svg page" alt=""></div>
 				<span>Program</span>
 			</a>
-			<a href="/en/members" class="active">
+			<a href="/en/members">
 				<div class="icon"><img src="/data/icons/membres.svg" class="svg page" alt=""></div>
 				<span>Members</span>
 			</a>
@@ -72,34 +72,23 @@
 	</header>
 
 	<main>
-		<h1>Members</h1>
-		<p>Discover the greatest inspectors of Centrale!</p>
+		<h1>Riddle n°3</h1>
+		<p>The investigation is moving well! We know which poison has been used and how Serge, the beloved leader of the Stealing Deers Gang, has swallowed it. Cerf’Lock is now wondering <b>where</b> the murder could have happened. Can you help him?</p>
 		<br>
-		<div class="jeu">
-			<?php 
-				$handle = fopen("https://cerflock.herokuapp.com/data/membres.csv", "r");
-				$lost = fgetcsv($handle, 3000, ',', '"');
-				while (($membre = fgetcsv($handle, 3000, ',', '"')) !== FALSE) {
-					if ($membre[0] == "Adrien") {
-						echo '<a href="/en/members/adrien/"';
-					} else if ($membre[0] == "Clément") {
-						echo '<a href="/en/enigms/Le-diademe-de-Beryl"';
-					} else {
-						echo '<div';
-					}
-					echo " class=carte><div class=image><img src='/data/photos_membres/" . $membre[6] . ".png' alt=''>";
-					echo "</div><div class=texte><h3>" . $membre[0] . " " . $membre[1] . "</h3>";
-					echo "<h4>" . $membre[3] . "</h4>";
-					echo "<p style='font-size:0.9em;'>" . $membre[5] . "</p></div>";
-					if ($membre[0] == "Adrien" || $membre[0] == "Clément") {
-						echo '</a>';
-					} else {
-						echo '</div>';
-					}
-				}
-				fclose($handle);
-			?>
+		<div class="box">
+		<p>My first is a Latin letter, which is the Greek variant of the one which gives the last syllable of the name used to designate the set of all the letters.</p>
+		<p>My second is a strictly positive integer that is neither a prime number nor a multiple of prime numbers.</p>
+		<p>My third is the neutral element of the only usual commutative, associative and invertible binary operation on the set of integers.</p>
+		<p>Finally, my fourth is the greatest exponent of 2 made up of a single figure.</p>
 		</div>
+		<br>
+		<p>So, did you find it? Congratulations! See you tomorrow for the last riddle!
+		You will then be able to send us your answers through a form.</p>
+
+		<details class="box" style="width: max-content;">
+			<summary>Answer</summary>
+			<p>It's a room of the Centrale Residence: the B108.</p>
+		</details>
 	</main>
 
 	<footer>

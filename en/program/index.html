@@ -6,9 +6,9 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
-	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/<?php echo $file; ?>" />
+	<link rel="alternate" hreflang="en" href="/en/program/" />
+	<link rel="alternate" hreflang="fr" href="/fr/program/" />
+	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/program/" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Program - Cerf'Lock Holmes</title>
 
@@ -18,10 +18,10 @@
 	<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
 	<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
 
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/topnav.css?v=1" />
 
-	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
+	<script type="text/javascript" src="/js/scripts.js?v=1"></script>
 	
 </head>
 
@@ -36,7 +36,7 @@
 			<a href="tel:+33783653406" class="quick-access" title="Call us!">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Call us!"></div>
 			</a>
-			<a href="/fr/<?php echo $file; ?>" class="quick-access" title="En Français dans le texte...!">
+			<a href="/fr/program/" class="quick-access" title="En Français dans le texte...!">
 				<div class="icon"><img src="/data/icons/fr.svg" alt="Version française"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Join the dark side...">

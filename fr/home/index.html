@@ -6,9 +6,10 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
-	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/<?php echo $file; ?>" />
+	<meta property="og:image" content="https://cerflock.herokuapp.com/data/photos/groupe-fun.jpg">
+	<link rel="alternate" hreflang="en" href="/en/home/" />
+	<link rel="alternate" hreflang="fr" href="/fr/home/" />
+	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/home/" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Cerf'Lock Holmes</title>
 
@@ -18,12 +19,11 @@
 	<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
 	<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
 
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/cartes.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/cartes.css') . '" />'; ?>
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/topnav.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/cartes.css?v=1" />
 
-	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
-	
+	<script type="text/javascript" src="/js/scripts.js?v=1"></script>
 </head>
 
 <body>
@@ -34,40 +34,39 @@
 	<header>
 		<nav>
 
-			<a href="tel:+33783653406" class="quick-access" title="Call us!">
-				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Call us!"></div>
+			<a href="tel:+33783653406" class="quick-access" title="Appelez-nous !">
+				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
-			<a href="/fr/<?php echo $file; ?>" class="quick-access" title="En Français dans le texte...!">
-				<div class="icon"><img src="/data/icons/fr.svg" alt="Version française"></div>
+			<a href="/en/home/" class="quick-access" title="In English, please!">
+				<div class="icon"><img src="/data/icons/en.png" alt="English version"></div>
 			</a>
-			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Join the dark side...">
-				<div class="icon"><img src="/data/icons/dark.svg" class="svg" alt="Enable/Disable dark mode"></div>
+			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
+				<div class="icon"><img src="/data/icons/dark.svg" class="svg" class="svg" alt="Activer/Désactiver le mode nuit"></div>
 			</a>
 
 			<a href="javascript:void(0);" onclick="open_close_menu()" id="menu">
-				<div class="icon"><img src="/data/icons/menu.svg" class="svg" alt="Menu"></div>
+				<div class="icon"><img src="/data/icons/menu.svg" class="svg" class="svg" alt="Menu"></div>
 			</a>
-			<a href="/en/home" class="active" id="titre">
+			<a href="/fr/home" class="active" id="titre">
 				<div class="icon"><img src="/data/logo_rond.png" alt=""></div>
 				<span>Cerf'Lock Holmes</span>
 			</a>
-			<a href="/en/program">
+			<a href="/fr/program">
 				<div class="icon"><img src="/data/icons/programme.svg" class="svg page" alt=""></div>
-				<span>Program</span>
+				<span>Programme</span>
 			</a>
-			<a href="/en/members">
+			<a href="/fr/members">
 				<div class="icon"><img src="/data/icons/membres.svg" class="svg page" alt=""></div>
-				<span>Members</span>
+				<span>Membres</span>
 			</a>
-			<a href="/en/campaigns">
+			<a href="/fr/campaigns">
 				<div class="icon"><img src="/data/icons/campaigns.svg" class="svg page" alt=""></div>
-				<span>Campaigns</span>
+				<span>Campagnes</span>
 			</a>
-			<a href="/en/allos">
+			<a href="/fr/allos">
 				<div class="icon"><img src="/data/icons/allos.svg" class="svg page" alt=""></div>
 				<span>Allos</span>
 			</a>
-
 		</nav>
 	</header>
 
@@ -76,10 +75,10 @@
 	<main style="padding-top:1rem;">
 		<div style="display:flex;flex-wrap: wrap;">
 			<div style="flex-basis: 200px;flex-grow: 1;margin-right: 2rem;">
-				<h1>Welcome!</h1>
-				<p>Welcome on the offical website of Cerf'Lock Holmes!</p>
-				<p>We forme a list which candidate for the 2021 BDE of Centrale Nantes, and we are motivated to shake you during these campaigns!</p>
-				<p>So, are you ready to investigate with us?</p>
+				<h1>Bienvenue&nbsp;!</h1>
+				<p>Bienvenue sur le site officiel des Cerf'Lock Holmes !</p>
+				<p>Candidats au BDE de Centrale Nantes pour l'année 2021, nous sommes déterminés à vous faire vibrer durant ces campagnes !</p>
+				<p>Alors, êtes-vous prêts à mener l'enquête avec nous ?</p>
 			</div>
 			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;">
 				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
@@ -87,8 +86,9 @@
 			</div>
 		</div>
 		<br><br>
-		<h2>Discover our mysterious events...</h2>
-		<p>Want to have fun and get away from this gloomy atmosphere? Don't worry, Cerf'Lock has concocted some surprises for you!</p>
+		<h2>Découvre nos mystérieux events...</h2>
+		<p>Envie de t'amuser et sortir un peu de cette atmosphère morose ? 
+			Ne t'inquiète pas, Cerf'Lock t'as concocté quelques surprises !</p>
 		<br>
 		<style>
 			.jeu {
@@ -105,71 +105,73 @@
 			}
 		</style>
 		<div class="jeu">
-			<a href="/en/campaigns#grande-enigme" class="carte">
-				<img src="/data/photos/serge.jpg" alt="Our beloved boss Serge Lelama">
-				<h2>The Great Enigma</h2>
+			<a href="/fr/campaigns#grande-enigme" class="carte">
+				<img src="/data/photos/serge.jpg" alt="feu Serge Lelama, chef regretté des Cerfs-Volants
+">
+				<h2>La Grande Énigme</h2>
 			</a>
-			<a href="/en/campaigns#soiree" class="carte">
-				<img src="/data/photos/soiree_bde.jpg" alt="The greeat parties of Cerf'Lock!">
-				<h2>The BDE Party</h2>
+			<a href="/fr/campaigns#soiree" class="carte">
+				<img src="/data/photos/soiree_bde.jpg" alt="Les grandes soirées de Cerf'Lock !">
+				<h2>La Soirée BDE</h2>
 			</a>
-			<a href="/en/allos" class="carte">
-				<img src="/data/photos/zoom.jpg" alt="A beautiful JB captured during a zoom session ;)">
-				<h2>The "Allôs"</h2>
+			<a href="/fr/allos" class="carte">
+				<img src="/data/photos/zoom.jpg" alt="Un magnifique JB capturé en plein Zoom ;)">
+				<h2>Les Allos</h2>
 			</a>
 		</div>
 		<br>
-		<h1>Do you want more?</h1>
-		<p>Because we are never out of ideas, you can also discover all these bonuses prepared just for you!</p>
+		<h1>Tu en veux encore ?</h1>
+		<p>Parce qu'on n'est jamais à court d'idées, tu peux encore découvrir tous ces bonus préparés rien que pour toi !</p>
 		<br>
 		<div class="jeu">
-			<a href="/en/campaigns#movie" class="carte">
+			<a href="/fr/campaigns#movie" class="carte">
 				<div class="image">
-					<img src="/data/photos/film.jpg" alt="Joshua and a camera">
+					<img src="/data/photos/film.jpg" alt="Image de Joshua tenant une caméra">
 				</div>
 				<div class="texte">
-					<h3>The movie</h3>
-					<p>Want to see again and again our trailer and our fantastic movie? Click here!</p>
+					<h3>Le film</h3>
+					<p>Envie de voir et revoir notre trailer et notre super film ? Clique ici !</p>
 				</div>
 			</a>
-			<a href="/en/program" class="carte">
+			<a href="/fr/program" class="carte">
 				<div class="image">
-					<img src="/data/photos/adrien-loin.jpg" alt="Adrien looking far far away...">
+					<img src="/data/photos/adrien-loin.jpg" alt="Image d'Adrien regardant au loin">
 				</div>
 				<div class="texte">
-					<h3>The Program</h3>
-					<p>Our actions are not limited to the campaigns! Cerf'Lock is always one step ahead ...</p>
+					<h3>Le Programme</h3>
+					<p>Nos actions ne se limitent pas qu'aux campagnes ! Cerf'Lock garde toujours un coup d'avance...</p>
 				</div>
 			</a>
-			<a href="/en/members" class="carte">
+			<a href="/fr/members" class="carte">
 				<div class="image">
-					<img src="/data/photos/groupe.jpg" alt="Group photo">
+					<img src="/data/photos/groupe.jpg" alt="Photo de groupe des membres">
 				</div>
 				<div class="texte">
-					<h3>Members</h3>
-					<p>Who are we? Discover the members of the list!</p>
+					<h3>Les Membres</h3>
+					<p>Tu veux savoir qui nous sommes ? Découvre-nous !</p>
 				</div>
 			</a>
 			<a href="https://www.youtube.com/channel/UCXkxERW_Eq3eXeSNH2yEp9A" target="_blank" class="carte">
 				<div class="image">
-					<img src="/data/photos/youtube.jpg" alt="Camera Picture">
+					<img src="/data/photos/youtube.jpg" alt="Image de caméra">
 				</div>
 				<div class="texte">
 					<h3>Youtube</h3>
-					<p>Discover or rediscover all of our campaign and pre-campaign videos!</p>
+					<p>Découvre ou redécouvre toutes nos vidéos des campagnes et des précampagnes !</p>
 				</div>
 			</a>
-			<a href="https://www.facebook.com/sotb2020" target="_blank" class="carte">
+			<a href="https://www.facebook.com/cerflock" target="_blank" class="carte">
 				<div class="image">
-					<img src="/data/photos/facebook.jpg" alt="facebook Picture">
+					<img src="/data/photos/facebook.jpg" alt="Image Facebook">
 				</div>
 				<div class="texte">
 					<h3>Facebook</h3>
-					<p>Follow all our latest news on social networks!</p>
+					<p>Suis toutes nos dernières actus sur les réseaux !</p>
 				</div>
 			</a>
 		</div>
 	</main>
+
 	<footer>
 		<div id="piedDePage">
 			<img id="footerlogo" src="/data/logo.png" alt="Logo de Cerf'Lock Holmes" loading="lazy"/>
@@ -177,13 +179,13 @@
 				<div id="footer1">
 					<h2 class="titlefont">Cerf'Lock Holmes</h2>
 					<p>© Château Porc 2021</p>
-					<p><a href="/en/legal">Legal mentions</a></p>
-					<p><i>This site has been made with does, love, and fun!</i></p>
+					<p><a href="/fr/legal">Mentions légales</a></p>
+					<p><i>Fait avec des biches, de l'amour, de l'humour et du fun !</i></p>
 				</div>
 				<div id="footer2">
-					<h2>Social Network</h2>
+					<h2>Nos Réseaux !</h2>
 					<p>
-						<a href="https://www.facebook.com/sotb2020" target="_blank" class="hidden" title="Facebook" id="facebook">
+						<a href="https://www.facebook.com/cerflock" target="_blank" class="hidden" title="Facebook" id="facebook">
 							<button style="--first-color:#1877f2;">
 								<img src="/data/rs/facebook.svg" class="svg" />
 								Facebook
@@ -191,7 +193,9 @@
 						</a>
 						<a href="https://www.youtube.com/channel/UCXkxERW_Eq3eXeSNH2yEp9A" target="_blank" class="hidden" title="Youtube" id="youtube">
 							<button style="--first-color: #e20d0d;">
-								<img src="/data/rs/youtube.svg" class="svg" />Youtube</button>
+								<img src="/data/rs/youtube.svg" class="svg" />
+								Youtube
+							</button>
 						</a>
 						<br>
 						<a href="https://www.instagram.com/cerflock_holmes/" target="_blank" class="hidden" title="Spotify - Playlist Mystère" id="spotify1">

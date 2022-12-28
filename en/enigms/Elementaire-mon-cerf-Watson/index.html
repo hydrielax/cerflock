@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
 <html>
-<?php $file = "members/adrien" ?>
+<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" . basename (dirname( $path)); ?>
 
 <head>
-	<meta charset="UTF-8" />
+<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<meta name="robots" content="noindex">
-	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
-	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/<?php echo $file; ?>" />
+	<link rel="alternate" hreflang="en" href="/en/enigms/Elementaire-mon-cerf-Watson/" />
+	<link rel="alternate" hreflang="fr" href="/fr/enigms/Elementaire-mon-cerf-Watson/" />
+	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/enigms/Elementaire-mon-cerf-Watson/" />
 	<link rel="manifest" href="/manifest.json">
-	<title>Adrien Gaillard - Cerf'Lock Holmes</title>
+	<title>Riddle n°1 - Cerf'Lock Holmes</title>
 
 	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
 	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
@@ -19,11 +19,11 @@
 	<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
 	<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
 
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/cartes.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/cartes.css') . '" />'; ?>
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/topnav.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/cartes.css?v=1" />
 
-	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
+	<script type="text/javascript" src="/js/scripts.js?v=1"></script>
 </head>
 
 <body>
@@ -31,13 +31,13 @@
 		autoChangeMode();
 	</script>
 
-	<header>
+<header>
 		<nav>
 
 			<a href="tel:+33783653406" class="quick-access" title="Call us!">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Call us!"></div>
 			</a>
-			<a href="/fr/<?php echo $file; ?>" class="quick-access" title="En Français dans le texte...!">
+			<a href="/fr/enigms/Elementaire-mon-cerf-Watson/" class="quick-access" title="En Français dans le texte...!">
 				<div class="icon"><img src="/data/icons/fr.svg" alt="Version française"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Join the dark side...">
@@ -72,33 +72,30 @@
 	</header>
 
 	<main>
-		<h1>Adrien Gaillard</h1>
-		<p>Discover the Big Boss of Cerf'Lock Holmes!</p>
-		<br>
-		<div class="jeu">
-			<?php 
-				for ($i = 1; $i < 33; $i++) {
-					if ($i == 18) {
-						echo "<a href='/en/enigms/Elementaire-mon-cerf-Watson'";
-					} else {
-						echo "<div";
-					}
-
-					echo " class='carte";
-
-					if ($i == 2 || $i == 4 || $i == 6 || $i == 9 || $i == 13 || $i == 15 || $i == 18 ||$i == 19 || $i == 22 || $i == 26) {
-							echo " carte-haute";
-					}
-
-					echo "'><img src='/data/adrien/adrien_" . $i . ".jpg' alt='' /></";
-					if ($i == 18) {
-						echo "a>";
-					} else {
-						echo "div>";
-					}
-				}
-			?>
+		<h1>Riddle n°1</h1>
+		<p><i>Congratulations! You found the first riddle!</i></p>
+		<p>The Stealing Deers Gang is stunned! The autopsy reveals that the regretted and beloved leader of the Gang, Serge Lelama, has been poisoned.</p>
+		<p>Cerf'Lock immediately goes on the track of the killer! But there is an even more important question: how was Serge poisoned? More precisely, with which substance?</p>
+		<p>Cerf’Lock being an excellent chemist, he did some analysis on the body of the former boss of the Stealing Deers… Will you find, like the great detective, which poison killed our beloved leader?</p>
+		<div class="box" style="background:var(--box-color);">
+			<h2>Autopsy report</h2>
+			<p>After having performed an autopsy in proper form, the following elements have been found.</p>
+			<h4>External appearance:</h4>
+			<ul>
+				<li>Under the foot sole is written a black tattoo strangely saying <b>“CNT-CNC”</b>;</li>
+				<li>Behind the neck is written the number <b>“2019”</b>. Origin : burnt at the stake. Might be inherited from prison years;</li>
+				<li>Notice that the state of hands and feets shows that the man probably used to participate in <b>campaigns</b>.</li>
+			</ul>
+			<h4>Suspected cause of death:</h4>
+			<p>The burn marks along the oesophagus and the state of lungs show clearly a death due to poisoning. The poison must have been dissolved in another liquid before ingestion, which doesn’t allow us to identify the poison.</p>
+			<p><i>Autopsy performed by Molly Hooper.</i></p>
 		</div>
+		<br>
+		<p>Well then, have you found the used poison?</p>
+		<details class="box" style="width: max-content;">
+			<summary>Answer</summary>
+			<p>The used poison is arsenic.</p>
+		</details>
 	</main>
 
 	<footer>
@@ -142,7 +139,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<script>
 		convert();
 	</script>

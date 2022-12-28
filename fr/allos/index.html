@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
 <html>
-<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" . basename (dirname( $path)); ?>
+<?php $path = $_SERVER['PHP_SELF']; $file = basename (dirname( $path)); ?>
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<meta name="robots" content="noindex">
-	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
-	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/<?php echo $file; ?>" />
+	<link rel="alternate" hreflang="en" href="/en/allos/" />
+	<link rel="alternate" hreflang="fr" href="/fr/allos/" />
+	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/allos/" />
 	<link rel="manifest" href="/manifest.json">
-	<title>Énigme n°3 - Cerf'Lock Holmes</title>
+	<title>Allos - Cerf'Lock Holmes</title>
 
 	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
 	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
@@ -19,11 +18,12 @@
 	<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
 	<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
 
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/cartes.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/cartes.css') . '" />'; ?>
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/topnav.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/cartes.css?v=1" />
 
-	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
+	<script type="text/javascript" src="/js/scripts.js?v=1"></script>
+	
 </head>
 
 <body>
@@ -37,7 +37,7 @@
 			<a href="tel:+33783653406" class="quick-access" title="Appelez-nous !">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
-			<a href="/en/<?php echo $file; ?>" class="quick-access" title="In English, please!">
+			<a href="/en/allos/" class="quick-access" title="In English, please!">
 				<div class="icon"><img src="/data/icons/en.png" alt="English version"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">
@@ -63,29 +63,62 @@
 				<div class="icon"><img src="/data/icons/campaigns.svg" class="svg page" alt=""></div>
 				<span>Campagnes</span>
 			</a>
-			<a href="/fr/allos">
+			<a href="/fr/allos" class="active">
 				<div class="icon"><img src="/data/icons/allos.svg" class="svg page" alt=""></div>
 				<span>Allos</span>
 			</a>
 		</nav>
 	</header>
 
+	<style>
+		a.gros-bouton {
+			float:right;
+			margin-top:1.5rem;
+		}
+		button.gros-bouton {
+			font-size:1.5rem;
+			height:2em;
+			padding:0.5em;
+			margin:auto 0;
+		}
+		@media screen and (max-width: 500px) {
+			button.gros-bouton {
+				font-size: 1.1rem;
+			}
+		}
+	</style>
 	<main>
-		<h1>Énigme n°3</h1>
-		<p>L’enquête avance ! On sait désormais quel poison a été utilisé, et comment Serge, le bien-aimé chef des Cerfs-Volants, a ingéré ce poison. Cerf’Lock se demande maintenant <b>où</b> Serge aurait pu ingérer ce poison… Peux-tu l’aider ?</p>
-		<br>
-		<div class="box">
-		<p>Mon premier est une lettre latine dont la variante grecque a donné la dernière syllabe du nom servant à désigner l’ensemble des lettres.</p>
-		<p>Mon second est un nombre entier strictement positif qui n’est ni premier, ni un multiple de nombres premiers.</p>
-		<p>Mon troisième est l’élément neutre de la seule loi usuelle commutative, associative et inversible de l’ensemble des entiers relatifs.</p>
-		<p>Mon quatrième, enfin, est la plus grande puissance de 2 constituée d’un seul chiffre.</p>
+		<div style="display:flow-root;">
+			<h1 style="float:left;">Allô ?</h1>
+			<a class="hidden gros-bouton" href="tel:+33783653406">
+				<button class="gros-bouton">Appelle-nous !</button>
+			</a>
 		</div>
-		<br>
-		<p>Alors, tu as trouvé ? Félicitations ! Rendez-vous demain pour la dernière énigme !!!! Tu pourras alors nous envoyer tes réponses via un formulaire.</p>
-		<details class="box" style="width: max-content;">
-			<summary>Solution</summary>
-			<p>Le lieu recherché est une chambre de la Rez : la B108.</p>
-		</details>
+		<p style="margin-top:0;">
+			Tu veux discuter ou nous poser un défi ? Alors n'hésite plus et appelle-nous au <a href="tel:+33783653406">07.83.65.34.06</a> ! Les allos auront lieu jeudi après-midi et le weekend 😉 Tu peux nous demander ce que tu veux parmi la liste ci-dessous !
+		</p>
+		<div class="jeu">
+			<?php 
+				$handle = fopen("https://cerflock.herokuapp.com/data/allos.csv", "r");
+				$lost = fgetcsv($handle, 1000, ',', '"');
+				while (($allo = fgetcsv($handle, 1000, ',', '"')) !== FALSE) {
+					if ($allo[4] == "uber") {
+						echo "<a href='/fr/allos/uber' class='carte carte-haute";
+					} else {
+						echo "<div class='carte wohover";
+					}
+					echo "'><div class=image><img src='/data/allos/" . $allo[4] . ".jpg' alt='Image du " . $allo[0] . "'>";
+					echo "</div><div class=texte><h2>" . $allo[0] . "</h2>";
+					echo "<p>" . $allo[2] . "</p></div>";
+					if ($allo[4] == "uber") {
+						echo "</a>";
+					} else {
+						echo "</div>";
+					}
+				}
+				fclose($handle);
+			?>
+		</div>
 	</main>
 
 	<footer>

@@ -8,9 +8,9 @@
 	<meta name="viewport" content="width=device-width" />
 	<meta property="og:image" content="https://cerflock.herokuapp.com/data/photos/serge.jpg">
 	
-	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
-	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/<?php echo $file; ?>" />
+	<link rel="alternate" hreflang="en" href="/en/campaigns/" />
+	<link rel="alternate" hreflang="fr" href="/fr/campaigns/" />
+	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/campaigns/" />
 	<link rel="manifest" href="/manifest.json">
 	<title>Campagnes - Cerf'Lock Holmes</title>
 
@@ -20,11 +20,11 @@
 	<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
 	<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
 
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/cartes.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/cartes.css') . '" />'; ?>
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/topnav.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/cartes.css?v=1" />
 
-	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
+	<script type="text/javascript" src="/js/scripts.js?v=1"></script>
 	
 </head>
 
@@ -39,7 +39,7 @@
 			<a href="tel:+33783653406" class="quick-access" title="Appelez-nous !">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
 			</a>
-			<a href="/en/<?php echo $file; ?>" class="quick-access" title="In English, please!">
+			<a href="/en/campaigns/" class="quick-access" title="In English, please!">
 				<div class="icon"><img src="/data/icons/en.png" alt="English version"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Rejoignez le côté obscur...">

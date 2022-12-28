@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
 <html>
-<?php $path = $_SERVER['PHP_SELF']; $file = "enigms/" . basename (dirname( $path)); ?>
+<?php $path = $_SERVER['PHP_SELF']; $file = basename (dirname( $path)); ?>
 
 <head>
-<meta charset="UTF-8" />
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<meta name="robots" content="noindex">
-	<link rel="alternate" hreflang="en" href="/en/<?php echo $file; ?>" />
-	<link rel="alternate" hreflang="fr" href="/fr/<?php echo $file; ?>" />
-	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/<?php echo $file; ?>" />
+	<link rel="alternate" hreflang="en" href="/en/allos/" />
+	<link rel="alternate" hreflang="fr" href="/fr/allos/" />
+	<link rel="canonical" href="https://cerflock.herokuapp.com/fr/allos/" />
 	<link rel="manifest" href="/manifest.json">
-	<title>Riddle n°2 - Cerf'Lock Holmes</title>
+	<title>Allos - Cerf'Lock Holmes</title>
 
 	<link rel="shortcut icon" href="/data/favicons/favicon_16.ico" type="image/x-icon" />
 	<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
@@ -19,11 +18,12 @@
 	<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
 	<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
 
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/style.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/style.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/topnav.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/topnav.css') . '" />'; ?>
-	<?php echo '<link rel="stylesheet" type="text/css" href="/css/cartes.css?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/css/cartes.css') . '" />'; ?>
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/topnav.css?v=1" />
+	<link rel="stylesheet" type="text/css" href="/css/cartes.css?v=1" />
 
-	<?php echo '<script type="text/javascript" src="/js/scripts.js?' . filemtime($_SERVER['DOCUMENT_ROOT'].'/js/scripts.js') .'"></script>' ?>
+	<script type="text/javascript" src="/js/scripts.js?v=1"></script>
+	
 </head>
 
 <body>
@@ -31,13 +31,13 @@
 		autoChangeMode();
 	</script>
 
-<header>
+	<header>
 		<nav>
 
 			<a href="tel:+33783653406" class="quick-access" title="Call us!">
 				<div class="icon"><img src="/data/icons/tel.svg" class="svg" alt="Call us!"></div>
 			</a>
-			<a href="/fr/<?php echo $file; ?>" class="quick-access" title="En Français dans le texte...!">
+			<a href="/fr/allos/" class="quick-access" title="En Français dans le texte...!">
 				<div class="icon"><img src="/data/icons/fr.svg" alt="Version française"></div>
 			</a>
 			<a href="javascript:void(0);" onclick="changeMode()" class="quick-access" title="Join the dark side...">
@@ -63,7 +63,7 @@
 				<div class="icon"><img src="/data/icons/campaigns.svg" class="svg page" alt=""></div>
 				<span>Campaigns</span>
 			</a>
-			<a href="/en/allos">
+			<a href="/en/allos" class="active">
 				<div class="icon"><img src="/data/icons/allos.svg" class="svg page" alt=""></div>
 				<span>Allos</span>
 			</a>
@@ -71,20 +71,52 @@
 		</nav>
 	</header>
 
+	<style>
+		a.gros-bouton {
+			float:right;
+			margin-top:1.5rem;
+		}
+		button.gros-bouton {
+			font-size:1.5rem;
+			height:2em;
+			padding:0.5em;
+			margin:auto 0;
+		}
+		@media screen and (max-width: 500px) {
+			button.gros-bouton {
+				font-size: 1.1rem;
+			}
+		}
+	</style>
+	
 	<main>
-	<h1>Riddle n°2</h1>
-		<p>Congratulations, you found the used poison! But a question remains: how Serge swallowed the poison?</p>
-		<p>Fortunately, Cerf’Lock managed to find some clues that could link to the weapon… Will you decipher the coded message?</p>
-		<p>Here is a piece of advice from Cerf'Lock: in French, a phone can sometimes be named a "tel", for "téléphone".</p>
-		<br>
-		<img src="/data/enigm2.png" alt="Trois images : un coq, un téléphone et le logo Sex on the Biche" style="width:100%;max-width:1000px;">
-		<br><br>
-		<p>Found it? Congratulations! Write the answer down, it will soon be useful 😉</p>
-		<br>
-		<details class="box" style="width: max-content;">
-			<summary>Answer</summary>
-			<p>The poison has been placed in a <i>Sex-on-the-Biche cocktail</i> (cock - tel - Sex on the Biche).</p>
-		</details>
+		<div style="display:flow-root;">
+			<h1 style="float:left;">Allôs</h1>
+			<a class="hidden gros-bouton" href="tel:+33783653406">
+				<button class="gros-bouton">Call us!</button>
+			</a>
+		</div>
+		<p style="margin-top:0;">
+			The <i>Allos</i> are a famous event of the Centrale Nantes' campaigns: you call us fot the <i>allô</i> you want, and we try to answer your demand as soon as possible! To participate, you just have to call this number: <a href="tel:+33783653406">07.83.65.34.06
+</a>!
+			You can call on thursday afternoon, and during all the weekend of the campaigns😉 Choose your <i>allô</i> in the list below!
+		</p>
+		<div class="jeu">
+			<?php 
+				$handle = fopen("https://cerflock.herokuapp.com/data/allos.csv", "r");
+				$lost = fgetcsv($handle, 1000, ',', '"');
+				while (($allo = fgetcsv($handle, 1000, ',', '"')) !== FALSE) {
+					echo "<div class='carte wohover";
+					if ($allo[4] == "uber") {
+						echo " carte-haute";
+					}
+					echo "'><div class=image><img src='/data/allos/" . $allo[4] . ".jpg' alt='Picture of " . $allo[1] . "'>";
+					echo "</div><div class=texte><h2>" . $allo[1] . "</h2>";
+					echo "<p>" . $allo[3] . "</p></div></div>";
+				}
+				fclose($handle);
+			?>
+		</div>
 	</main>
 
 	<footer>
