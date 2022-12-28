@@ -1,6 +1,6 @@
 # Site Web des Cerf'Lock Holmes
 
-[cerflock.fr](https://cerflock.fr/)
+[hydrielax.github.io/cerflock](https://hydrielax.github.io/cerflock/)
 
 ## Description
 
