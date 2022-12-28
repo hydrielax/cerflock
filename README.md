@@ -1,6 +1,6 @@
 # Site Web des Cerf'Lock Holmes
 
-[hydrielax.github.io/cerflock](https://hydrielax.github.io/cerflock/)
+[hydrielax.github.io/cerflock/](https://hydrielax.github.io/cerflock/) (anciennement [cerflock.fr](https://cerflock.fr))
 
 ## Description
 
@@ -14,12 +14,25 @@ Site web de la liste BDE *Cerf'Lock Holmes*, liste candidate au BDE de Centrale 
   * Si le site détecte que le système a changé de thème, alors le mode auto suit le thème du système au lieu de l'heure
   * Si l'utilisateur change de thème, alors le thème choisi est forcé et reste en permanence
   * Si l'utilisateur change à nouveau de thème et que ce thème correspond au thème auto, alors on rebascule sur le thème auto.
-* Technologies : le site est construit en PHP, qui permet d'ajouter des scripts dans le HTML. En pratique c'est à éviter, il vaut mieux se contenter de HTML et construire des scripts en JavaScript.
+* Technologies : le site est construit directement en HTML, avec quelques scripts javascripts quand nécessaire.
 * Langues : le site propose une version anglaise et une version française
-* Le site web est installable en tant qu'appli (grâce aux fichiers `service-worker.js` et `manifest.json`)
+* Le site web est installable en tant qu'appli (grâce au fichier `manifest.json`)
 * L'indexation des membres par les moteurs de recherche est désactivée grâce à la balise `
 	<meta name="robots" content="noindex">` sur la page html correspondante
 * L'indexation des image est désactivée grâce aux fichiers `robots.txt`
+
+## Développement
+
+Pour travailler sur le site en local, clonez le repo et lancez un serveur http avec Python par exemple, depuis le dossier racine :
+```bash
+python3 -m http.server 8000
+```
+Le site est alors accessible à l'adresse [http:localhost:8000](http://localhost:8000).
+
+---
+
+*Note : pour la version en ligne sur Github Pages, les chemins absolus internes des liens ont été corrigés.*
+
 
 ## License
 
