@@ -114,7 +114,7 @@ function setCookie(sName, sValue) {
 
 if ('serviceWorker' in navigator) {
 	// enregistrer le service worker 
-	navigator.serviceWorker.register('/service-worker.js');
+	navigator.serviceWorker.register('/cerflock/service-worker.js');
 }
 
 //note : ce que dit la loi sur les cookies
